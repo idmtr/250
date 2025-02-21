@@ -1,0 +1,36 @@
+.
+├── [lang]
+│   ├── blog
+│   │   ├── [slug]
+│   │   │   └── page.tsx
+│   │   ├── page.tsx
+│   │   └── tag
+│   │       └── [tag]
+│   │           └── page.tsx
+│   ├── contact
+│   │   └── page.tsx
+│   ├── debug-config.ts
+│   ├── education
+│   │   └── page.tsx
+│   ├── get-feedback
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   ├── mission
+│   │   └── page.tsx
+│   ├── page.client.tsx
+│   ├── page.tsx
+│   ├── retreats
+│   │   └── page.tsx
+│   ├── speaking-events
+│   │   └── page.tsx
+│   └── workshops
+│       └── page.tsx
+├── globals.css
+├── layout.tsx
+├── page.tsx
+├── project_structure.txt
+├── robots.ts
+├── sitemap.ts
+└── template.tsx
+
+13 directories, 21 files

@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "github.copilot",
+    "github.copilot-chat",
+    "lokalise.i18n-ally",
+    "ms-vsliveshare.vsliveshare",
+    "formulahendry.auto-rename-tag",
+    "streetsidesoftware.code-spell-checker",
+    "naumovs.color-highlight",
+    "mikestead.dotenv",
+    "dsznajder.es7-react-js-snippets",
+    "wayou.vscode-todo-highlight",
+    "gruntfuggly.todo-tree",
+    "redhat.vscode-yaml",
+    "davidanson.vscode-markdownlint"
+  ]
+}

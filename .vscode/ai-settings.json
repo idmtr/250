@@ -1,0 +1,34 @@
+{
+    "githubCopilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false
+    },
+    "githubCopilot.advanced": {
+        "inlineSuggest.enable": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "copilot.chat.contextPath": "./README.md",
+    "copilot.chat.contextLevel": "auto",
+    "copilot.chat.includeIdentifiers": true,
+    "copilot.chat.referenceMode": "classic",
+    "files.associations": {
+        "*.mdx": "markdown"
+    },
+    "search.useIgnoreFiles": true,
+    "search.useParentIgnoreFiles": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.preferences.quoteStyle": "double",
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "tailwindCSS.includeLanguages": {
+        "typescript": "javascript",
+        "typescriptreact": "javascript"
+    },
+    "editor.linkedEditing": true,
+    "editor.guides.bracketPairs": true,
+    "editor.bracketPairColorization.enabled": true
+}

@@ -1,0 +1,480 @@
+{
+  "metadata": {
+    "title": "TwoFifty Consulting - Coworking Consultancy",
+    "description": "TwoFifty specializes in coworking consultancy, offering expert guidance on creating and optimizing coworking spaces for organizations across the globe.",
+    "keywords": [
+      "coworking",
+      "consultancy",
+      "workspace optimization",
+      "community building",
+      "coworking education",
+      "coworking events",
+      "flexible workspace solutions",
+      "coworking trends",
+      "workspace design"
+    ]
+  },
+  "header": {
+    "mission": "Mission",
+    "services": "Services",
+    "workshops": "Workshops",
+    "education": "Education",
+    "speakingEvents": "Speaking & Events",
+    "getFeedback": "Get Feedback",
+    "communityRetreats": "Community Retreats",
+    "language": "",
+    "getInTouch": "Get in Touch",
+    "coworkingConsultancy": "Coworking Consultancy",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "blog": "Blog"
+  },
+  "footer": {
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "contact": "Contact"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/paulineroussel/",
+    "twitter": "https://twitter.com/twofifty",
+    "contact": "/en/contact"
+  },
+  "hero": {
+    "title": "We teach, advise and build understanding about coworking for organizations across the globe.",
+    "subtitle": "Transforming workspaces into thriving communities through expert consultation and education.",
+    "learnMore": "Learn More",
+    "getInTouch": "Get in Touch"
+  },
+  "consulting": {
+    "title": "Coworking Consultancy",
+    "subtitle": "Better Coworking Spaces for All",
+    "description": "TwoFifty specializes in crafting sustainable, adaptable workspaces that streamline processes, foster team dynamics, and enhance community engagement through our proven methodologies.",
+    "learnMore": "Learn more about our consulting services"
+  },
+  "education": {
+    "title": "What is Coworking?",
+    "subtitle": "Deep-dive Workshops & Presentations",
+    "description": "Our bespoke workshops are tailored to both organizations and individuals, guiding you to understand how coworking and flex-office trends are reshaping today's traditional workplace. Experience hands-on learning and practical insights.",
+    "discoverMore": "Discover More",
+    "items": [
+      {
+        "title": "Understanding Coworking",
+        "description": "Learn about the fundamentals of coworking, its history, and how it's transforming the modern workplace."
+      },
+      {
+        "title": "Community Building",
+        "description": "Discover strategies for creating and nurturing thriving coworking communities that foster collaboration and growth."
+      },
+      {
+        "title": "Space Management",
+        "description": "Master the art of managing flexible workspaces, from layout optimization to member experience enhancement."
+      }
+    ],
+    "hero": {
+      "overline": "Teaching Session on Community Management",
+      "title": "Education"
+    },
+    "process": {
+      "title": "Process",
+      "subtitle": "Learning Sessions",
+      "heading": "Make Coworking Sustainable",
+      "description": "Learn how to create, manage and sustain a coworking space. Learn the basics of day-to-day tasks. From building a space to curating and suntanning the community."
+    },
+    "job": {
+      "title": "The Job",
+      "subtitle": "Build Understanding",
+      "heading": "What does a Community Manager do?",
+      "description": "Community managers are the most important part of a coworking community. Very often they can make or break a community. Join our bi-monthly learning group to talk community management and learn the intricacies."
+    },
+    "connect": {
+      "title": "Let's Connect",
+      "subtitle": "We are happy to help with any skills/knowledge gaps in your organization.",
+      "cta": "Get In Touch",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "clientLogos": {
+    "title": "Adding value to organizations of various sizes",
+    "subtitle": "Some of the companies/brands we've collaborated with throughout the years."
+  },
+  "fieldsOfWork": {
+    "title": "Our Fields of Work",
+    "consulting": {
+      "title": "Coworking Consulting & Workshops",
+      "description": "Expert guidance on creating and optimizing coworking spaces."
+    },
+    "communityBuilding": {
+      "title": "Community Building",
+      "description": "Strategies for fostering engagement and collaboration."
+    },
+    "eventsContent": {
+      "title": "Events & Content Creation",
+      "description": "Curated experiences and valuable resources for the coworking community."
+    }
+  },
+  "ourStory": {
+    "title": "Our Story",
+    "subtitle": "We Understand Coworking, Globally.",
+    "points": [
+      "Traveled to 50 cities and visited 500+ coworking spaces from New York to Tokyo. Conversing with over 1000 people.",
+      "Made the first Coworking Specific Job Board: Coworkies.",
+      "Built the first Coworking Hackathon: Hack Coworking.",
+      "Created a future of work and workspaces podcast show: Hot Water.",
+      "Wrote and self-published \"Around The World in 250 Coworking Spaces\", a coffee table book showcasing 250 amazing stories of coworking spaces from all over the world."
+    ],
+    "aboutUs": "Learn More About Us"
+  },
+  "bookShowcase": {
+    "title": "Our Book About Coworking",
+    "description": "Order \"Around the World in 250 Coworking Spaces\". A coworking book of carefully curated stories from founders and companies that make coworking happen across the globe.",
+    "orderNow": "Order Now"
+  },
+  "otherProjects": {
+    "title": "Other Projects",
+    "coworkingJobBoard": "Coworking Job Board",
+    "coworkingPodcast": "Coworking Podcast",
+    "coworkingHackathon": "Coworking Hackathon",
+    "communityManagersGroup": "Community Managers Group"
+  },
+  "workshops": {
+    "title": "Presentations & Workshops",
+    "subtitle": "The Ways We Make a Difference",
+    "presentations": {
+      "overline": "Knowledge",
+      "title": "Presentations",
+      "subtitle": "Around the world of Coworking",
+      "description": "Our team traveled across the globe to 50 cities to visit, as of today, more than 500+ coworking spaces. From New York to Tokyo we've explored a vast variety of open work/collaborative spaces talking to more than 1000 coworking‐related people.",
+      "callout": "Book a \"Coworking Around the World\" presentation to learn about the various forms of flex/collaborative workspaces across the globe.",
+      "details": {
+        "duration": "From 45min to 60min",
+        "includes": "Presentation + Q&A Session",
+        "options": "Virtual/Online, Offline",
+        "suitableFor": "HR/Workplace Teams, CRE, Universities, Events, Startups in the FOW"
+      }
+    },
+    "workshop": {
+      "overline": "Creation",
+      "title": "Workshop",
+      "subtitle": "Play the Game of Coworking",
+      "description": "We've created our own game to help teams and organizations better understand and work on coworking concepts that will fit the needs of their people. Covering topics such as community, interior design, collaboration and more.",
+      "callout": "Book this immersive workshop with our team to really dig deeper into the coworking concept.",
+      "details": {
+        "duration": "From 2h to 5h",
+        "includes": "Presentation, Workshop & Q&A Session",
+        "options": "Virtual/Online, Offline",
+        "suitableFor": "Teams, Future Founders, Event Workshops, Change Makers, Universities"
+      }
+    },
+    "connect": {
+      "question": "Does your organization have any skills/knowledge gaps?",
+      "title": "Let's Connect",
+      "subtitle": "We would love to hear from you.",
+      "cta": "Get In Touch",
+      "linkedin": "Connect on LinkedIn"
+    }
+  },
+  "speakingEvents": {
+    "title": "Speaking & Events",
+    "description": "Learn about our speaking engagements and upcoming events in the coworking industry.",
+    "hero": {
+      "overline": "Engagement",
+      "title": "Speaking Gigs & Events"
+    },
+    "moderate": {
+      "title": "Moderate",
+      "subtitle": "Future of Work Panels",
+      "venue": "Vivatech Paris",
+      "description": "**Startup Spaces: Crafting Communities** 'Coworking space', 'campus', 'hub' – whatever you call it, the place a tech startup does business in is likely to be an entirely new breed of office, where entrepreneurs can work, learn and network. What once felt like a workplace is starting to feel (and work) a lot like a community. What's next?",
+      "speakers": [
+        "Catherine Bischoff (FACTORY BERLIN)",
+        "Marwan Elfitesse (STATION F)",
+        "Pauline Roussel (COWORKIES)",
+        "Ricardo Van Loenen (B. BUILDING BUSINESS)"
+      ],
+      "link": "https://app.vivatechnology.com/session/e9d4d7e4-c766-e911-b49e-28187816b50e"
+    },
+    "presentations": {
+      "title": "Presentations",
+      "subtitle": "Share",
+      "venue": "Conferences",
+      "description": "Participating at various conferences and private events to share what we've learned along the way of our practice & travels. We've been lucky enough to participate at events such as Coworking Now in Gdansk, Coworking Spain Conference, Cowork Buzz, What Works, Techfestival & others."
+    },
+    "educate": {
+      "title": "Educate",
+      "subtitle": "Learn & Share",
+      "venue": "Private Events & Meetups",
+      "description": "The world is going through fundamental change. Our research and work into the future of work and work-spaces has been valuable to many people and organizations. We strive to share what we've learned with as many companies and groups to get them started onto their journey into coworking and the future of work-spaces."
+    },
+    "hackathon": {
+      "title": "Hackathon",
+      "subtitle": "Innovate by Doing",
+      "venue": "Hands-on Events",
+      "description": "We believe in learning by doing. With many of our global partners we organize hands-on workshops and events like hackathons, so everyone can build understanding about the coworking world through project-based activities. Hackathons showcase people's ideas and needs when it comes down to work. Workshops are great for companies who would like to educate their team about the new and emerging type of workspaces."
+    },
+    "connect": {
+      "title": "Engagement",
+      "subtitle": "Let's Connect",
+      "description": "Do you have an event, looking for speakers, co-organizers or people who can help you with content around the future of work and workspaces? Send us a message and let's chat!",
+      "cta": "Get in Touch"
+    }
+  },
+  "getFeedback": {
+    "title": "Get Feedback",
+    "description": "Receive expert feedback on your coworking space or community building strategies.",
+    "hero": {
+      "overline": "One on One Session about your Projects",
+      "title": "Get Feedback"
+    },
+    "feedback": {
+      "title": "Feedback",
+      "subtitle": "Use Our Knowledge",
+      "heading": "Show us Your Product / Idea / Service / Space.\nGet our Feedback",
+      "description": "We've developed a unique philosophy about coworking. Use our knowledge and understanding about it to bounce off ideas with us and get detailed feedback. Our experience spans from design & developing software products to setting up and organizing the work in a coworking space.",
+      "callout": "Book a \"Get Feedback\" session to improve your product/Idea/Service/Space.",
+      "details": {
+        "duration": "1-5 Days",
+        "includes": "2 Calls, Q&A Session, Feedback Report",
+        "options": "Virtual/Online",
+        "suitableFor": "People/Companies looking to improve their spaces, products, services, processes"
+      }
+    },
+    "connect": {
+      "question": "Does your organization have any skills/knowledge gaps?",
+      "title": "Let's Connect",
+      "subtitle": "We would love to hear from you.",
+      "cta": "Get In Touch",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "blog": {
+    "title": "Coworking Insights & Best Practices",
+    "subtitle": "Expert tips and proven strategies for building successful coworking spaces",
+    "featuredPost": "Featured Article",
+    "latestPosts": "Latest Articles",
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "byAuthor": "by",
+    "tags": "Tags",
+    "tagDescription": "Browse all posts tagged with",
+    "postsTaggedWith": "Posts tagged with",
+    "posts": "posts",
+    "relatedPosts": "Related Posts",
+    "noPostsFound": "No posts found",
+    "updated": "Updated",
+    "minutes": "min read",
+    "readingTime": "Reading time"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "subtitle": "What We Fight For",
+    "mainHeading": "Make Coworking Better, For Everyone",
+    "mainDescription": "Two Fifty Co. was founded as an answer to the question: 'How can we make coworking better?' For many years now, our team has traveled around the world visiting coworking spaces and meeting their peoples, over 1000 at the moment. Over time, organizations began to ask us to teach them about how coworking is done around the globe. While working with clients on specific projects, we constantly asked ourselves how to expand our impact on coworking in general. Our most important advice to coworking spaces has always been to work closely with their members. To stress this point, we started Hack Coworking, an event where members can invent the products and services they need in shared workspaces, providing direct feedback to coworking spaces on what to focus their services on. We also embarked on a journey to create a book with unique content that cannot be found through a simple Google search. In addition to our consulting work, we also build and manage the most popular job board for people passionate about participating in the biggest change to the office as we know it.",
+    "valuesTitle": "Our Values",
+    "values": [
+      {
+        "title": "Universal Work",
+        "description": "We see coworking as universal. Our understanding of coworking is that it can have the most profound and positive impact on the way humans live and work."
+      },
+      {
+        "title": "Co-Creation and Collaboration",
+        "description": "We do not subscribe to a one-size-fits-all approach to success. Instead, we work closely with our clients to build a shared understanding."
+      },
+      {
+        "title": "Integrity & Accountability",
+        "description": "We take our work seriously and expect the same from our clients. We approach our projects with passion and focus on achieving our end goal."
+      },
+      {
+        "title": "Exchange of Value",
+        "description": "We believe in relationships based on exchange of value. We strive to build sustainable projects with long-lasting results."
+      }
+    ],
+    "ctaTitle": "Let's Connect",
+    "ctaDescription": "Ready to transform your coworking space?",
+    "ctaButton": "Get In Touch"
+  },
+  "retreats": {
+    "title": "Retreats for Coworking Professionals",
+    "description": "The Community Managers Retreat, a 4-day in-person workshop, in the beautiful city of Marrakesh, during which you will be able to strengthen your community knowledge, while learning from other community managers from around Europe.",
+    "purposeTitle": "Purpose of the Retreat",
+    "resetTitle": "Reset",
+    "resetDescription": "The retreat aims at bringing you out of your own daily-environment so you can take a step back and reset and reflect.",
+    "learnTitle": "Learn",
+    "learnDescription": "Learn from yourself and from the other participants who will join the retreat. Our daily programming will help you gain some perspective on challenge(s) you might face, while developing solutions on how to solve them as a group.",
+    "connectTitle": "Connect",
+    "connectDescription": "Build long-lasting connections with other community managers and become a part of our second cohort!",
+    "agendaTitle": "Agenda",
+    "agenda": [
+      {
+        "title": "DAY 1",
+        "activities": [
+          "Arrival & Accommodation",
+          "Tour of coworking Spaces in Marrakesh"
+        ]
+      },
+      {
+        "title": "DAY 2",
+        "activities": [
+          "Introduction Session: \"Know My Space\"",
+          "Presentation on Community Management for Coworking spaces with Examples",
+          "Global Examples and presentation on the career path of a community manager"
+        ]
+      },
+      {
+        "title": "DAY 3",
+        "activities": [
+          "Presentation on community management with global examples and group discussion.",
+          "Workshop session in teams, solve challenges",
+          "Team presentations, group discussion and feedback session."
+        ]
+      },
+      {
+        "title": "DAY 4",
+        "activities": [
+          "Team presentations, group discussion and feedback session.",
+          "Wrap-up, conclusion, learning",
+          "Setup agenda for followup online calls to build on the group learning outcomes"
+        ]
+      }
+    ],
+    "ctaTitle": "Ready to Transform Your Space?",
+    "ctaDescription": "Book an initial call to learn more about the retreat",
+    "ctaButton": "Book Initial Call",
+    "heroTitle": "Coworking Community Retreats",
+    "heroSubtitle": "Learning Experiences",
+    "heroDate": "Morocco, 30th May/2nd June - 2024",
+    "heroDescription": "Join us for a transformative journey in the heart of Marrakesh. Our 4-day workshop is designed specifically for community managers who want to deepen their understanding and strengthen their practice.",
+    "whatYouGet": {
+      "title": "What You Get",
+      "items": [
+        "4 days of intensive learning and sharing",
+        "Accommodation in beautiful traditional riad",
+        "Visit to local coworking spaces",
+        "Hands-on workshops and group sessions",
+        "Network with peers from across Europe",
+        "Follow-up support and resources"
+      ]
+    },
+    "program": {
+      "title": "Program Overview",
+      "subtitle": "A Carefully Crafted Learning Journey",
+      "days": [
+        {
+          "title": "Day 1: Arrival & Discovery",
+          "activities": [
+            "Welcome reception and introductions",
+            "Tour of local coworking spaces",
+            "Evening networking dinner"
+          ]
+        },
+        {
+          "title": "Day 2: Foundations & Context",
+          "activities": [
+            "\"Know My Space\" introduction session",
+            "Community management fundamentals",
+            "Global case studies and examples",
+            "Career development pathways"
+          ]
+        },
+        {
+          "title": "Day 3: Deep Dive & Practice",
+          "activities": [
+            "Advanced community strategies",
+            "Group problem-solving workshops",
+            "Team presentations and feedback",
+            "Evening cultural experience"
+          ]
+        },
+        {
+          "title": "Day 4: Integration & Next Steps",
+          "activities": [
+            "Final presentations",
+            "Action planning session",
+            "Setting up ongoing support",
+            "Closing celebration"
+          ]
+        }
+      ]
+    },
+    "facilitators": {
+      "title": "Your Facilitators",
+      "team": [
+        {
+          "name": "Pauline Roussel",
+          "role": "Global Community Expert",
+          "bio": "Co-founder of Coworkies, author, and worldwide coworking space explorer having visited over 500 spaces across 50 cities."
+        },
+        {
+          "name": "Dimitar Inchev",
+          "role": "Strategic Advisor",
+          "bio": "Experienced consultant helping coworking spaces optimize their operations and build thriving communities."
+        }
+      ]
+    },
+    "location": {
+      "title": "The Experience",
+      "description": "Immerse yourself in the vibrant culture of Marrakesh while learning in a carefully selected traditional riad that combines comfort with inspiration.",
+      "features": [
+        "Traditional Moroccan architecture",
+        "Peaceful courtyards for reflection",
+        "Modern amenities for comfort",
+        "Authentic local experience"
+      ]
+    },
+    "pricing": {
+      "title": "Investment",
+      "regular": "2,500€",
+      "early": "2,000€ (Early Bird until March 30)",
+      "includes": [
+        "All workshop materials",
+        "4 nights accommodation",
+        "Breakfast and lunch",
+        "Local transportation",
+        "Welcome dinner"
+      ]
+    },
+    "cta": {
+      "title": "Ready to Transform Your Community?",
+      "subtitle": "Limited to 12 participants for an optimal learning experience",
+      "buttonText": "Book Initial Consultation",
+      "secondaryText": "or email us at hello@twofifty.co"
+    }
+  },
+  "contact": {
+    "hero": {
+      "overline": "One on One Session about your Projects",
+      "title": "Contact"
+    },
+    "content": {
+      "title": "Let's connect!",
+      "description": "Say \"Hi\" on LinkedIn or by email. We would be happy to hear from you.",
+      "links": {
+        "call": "Book a 30min Call",
+        "linkedin": "Connect on Linkedin",
+        "email": "Connect via Email"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "home": "Home"
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Learn More About the Founders of TwoFifty."
+    },
+    "image": {
+      "src": "/images/about/Twofifty.co_.svg",
+      "alt": "TwoFifty.co logo",
+      "width": 201,
+      "height": 40
+    },
+    "imageTitle": "ABOUT TwoFifty Coworking consulting",
+    "imageSubtitle": "From Berlin to the world.",
+    "content": {
+      "paragraph1": "TwoFifty Coworking Consulting was founded by Pauline Roussel and Dimitar Inchev, with a focus on enhancing coworking experiences. Our approach is twofold. We organize practical workshops, presentations, and educational events for a range of organizations. Additionally, we consult with companies operating or aspiring to start coworking spaces, offering support in concept development, organization, team building, and community engagement.",
+      "paragraph2": "Our journey began in 2014. At that time, Pauline managed a 2000 sq/m coworking space in Berlin, and Dimitar was involved in a startup accelerator within that space. This collaboration led to the creation of Coworkies.com, the first job board targeted at coworking spaces. We also hosted the first coworking hackathon in London and authored a book detailing our experiences with over 500 coworking spaces in 50 cities globally.",
+      "paragraph3": "At TwoFifty, we actively organize and participate in coworking-related events. Our goal is to share our knowledge and experiences of coworking practices from around the world. As the workplace continues to evolve, we are dedicated to educating individuals and organizations about the benefits and possibilities of coworking."
+    },
+    "cta": "Get in Touch"
+  }
+}
