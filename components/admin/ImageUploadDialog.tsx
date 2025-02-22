@@ -175,7 +175,7 @@ export function ImageUploadDialog({
           </TabsContent>
 
           <TabsContent value="browse" className="py-4">
-            <div className="min-h-[200px]">
+            <div className="min-h-[200px] max-h-[80vh] overflow-y-auto">
               {loading && (
                 <div className="flex items-center justify-center h-40">
                   <span className="loading loading-spinner" />
@@ -190,7 +190,7 @@ export function ImageUploadDialog({
               )}
 
               {!loading && !error && (
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-3 gap-4 p-2">
                   {images.map((image) => (
                     <div
                       key={image}

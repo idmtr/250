@@ -22,18 +22,26 @@ function getLocale(request: NextRequest): string {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
-  console.log("[middleware] Incoming request:", { pathname });
+  console.log("[middleware] Request:", pathname);
 
-  // Allow admin routes
-  if (pathname.startsWith('/en/admin') || pathname.startsWith('/bg/admin')) {
-    return NextResponse.next()
+  // Skip middleware for API routes
+  if (pathname.startsWith("/api/")) {
+    return NextResponse.next();
   }
 
-  // Skip static files and API routes
-  if (
-    /\.(jpg|jpeg|png|gif|ico|css|js)$/i.test(pathname) ||
-    pathname.startsWith("/api/")
-  ) {
+  // Admin routes check (including language prefixes)
+  if (pathname.includes('/admin') && !pathname.includes('admin-login')) {
+    const adminCookie = request.cookies.get('admin_access');
+    console.log('[middleware] Cookie check:', !!adminCookie);
+
+    if (!adminCookie?.value || adminCookie.value !== process.env.ADMIN_SECRET) {
+      console.log('[middleware] Unauthorized access, redirecting to login');
+      return NextResponse.redirect(new URL('/admin-login', request.url));
+    }
+  }
+
+  // Skip static files
+  if (/\.(jpg|jpeg|png|gif|ico|css|js)$/i.test(pathname)) {
     return NextResponse.next();
   }
 
@@ -106,7 +114,10 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Add admin routes to matcher
-    "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|images/|favicon/).*)",
+    // Match all admin routes including those with language prefixes
+    "/((?!api|_next/static|_next/image|favicon.ico).*)",
+    "/admin/:path*",
+    "/admin-login",
+    "/:lang/admin/:path*"  // Add this to catch language-prefixed admin routes
   ],
 };
