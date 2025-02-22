@@ -1,8 +1,8 @@
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
-// import Image from "next/image"
-import CustomImage from "@/components/CustomImage";
+import Image from "next/image"
+// import CustomImage from "@/components/CustomImage";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
 import { generatePageMetadata } from "@/lib/metadata";
@@ -15,16 +15,16 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { lang } = await getValidatedParams(params);
   const dictionary = await getDictionary(lang);
-  
+
   // Get the current route config
   const contactRoute = routes.contact;
   const currentPath = contactRoute.localized[lang].path;
 
   return generatePageMetadata({
     lang,
-    path: currentPath,  // Use the localized path
+    path: currentPath, // Use the localized path
     title: contactRoute.localized[lang].title,
-    description: dictionary.contact.hero.description
+    description: dictionary.contact.hero.description,
   });
 }
 
@@ -50,7 +50,7 @@ export default async function ContactPage(props: Props) {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[600px]">
-                <CustomImage
+                <Image
                   // src="/images/placeholders/placeholder.svg"
                   src="/images/pages/contact-us-space.webp"
                   alt="team 250co"

@@ -29,7 +29,7 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { lang } = await getValidatedParams(params);
   const dictionary = await getDictionary(lang);
-  const route = routes["coworking-consulting"];  // Add this to routes.ts
+  const route = routes["coworking-consulting"]; // Add this to routes.ts
 
   return generatePageMetadata({
     lang,
@@ -155,7 +155,7 @@ export default async function ConsultingServices({ params }: Props) {
         {/* Left Column - Image */}
         <div className="relative w-full lg:w-1/2 h-[40vh] lg:h-screen">
           <Image
-            src="images/pages/twofifty-coworking-consulting-service.jpg"
+            src="/images/pages/twofifty-coworking-consulting-service.jpg"
             alt="TwoFifty coworking consulting service"
             fill
             className="object-cover"
@@ -291,7 +291,7 @@ export default async function ConsultingServices({ params }: Props) {
             <div className="grid md:grid-cols-2 gap-12 items-center bg-gray-50 rounded-2xl p-8">
               <div className="relative aspect-video rounded-xl overflow-hidden">
                 <Image
-                  src="images/pages/coworking-travel.jpg"
+                  src="/images/pages/coworking-travel.jpg"
                   alt="Coworking seminar"
                   fill
                   className="object-cover"
@@ -393,7 +393,7 @@ export default async function ConsultingServices({ params }: Props) {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="images/pages/coworkies-teach.jpg"
+                  src="/images/pages/coworkies-teach.jpg"
                   alt="Coworking seminar students"
                   fill
                   className="object-cover"
@@ -477,7 +477,7 @@ export default async function ConsultingServices({ params }: Props) {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
-                  src="images/pages/twofifty-coworking-consulting-service.jpg"
+                  src="/images/pages/twofifty-coworking-consulting-service.jpg"
                   alt="TwoFifty Coworking Consulting Approach"
                   fill
                   className="object-cover"

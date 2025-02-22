@@ -43,7 +43,7 @@ export default function BookShowcase({ lang, dictionary }: BookShowcaseProps) {
           </div>
           <div className="relative h-[400px]">
             <Image
-              src="images/pages/coworking-book-cover.jpg"
+              src="/images/pages/coworking-book-cover.jpg"
               alt="Around the World in 250 Coworking Spaces book"
               fill
               className="object-contain"

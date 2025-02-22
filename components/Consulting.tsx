@@ -1,7 +1,7 @@
 "use client";
 
 // import { motion } from "framer-motion";
-// import Image from "next/image";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import CustomImage from "@/components/CustomImage";
 import Link from "next/link";
@@ -63,9 +63,9 @@ export default function Consulting({ lang, dictionary }: ConsultingProps) {
           </div>
           {/* https://twofifty.co/wp-content/uploads/2019/08/IMG_0945.jpg */}
           <div className="relative h-[600px] group">
-            <CustomImage
+            <Image
               // src="https://twofifty.co/wp-content/uploads/2023/09/twofifty-coworking-consulting-service-1024x768.jpg"
-              src="images/pages/twofifty-coworking-consulting-service.jpg"
+              src="/images/pages/twofifty-coworking-consulting-service.jpg"
               alt="Coworking space consultation"
               fill
               className="object-cover rounded-lg transition-transform duration-500 opacity-80 group-hover:scale-105"

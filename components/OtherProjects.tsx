@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import CustomImage from "./CustomImage";
+// import CustomImage from "./CustomImage";
 import type { Locale } from "@/i18n-config";
 
 interface OtherProjectsProps {
@@ -34,25 +34,25 @@ export default function OtherProjects({
     {
       title: dictionary.communityManagersGroup,
       alt: "Community Managers",
-      image: "images/pages/community-managers-group.png",
+      image: "/images/pages/community-managers-group.png",
       aspectRatio: "aspect-[3/1]", // Wide logo ratio
     },
     {
       title: dictionary.coworkingJobBoard,
       alt: "Coworkies",
-      image: "images/pages/coworkies-logo.png",
+      image: "/images/pages/coworkies-logo.png",
       aspectRatio: "aspect-[2/1]", // Logo ratio
     },
     {
       title: dictionary.coworkingHackathon,
       alt: "Hack Coworking",
-      image: "images/pages/hack-coworking-logo.png",
+      image: "/images/pages/hack-coworking-logo.png",
       aspectRatio: "aspect-square", // Square logo
     },
     {
       title: dictionary.coworkingPodcast,
       alt: "Hot Water Podcast",
-      image: "images/pages/hot-water-podcast.png",
+      image: "/images/pages/hot-water-podcast.png",
       aspectRatio: "aspect-[3/2]", // Podcast cover ratio
     },
   ];
@@ -70,7 +70,7 @@ export default function OtherProjects({
               className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="relative w-full h-32 mb-4">
-                <CustomImage
+                <Image
                   src={project.image}
                   alt={project.alt}
                   fill

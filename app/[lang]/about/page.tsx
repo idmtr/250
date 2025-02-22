@@ -78,7 +78,7 @@ export default async function About({ params }: Props) {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <Image
-                  src="images/pages/twofifty-coworkies-founders-portrait.jpg"
+                  src="/images/pages/twofifty-coworkies-founders-portrait.jpg"
                   alt="TwoFifty Workspace"
                   width={600}
                   height={400}

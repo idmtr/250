@@ -1,7 +1,7 @@
 'use client'
 
 // import { useEffect } from 'react'
-import { useHydrationDebug } from './debug-config'
+// import { useHydrationDebug } from './debug-config'
 import type { Locale } from "@/i18n-config"
 import type { Dictionary } from "@/types/dictionary"
 import Consulting from "@/components/Consulting"

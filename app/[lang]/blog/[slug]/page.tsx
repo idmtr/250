@@ -9,11 +9,11 @@ import { generatePageMetadata } from "@/lib/metadata";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import Image from "next/image";
 import { formatDate } from "@/lib/utils";
-import CustomImage from "@/components/CustomImage";
+// import CustomImage from "@/components/CustomImage";
 import BlogGrid from "@/components/BlogGrid"; // Add this import
 import { i18n } from "@/i18n-config";
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 
 interface Props {
   params: {
@@ -38,7 +38,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const availableTranslations = await Promise.all(
       i18n.locales.map(async (locale) => {
         try {
-          const filePath = path.join(process.cwd(), 'content/blog', locale, `${slug}.md`);
+          const filePath = path.join(
+            process.cwd(),
+            "content/blog",
+            locale,
+            `${slug}.md`
+          );
           const exists = fs.existsSync(filePath);
           return exists ? locale : null;
         } catch {
@@ -50,14 +55,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Filter out nulls and build languages object
     const languages = Object.fromEntries(
       availableTranslations
-        .filter((locale): locale is Locale => 
-          locale !== null && locale !== lang
+        .filter(
+          (locale): locale is Locale => locale !== null && locale !== lang
         )
-        .map(locale => [
+        .map((locale) => [
           locale,
-          locale === 'en'
+          locale === "en"
             ? `${baseUrl}/blog/${slug}`
-            : `${baseUrl}/${locale}/blog/${slug}`
+            : `${baseUrl}/${locale}/blog/${slug}`,
         ])
     );
 
@@ -67,18 +72,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       openGraph: {
         title: post.title,
         description: post.excerpt,
-        type: 'article',
+        type: "article",
         publishedTime: post.date,
         modifiedTime: post.modified || post.date,
         authors: post.author ? [post.author] : undefined,
-        images: post.coverImage 
-          ? [`${baseUrl}${post.coverImage}`]
-          : undefined,
+        images: post.coverImage ? [`${baseUrl}${post.coverImage}`] : undefined,
       },
       alternates: {
-        canonical: lang === 'en' 
-          ? `${baseUrl}/blog/${slug}`
-          : `${baseUrl}/${lang}/blog/${slug}`,
+        canonical:
+          lang === "en"
+            ? `${baseUrl}/blog/${slug}`
+            : `${baseUrl}/${lang}/blog/${slug}`,
         languages,
       },
     };
@@ -124,27 +128,31 @@ export default async function BlogPost({ params }: Props) {
 
     const jsonLd = {
       "@context": "https://schema.org",
-      "@type": "Article",  // Changed from BlogPosting to Article
+      "@type": "Article", // Changed from BlogPosting to Article
       headline: post.title,
       description: post.excerpt,
-      image: post.coverImage ? [
-        {
-          "@type": "ImageObject",
-          url: `${getBaseUrl()}${post.coverImage}`,
-          width: 1200,
-          height: 630,
-          caption: post.title
-        }
-      ] : undefined,
+      image: post.coverImage
+        ? [
+            {
+              "@type": "ImageObject",
+              url: `${getBaseUrl()}${post.coverImage}`,
+              width: 1200,
+              height: 630,
+              caption: post.title,
+            },
+          ]
+        : undefined,
       datePublished: new Date(post.date).toISOString(),
-      dateModified: post.modified 
-        ? new Date(post.modified).toISOString() 
+      dateModified: post.modified
+        ? new Date(post.modified).toISOString()
         : new Date(post.date).toISOString(),
       author: {
         "@type": "Person",
         name: post.author,
-        image: post.authorImage ? `${getBaseUrl()}${post.authorImage}` : undefined,
-        url: "https://twofifty.co/about"
+        image: post.authorImage
+          ? `${getBaseUrl()}${post.authorImage}`
+          : undefined,
+        url: "https://twofifty.co/about",
       },
       publisher: {
         "@type": "Organization",
@@ -153,16 +161,16 @@ export default async function BlogPost({ params }: Props) {
           "@type": "ImageObject",
           url: `${getBaseUrl()}/images/logo.png`,
           width: 600,
-          height: 60
+          height: 60,
         },
-        url: "https://twofifty.co"
+        url: "https://twofifty.co",
       },
       mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": `${getBaseUrl()}/${lang}/blog/${slug}`
+        "@id": `${getBaseUrl()}/${lang}/blog/${slug}`,
       },
       wordCount: post.content.trim().split(/\s+/).length,
-      articleBody: post.content.replace(/<[^>]+>/g, ''), // Strip HTML tags
+      articleBody: post.content.replace(/<[^>]+>/g, ""), // Strip HTML tags
       timeRequired: `PT${readingTime}M`,
       keywords: post.tags?.join(","),
       inLanguage: lang,
@@ -170,21 +178,23 @@ export default async function BlogPost({ params }: Props) {
       license: "https://creativecommons.org/licenses/by-nc/4.0/", // Add if applicable
       articleSection: "Blog",
       genre: "Coworking",
-      about: post.tags?.map(tag => ({
+      about: post.tags?.map((tag) => ({
         "@type": "Thing",
-        name: tag
-      }))
+        name: tag,
+      })),
     };
 
     // Add additional schema for the article series if applicable
-    const articleSeriesSchema = post.series ? {
-      "@context": "https://schema.org",
-      "@type": "CreativeWorkSeries",
-      name: post.series.name,
-      url: `${getBaseUrl()}/${lang}/blog/series/${post.series.slug}`,
-      position: post.series.position,
-      numberOfItems: post.series.totalPosts
-    } : null;
+    const articleSeriesSchema = post.series
+      ? {
+          "@context": "https://schema.org",
+          "@type": "CreativeWorkSeries",
+          name: post.series.name,
+          url: `${getBaseUrl()}/${lang}/blog/series/${post.series.slug}`,
+          position: post.series.position,
+          numberOfItems: post.series.totalPosts,
+        }
+      : null;
 
     const breadcrumbJsonLd = {
       "@context": "https://schema.org",
@@ -219,8 +229,8 @@ export default async function BlogPost({ params }: Props) {
             __html: JSON.stringify([
               jsonLd,
               breadcrumbJsonLd,
-              ...(articleSeriesSchema ? [articleSeriesSchema] : [])
-            ])
+              ...(articleSeriesSchema ? [articleSeriesSchema] : []),
+            ]),
           }}
         />
 
@@ -278,7 +288,7 @@ export default async function BlogPost({ params }: Props) {
 
           {post.coverImage && (
             <figure className="relative h-[460px] mb-8">
-              <CustomImage
+              <Image
                 src={post.coverImage}
                 alt={post.title || "Blog post cover image"}
                 fill
@@ -314,24 +324,29 @@ export default async function BlogPost({ params }: Props) {
           )}
 
           {/* Optional: Show available translations */}
-          {post.availableTranslations && post.availableTranslations.length > 1 && (
-            <div className="mt-8">
-              <h2>{dictionary.blog.availableTranslations}:</h2>
-              <ul>
-                {post.availableTranslations
-                  .filter(locale => locale !== lang)
-                  .map(locale => (
-                    <li key={locale}>
-                      <Link 
-                        href={locale === 'en' ? `/blog/${slug}` : `/${locale}/blog/${slug}`}
-                      >
-                        {dictionary.languages[locale]}
-                      </Link>
-                    </li>
-                  ))}
-              </ul>
-            </div>
-          )}
+          {post.availableTranslations &&
+            post.availableTranslations.length > 1 && (
+              <div className="mt-8">
+                <h2>{dictionary.blog.availableTranslations}:</h2>
+                <ul>
+                  {post.availableTranslations
+                    .filter((locale) => locale !== lang)
+                    .map((locale) => (
+                      <li key={locale}>
+                        <Link
+                          href={
+                            locale === "en"
+                              ? `/blog/${slug}`
+                              : `/${locale}/blog/${slug}`
+                          }
+                        >
+                          {dictionary.languages[locale]}
+                        </Link>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            )}
         </article>
 
         {relatedPosts.length > 0 && (

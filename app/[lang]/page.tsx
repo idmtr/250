@@ -1,9 +1,8 @@
 import { getDictionary } from "@/get-dictionary";
-import type { Locale } from "@/i18n-config";
 import { i18n } from "@/i18n-config";
 import HomePage from "./page.client";
 import { notFound } from "next/navigation";
-import { getLatestBlogPosts, getLatestPosts } from "@/lib/blog";
+import { getLatestPosts } from "@/lib/blog";
 import type { Metadata } from "next";
 import { getValidatedParams } from "@/lib/params-helper";
 import { generatePageMetadata } from "@/lib/metadata";
@@ -36,7 +35,7 @@ export default async function Page({ params }: Props) {
     const { lang } = await getValidatedParams(params);
     const [dictionary, recentPosts] = await Promise.all([
       getDictionary(lang),
-      getLatestPosts(lang, 3), // Changed from getLatestBlogPosts to getLatestPosts
+      getLatestPosts(lang, 3),
     ]);
 
     if (!dictionary) {

@@ -15,7 +15,7 @@ interface CustomImageProps {
   loading?: "eager" | "lazy";
 }
 
-const CustomImage: React.FC<CustomImageProps> = ({
+const CustomImage: React.FC<ImageProps> = ({
   src,
   alt,
   fill,

@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import CustomImage from "./CustomImage";
+// import CustomImage from "./CustomImage";
+import Image from "next/image";
 import type { Post } from "@/types/blog";
 import type { Locale } from "@/i18n-config";
 
@@ -17,7 +18,7 @@ export default function BlogGrid({ posts, lang }: BlogGridProps) {
         <article key={post.slug} className="group">
           <Link href={`/${lang}/blog/${post.slug}`}>
             <div className="relative h-48 mb-4">
-              <CustomImage
+              <Image
                 src={post.coverImage}
                 alt={post.title}
                 fill

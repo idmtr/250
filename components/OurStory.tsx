@@ -1,7 +1,7 @@
 "use client";
 
-// import Image from "next/image"
-import CustomImage from "@/components/CustomImage";
+import Image from "next/image"
+// import CustomImage from "@/components/CustomImage";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -49,8 +49,8 @@ export default function OurStory({ lang, dictionary }: OurStoryProps) {
             </Button>
           </div>
           <div className="relative h-[600px]">
-            <CustomImage
-              src="images/pages/twofifty-coworkies-founders-portrait.jpg"
+            <Image
+              src="/images/pages/twofifty-coworkies-founders-portrait.jpg"
               alt="TwoFifty team"
               fill
               className="object-cover rounded-lg"

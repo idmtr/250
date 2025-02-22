@@ -1,7 +1,7 @@
 "use client";
 
-// import Image from "next/image"
-import CustomImage from "@/components/CustomImage";
+import Image from "next/image"
+// import CustomImage from "@/components/CustomImage";
 import type { Locale } from "@/i18n-config";
 
 interface ClientLogosProps {
@@ -46,8 +46,8 @@ export default function ClientLogos({ lang, dictionary }: ClientLogosProps) {
             </div>
           ))} */}
         <div className="relative rounded-md h-[600px]">
-          <CustomImage
-            src="images/pages/two-fifty-co-bw-sml.jpg"
+          <Image
+            src="/images/pages/two-fifty-co-bw-sml.jpg"
             alt="Coworking consulting companies/brands we’ve collaborated"
             fill
             className="object-contain drop-shadow-2xl rounded-md opacity-75 rounded-lg"
