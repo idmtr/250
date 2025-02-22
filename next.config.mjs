@@ -37,9 +37,10 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; sandbox;",
-    // unoptimized: process.env.NODE_ENV === 'development',
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    unoptimized: process.env.NODE_ENV === 'development',
+    // Optimized sizes covering most common use cases
+    deviceSizes: [640, 750, 1080, 1920],
+    imageSizes: [16, 32, 64, 96, 128, 256],
   },
   async rewrites() {
     return [
