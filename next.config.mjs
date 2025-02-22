@@ -37,7 +37,7 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; sandbox;",
-    unoptimized: process.env.NODE_ENV === 'development',
+    // unoptimized: process.env.NODE_ENV === 'development',
     // Optimized sizes covering most common use cases
     deviceSizes: [640, 750, 1080, 1920],
     imageSizes: [16, 32, 64, 96, 128, 256],
@@ -94,4 +94,12 @@ function mergeConfig(nextConfig, userConfig) {
   }
 }
 
-export default nextConfig
+export default {
+  ...nextConfig,
+  experimental: {
+    ...nextConfig.experimental,
+    serverActions: {
+      bodySizeLimit: '3mb'
+    }
+  }
+}

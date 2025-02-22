@@ -12,7 +12,15 @@ export interface Post {
   authorImage?: string;
   lang: string;
   readingTime?: string;
-  
+}
+
+export interface ArticleFormData {
+  title: string
+  excerpt: string
+  content: string
+  coverImage?: string
+  tags?: string
+  lang: string
 }
 
 export interface BlogDictionary {

@@ -24,6 +24,11 @@ export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   console.log("[middleware] Incoming request:", { pathname });
 
+  // Allow admin routes
+  if (pathname.startsWith('/en/admin') || pathname.startsWith('/bg/admin')) {
+    return NextResponse.next()
+  }
+
   // Skip static files and API routes
   if (
     /\.(jpg|jpeg|png|gif|ico|css|js)$/i.test(pathname) ||
@@ -101,6 +106,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
+    // Add admin routes to matcher
     "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|images/|favicon/).*)",
   ],
 };

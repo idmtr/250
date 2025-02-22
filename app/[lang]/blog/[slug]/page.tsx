@@ -10,7 +10,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import Image from "next/image";
 import { formatDate } from "@/lib/utils";
 // import CustomImage from "@/components/CustomImage";
-import BlogGrid from "@/components/BlogGrid"; // Add this import
+import BlogGrid from "@/components/BlogGrid";
 import { i18n } from "@/i18n-config";
 import fs from "fs";
 import path from "path";
@@ -280,8 +280,8 @@ export default async function BlogPost({ params }: Props) {
                 )}
               </div>
 
-              <span title={`${readingTime} ${dictionary.blog.minutes}`}>
-                {readingTime} min read
+              <span title={`${post.readingTime}`}>
+                {post.readingTime}
               </span>
             </div>
           </header>
