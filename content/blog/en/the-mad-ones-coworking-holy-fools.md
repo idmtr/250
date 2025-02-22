@@ -1,26 +1,24 @@
 ---
-title: "The Mad Ones: A Coworking Space for The Holy Fools of Our Time"
-date: "2024-10-25"
-excerpt: "Join us on a wild ride through the untamed territory of coworking spaces, where souls collide and magic happens in the raw energy of community building."
-author: "Community Wanderer"
-authorRole: "Community Wanderer"
-authorImage: "/images/team/twofifty-team.jpg"
-coverImage: "/images/blog/on-the-road-to-connection.jpg"
-featured: false
-readingTime: "12 min read"
+title: 'The Mad Ones: A Coworking Space for The Holy Fools of Our Time'
+date: '2025-02-22'
+author: Community Wanderer
+authorRole: Community Wanderer
+authorImage: /images/team/twofifty-team.jpg
+coverImage: /images/blog/on-the-road-to-connection.jpg
+excerpt: >-
+  Join us on a wild ride through the untamed territory of coworking spaces,
+  where souls collide and magic happens in the raw energy of community building.
 tags:
-    [
-        "coworking",
-        "community spirit",
-        "workspace vibes",
-        "spontaneous connections",
-        "urban tribes",
-        "workplace culture",
-        "human spirit"
-    ]
-slug: "the-mad-ones-coworking-holy-fools"
-lang: "en"
-published: true
+  - coworking
+  - community spirit
+  - workspace vibes
+  - spontaneous connections
+  - urban tribes
+  - workplace culture
+  - human spirit
+featured: false
+published: false
+readingTime: 2 min read
 ---
 
 The mad ones are here, oh yes, the ones who burn like fabulous roman candles exploding across the stark white walls of our coworking universe. I've seen them all - the wild-eyed entrepreneurs hunched over their laptops at 3 AM, the jazz of their keyboard clicks mixing with the hum of the city outside.

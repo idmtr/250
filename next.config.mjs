@@ -30,7 +30,11 @@ const nextConfig = {
       },
       {
         protocol: 'http',
-        hostname: 'via.placeholder.com',
+        hostname: 'www.fillmurray.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
       }
     ],
     formats: ['image/avif', 'image/webp'],
