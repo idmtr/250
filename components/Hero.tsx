@@ -1,22 +1,12 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
-import { SmartImage } from "@/components/common/SmartImage"
 import type { Locale } from "@/types"
 
 export default function Hero({ dictionary, lang }: { dictionary: any; lang: Locale }) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F5EBE0] to-[#D4A373]">
-      <div className="absolute inset-0">
-        <SmartImage
-          src="/images/pages/coworking-presentation.jpg"
-          alt="Coworking Presentation Background"
-          fill
-          className="object-cover opacity-20"
-          transformation="hero"
-          priority
-        />
-      </div>
+      <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740252199/images/pages/ylzglgyn7h82m4oakj7w.jpg')] bg-cover bg-center opacity-20"></div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

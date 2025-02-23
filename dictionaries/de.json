@@ -400,11 +400,13 @@
       "team": [
         {
           "name": "Pauline Roussel",
+          "image": "images/team/pauline_h3fh0v",
           "role": "Globale Community-Expertin",
           "bio": "Mitbegründerin von Coworkies, Autorin und weltweite Coworking-Space-Entdeckerin mit über 500 besuchten Räumen in 50 Städten."
         },
         {
           "name": "Dimitar Inchev",
+          "image": "images/team/dimitar_nmeo81",
           "role": "Strategischer Berater",
           "bio": "Erfahrener Berater, der Coworking-Spaces hilft, ihre Abläufe zu optimieren und lebendige Gemeinschaften aufzubauen."
         }

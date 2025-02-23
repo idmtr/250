@@ -1,7 +1,7 @@
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
-import { SmartImage } from "@/components/common/SmartImage"
+import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 // import CustomImage from "@/components/CustomImage";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
@@ -50,8 +50,8 @@ export default async function ContactPage(props: Props) {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[600px]">
-                <SmartImage
-                  src="/images/pages/contact-us-space.webp"
+                <CloudinaryImage
+                  src="images/pages/contact-us-space_h1ey90"
                   alt="Team TwoFift.co"
                   fill
                   className="object-cover rounded-lg"

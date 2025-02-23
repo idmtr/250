@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { SmartImage } from "@/components/common/SmartImage";
+import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n-config";
 
@@ -40,7 +40,7 @@ export default function Education({ lang, dictionary }: EducationProps) {
       <div className="container mx-auto px-6 relative">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative h-[600px] order-2 md:order-1 group">
-            <SmartImage
+            <Image
               src="/images/pages/twofiflty-workshops2.png"
               alt="What is coworking workshop session"
               fill

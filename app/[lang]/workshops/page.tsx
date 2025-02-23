@@ -1,81 +1,83 @@
-import { getDictionary } from "@/get-dictionary"
-import type { Locale } from "@/i18n-config"
-import { getValidatedParams } from "@/lib/params-helper"
-import { notFound } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import Link from "next/link"
-import { Metadata } from 'next'
-import { generatePageMetadata } from '@/lib/metadata'
-import { SmartImage } from "@/components/common/SmartImage"
+import { getDictionary } from "@/get-dictionary";
+import type { Locale } from "@/i18n-config";
+import { getValidatedParams } from "@/lib/params-helper";
+import { notFound } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
+import { Metadata } from "next";
+import { generatePageMetadata } from "@/lib/metadata";
+import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 
 type Props = {
-  params: { lang: Locale }
-}
+  params: { lang: Locale };
+};
 
 // Add proper type
 interface WorkshopData {
-  subtitle: string
-  title: string
+  subtitle: string;
+  title: string;
   presentations: {
-    overline: string
-    title: string
-    subtitle: string
-    description: string
-    callout: string
+    overline: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    callout: string;
     details: {
-      duration: string
-      includes: string
-      options: string
-      suitableFor: string
-    }
-  }
+      duration: string;
+      includes: string;
+      options: string;
+      suitableFor: string;
+    };
+  };
   workshop: {
-    overline: string
-    title: string
-    subtitle: string
-    description: string
-    callout: string
+    overline: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    callout: string;
     details: {
-      duration: string
-      includes: string
-      options: string
-      suitableFor: string
-    }
-  }
+      duration: string;
+      includes: string;
+      options: string;
+      suitableFor: string;
+    };
+  };
   connect: {
-    question: string
-    title: string
-    subtitle: string
-    cta: string
-    linkedin: string
-  }
+    question: string;
+    title: string;
+    subtitle: string;
+    cta: string;
+    linkedin: string;
+  };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { lang } = await getValidatedParams(params)
-  const dictionary = await getDictionary(lang)
+  const { lang } = await getValidatedParams(params);
+  const dictionary = await getDictionary(lang);
 
-  return generatePageMetadata({ 
+  return generatePageMetadata({
     lang,
-    path: '/workshops',
-    title: dictionary.workshops?.title || 'Workshops | TwoFifty Consulting',
-    description: dictionary.workshops?.subtitle || 'Professional workshops for coworking spaces'
-  })
+    path: "/workshops",
+    title: dictionary.workshops?.title || "Workshops | TwoFifty Consulting",
+    description:
+      dictionary.workshops?.subtitle ||
+      "Professional workshops for coworking spaces",
+  });
 }
 
 export default async function Workshops(props: Props) {
-  const { lang } = await getValidatedParams(props.params)
+  const { lang } = await getValidatedParams(props.params);
 
   try {
-    const dictionary = await getDictionary(lang)
+    const dictionary = await getDictionary(lang);
 
     if (!dictionary.workshops) {
-      console.error('Workshops section missing in dictionary')
-      notFound()
+      console.error("Workshops section missing in dictionary");
+      notFound();
     }
 
-    const { workshops } = dictionary as { workshops: WorkshopData }
+    const { workshops } = dictionary as { workshops: WorkshopData };
 
     return (
       <main className="min-h-screen">
@@ -106,21 +108,32 @@ export default async function Workshops(props: Props) {
                   {workshops.presentations.callout}
                 </p>
                 <div className="space-y-2 text-gray-600">
-                  <p><strong>Duration:</strong> {workshops.presentations.details.duration}</p>
-                  <p><strong>Includes:</strong> {workshops.presentations.details.includes}</p>
-                  <p><strong>Options:</strong> {workshops.presentations.details.options}</p>
-                  <p><strong>Suitable For:</strong> {workshops.presentations.details.suitableFor}</p>
+                  <p>
+                    <strong>Duration:</strong>{" "}
+                    {workshops.presentations.details.duration}
+                  </p>
+                  <p>
+                    <strong>Includes:</strong>{" "}
+                    {workshops.presentations.details.includes}
+                  </p>
+                  <p>
+                    <strong>Options:</strong>{" "}
+                    {workshops.presentations.details.options}
+                  </p>
+                  <p>
+                    <strong>Suitable For:</strong>{" "}
+                    {workshops.presentations.details.suitableFor}
+                  </p>
                 </div>
                 <Button className="mt-8">Send an Enquiry</Button>
               </div>
               <div>
-                <SmartImage
-                  src="/images/workshops/presentations.jpg"
+                <CloudinaryImage
+                  src="images/workshops/presentations_lykmbc"
                   alt="Coworking Around the World Presentation"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
-                  overrideTransformation="hero"
                 />
               </div>
             </div>
@@ -132,8 +145,8 @@ export default async function Workshops(props: Props) {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <SmartImage
-                  src="/images/workshops/workshop.jpg"
+                <CloudinaryImage
+                  src="images/workshops/workshop_fb3ci4"
                   alt="Coworking Workshop Session"
                   width={600}
                   height={400}
@@ -152,12 +165,26 @@ export default async function Workshops(props: Props) {
                   {workshops.workshop.subtitle}
                 </h3>
                 <p className="mb-6">{workshops.workshop.description}</p>
-                <p className="font-semibold mb-6">{workshops.workshop.callout}</p>
+                <p className="font-semibold mb-6">
+                  {workshops.workshop.callout}
+                </p>
                 <div className="space-y-2 text-gray-600">
-                  <p><strong>Duration:</strong> {workshops.workshop.details.duration}</p>
-                  <p><strong>Includes:</strong> {workshops.workshop.details.includes}</p>
-                  <p><strong>Options:</strong> {workshops.workshop.details.options}</p>
-                  <p><strong>Suitable For:</strong> {workshops.workshop.details.suitableFor}</p>
+                  <p>
+                    <strong>Duration:</strong>{" "}
+                    {workshops.workshop.details.duration}
+                  </p>
+                  <p>
+                    <strong>Includes:</strong>{" "}
+                    {workshops.workshop.details.includes}
+                  </p>
+                  <p>
+                    <strong>Options:</strong>{" "}
+                    {workshops.workshop.details.options}
+                  </p>
+                  <p>
+                    <strong>Suitable For:</strong>{" "}
+                    {workshops.workshop.details.suitableFor}
+                  </p>
                 </div>
                 <Button className="mt-8">Send an Enquiry</Button>
               </div>
@@ -172,7 +199,9 @@ export default async function Workshops(props: Props) {
               {workshops.connect.question}
             </h2>
             <div className="max-w-md mx-auto">
-              <h3 className="text-2xl font-bold mb-2">{workshops.connect.title}</h3>
+              <h3 className="text-2xl font-bold mb-2">
+                {workshops.connect.title}
+              </h3>
               <p className="text-gray-600 mb-8">{workshops.connect.subtitle}</p>
               <div className="space-y-4">
                 <Button size="lg" asChild>
@@ -193,10 +222,9 @@ export default async function Workshops(props: Props) {
           </div>
         </section>
       </main>
-    )
+    );
   } catch (error) {
-    console.error('Failed to load workshops page:', error)
-    notFound()
+    console.error("Failed to load workshops page:", error);
+    notFound();
   }
 }
-

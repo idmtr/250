@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { SmartImage } from '@/components/common/SmartImage'
+import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 import type { Post } from '@/types/blog'
 import type { Locale } from '@/i18n-config'
 import { normalizeTag } from '@/lib/tag-utils'
@@ -15,7 +15,7 @@ export function BlogCard({ post, lang }: { post: Post; lang: Locale }) {
       <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
         <div className="relative h-48 flex-shrink-0">
           {post.coverImage && (
-            <SmartImage
+            <CloudinaryImage
               src={post.coverImage}
               alt={post.title || 'Blog post cover image'}
               fill
@@ -25,7 +25,6 @@ export function BlogCard({ post, lang }: { post: Post; lang: Locale }) {
             />
           )}
         </div>
-        
         {/* ...rest of the card content... */}
       </div>
     </article>

@@ -18,7 +18,7 @@ import { Upload, Link2, FolderOpen } from 'lucide-react'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { AlertCircle } from 'lucide-react'
 
-import { SmartImage } from "@/components/common/SmartImage";
+import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 import { CldImage } from 'next-cloudinary'
 import { cloudinaryConfig } from '@/lib/cloudinary/config'
 

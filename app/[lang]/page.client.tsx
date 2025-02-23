@@ -52,7 +52,7 @@ export default function Home({ params: { lang }, dictionary, recentPosts }: Home
   return (
     <>
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F5EBE0] to-[#D4A373]">
-        <div className="absolute inset-0 bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/coworking-presentation.jpg-V0uz2E37Yf7fWGJeS3cSSEz8MoP9N9.jpeg')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740333002/images/pages/coworking-presentation-kzndq.jpg')] bg-cover bg-center opacity-20"></div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

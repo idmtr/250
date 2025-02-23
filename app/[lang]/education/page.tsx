@@ -1,7 +1,7 @@
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
-import { SmartImage } from "@/components/common/SmartImage";
+import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 import Link from "next/link";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
@@ -73,8 +73,8 @@ export default async function Education(props: Props) {
                 <p className="text-lg">{education.process.description}</p>
               </div>
               <div>
-                <SmartImage
-                  src="/images/pages/coworking-education-workshhop-copenhagen.jpg"
+                <CloudinaryImage
+                  src="images/pages/coworking-education-workshhop-copenhagen-2_d8whyn"
                   alt="Coworkies Coworking Workshop Presentation"
                   width={600}
                   height={400}
@@ -91,8 +91,8 @@ export default async function Education(props: Props) {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <SmartImage
-                  src="/images/pages/coworking-education-workshhop-copenhagen-2.jpg"
+                <CloudinaryImage
+                  src="images/pages/coworking-education-workshhop-copenhagen-2_d8whyn"
                   alt="Coworking Workshop Group Work"
                   width={600}
                   height={400}

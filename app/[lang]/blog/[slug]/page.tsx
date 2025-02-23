@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 import { getValidatedParams } from "@/lib/params-helper";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { SmartImage } from "@/components/common/SmartImage";
+import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 import { formatDate } from "@/lib/utils";
 // import CustomImage from "@/components/CustomImage";
 import BlogGrid from "@/components/BlogGrid";
@@ -254,7 +254,7 @@ export default async function BlogPost({ params }: Props) {
               {post.author && (
                 <div className="flex items-center">
                   {post.authorImage && (
-                    <SmartImage
+                    <CloudinaryImage
                       src={post.authorImage}
                       alt={post.author}
                       width={40}
@@ -289,7 +289,7 @@ export default async function BlogPost({ params }: Props) {
 
           {post.coverImage && (
             <figure className="relative h-[460px] mb-8">
-              <SmartImage
+              <CloudinaryImage
                 src={post.coverImage} // This will use the URL directly
                 alt={post.title || "Blog post cover image"}
                 fill

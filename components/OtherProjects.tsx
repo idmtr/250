@@ -1,6 +1,6 @@
 "use client";
 
-import { SmartImage } from "@/components/common/SmartImage";
+import Image from "next/image";
 import type { Locale } from "@/i18n-config";
 
 interface OtherProjectsProps {
@@ -61,7 +61,7 @@ export default function OtherProjects({ lang, dictionary }: OtherProjectsProps) 
               className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="relative w-full h-32 mb-4">
-                <SmartImage
+                <Image
                   src={project.image}
                   alt={project.alt}
                   fill

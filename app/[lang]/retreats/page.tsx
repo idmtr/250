@@ -1,8 +1,7 @@
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
-import { SmartImage } from "@/components/common/SmartImage";
-
+import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -61,8 +60,8 @@ export default async function RetreatsPage(props: Props) {
                 </Button>
               </div>
               <div>
-                <SmartImage
-                  src="/images/pages/The-Community-Managers-Retreat.png"
+                <CloudinaryImage
+                  src="images/pages/The-Community-Managers-Retreat_cgq1ct"
                   alt="Coworking Retreat in Morocco"
                   width={1080}
                   height={720}
@@ -126,10 +125,8 @@ export default async function RetreatsPage(props: Props) {
             <div className="grid md:grid-cols-2 gap-12">
               {retreats.facilitators.team.map((member, index) => (
                 <div key={index} className="flex space-x-6">
-                  <SmartImage
-                    src={`/images/team/${member.name
-                      .split(" ")[0]
-                      .toLowerCase()}.jpg`}
+                  <CloudinaryImage
+                    src={member.image}
                     alt={member.name}
                     width={120}
                     height={120}
@@ -166,8 +163,8 @@ export default async function RetreatsPage(props: Props) {
                 </ul>
               </div>
               <div>
-                <SmartImage
-                  src="/images/pages/morocco-coworking-retreat.jpeg"
+                <CloudinaryImage
+                  src="images/pages/morocco-coworking-retreat_jqq3n2"
                   alt="Retreat Location in Marrakesh"
                   width={600}
                   height={400}

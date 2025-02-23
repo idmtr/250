@@ -4,7 +4,7 @@ import type { Locale } from "@/i18n-config";
 import { getValidatedParams } from "@/lib/params-helper";
 import { routes } from "@/lib/routes";
 import { Button } from "@/components/ui/button";
-import { SmartImage } from "@/components/common/SmartImage";
+import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import type { Metadata } from "next";
@@ -154,8 +154,8 @@ export default async function ConsultingServices({ params }: Props) {
       <section className="min-h-screen flex flex-col lg:flex-row">
         {/* Left Column - Image */}
         <div className="relative w-full lg:w-1/2 h-[40vh] lg:h-screen">
-          <SmartImage
-            src="/images/pages/twofifty-coworking-consulting-service.jpg"
+          <CloudinaryImage
+            src="images/pages/twofifty-coworking-consulting-service_drvax1"
             alt="TwoFifty coworking consulting service"
             fill
             className="object-cover"
@@ -291,8 +291,8 @@ export default async function ConsultingServices({ params }: Props) {
             {/* Image and CTA */}
             <div className="grid md:grid-cols-2 gap-12 items-center bg-gray-50 rounded-2xl p-8">
               <div className="relative aspect-video rounded-xl overflow-hidden">
-                <SmartImage
-                  src="/images/pages/coworking-travel.jpg"
+                <CloudinaryImage
+                  src="images/pages/coworking-travel_drvqnf"
                   alt="Coworking seminar"
                   fill
                   className="object-cover"
@@ -394,8 +394,8 @@ export default async function ConsultingServices({ params }: Props) {
             {/* Image and CTA */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
-                <SmartImage
-                  src="/images/pages/coworkies-teach.jpg"
+                <CloudinaryImage
+                  src="images/pages/coworkies-teach_ho15ue"
                   alt="Coworking seminar students"
                   fill
                   className="object-cover"
@@ -479,8 +479,8 @@ export default async function ConsultingServices({ params }: Props) {
             {/* Image and CTA */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
-                <SmartImage
-                  src="/images/pages/twofifty-coworking-consulting-service.jpg"
+                <CloudinaryImage
+                  src="images/pages/twofifty-coworking-consulting-service_drvax1"
                   alt="TwoFifty Coworking Consulting Approach"
                   fill
                   className="object-cover"

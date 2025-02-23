@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { SmartImage } from "@/components/common/SmartImage";
+import Image from "next/image";
 import Link from "next/link";
 
 import type { Locale } from "@/i18n-config";
@@ -60,14 +60,13 @@ export default function Consulting({ lang, dictionary }: ConsultingProps) {
             </Button>
           </div>
           <div className="relative h-[600px] group">
-            <SmartImage
-              src="/images/pages/twofifty-coworking-consulting-service.jpg"
-              alt="Coworking space consultation"
-              fill
-              className="object-cover rounded-lg transition-transform duration-500 opacity-80 group-hover:scale-105"
-              transformation="hero"
-              priority
-            />
+          <Image
+            // src="https://twofifty.co/wp-content/uploads/2023/09/twofifty-coworking-consulting-service-1024x768.jpg"
+            src="https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302476/images/pages/twofifty-coworking-consulting-service_drvax1.jpg"
+            alt="Coworking space consultation"
+            fill
+            className="object-cover rounded-lg transition-transform duration-500 opacity-80 group-hover:scale-105"
+          />
             <div className="absolute inset-0 bg-black/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
         </div>

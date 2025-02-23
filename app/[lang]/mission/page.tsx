@@ -3,7 +3,8 @@ import { generatePageMetadata } from "@/lib/metadata";
 import type { Locale } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import { Button } from "@/components/ui/button";
-import { SmartImage } from "@/components/common/SmartImage";
+// import Image from "next/image";
+import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 import { getValidatedParams } from "@/lib/params-helper";
 
 type Props = {
@@ -42,14 +43,12 @@ export default async function MissionPage(props: Props) {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <SmartImage
-                src="/images/pages/twofifty-coworkies-founders-portrait.jpg"
+              <CloudinaryImage
+                src="images/pages/twofifty-coworkies-founders-portrait_dxrd2e"
                 alt="TwoFifty Co coworking consulting Team"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg"
-                transformation="hero"
-                priority
+                className="rounded-lg"
               />
             </div>
             <div className="space-y-6">

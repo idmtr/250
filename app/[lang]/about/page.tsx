@@ -5,9 +5,9 @@ import Link from "next/link";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import OtherProjects from "@/components/OtherProjects"; // Add this import
+import OtherProjects from "@/components/OtherProjects";
 import { generatePageMetadata } from "@/lib/metadata";
-import { SmartImage } from "@/components/common/SmartImage"; // Add this import
+import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 
 type Props = {
   params: { lang: Locale };
@@ -77,8 +77,8 @@ export default async function About({ params }: Props) {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <SmartImage
-                  src="/images/pages/twofifty-coworkies-founders-portrait.jpg"
+                <CloudinaryImage
+                  src="images/pages/twofifty-coworkies-founders-portrait_dxrd2e"
                   alt="TwoFifty Workspace"
                   width={600}
                   height={400}
@@ -153,8 +153,8 @@ export default async function About({ params }: Props) {
             <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
               <div className="text-center">
                 <div className="relative aspect-[3/4] mb-6">
-                  <SmartImage
-                    src={`/images/team/pauline-full.jpg`}
+                  <CloudinaryImage
+                    src="images/team/pauline-full_onzqiy"
                     alt="Pauline Roussel"
                     fill
                     className="object-cover rounded-lg"
@@ -165,7 +165,6 @@ export default async function About({ params }: Props) {
                 <h3 className="text-2xl font-bold mb-2">Pauline Roussel</h3>
                 <p className="text-gray-600 mb-4">Co-founder & CEO</p>
                 <p className="text-gray-600 mb-4">
-                  Former manager of a 2000 sq/m coworking space in Berlin
                 </p>
                 <a
                   href="https://www.linkedin.com/in/paulineroussel/"
@@ -178,8 +177,8 @@ export default async function About({ params }: Props) {
               </div>
               <div className="text-center">
                 <div className="relative aspect-[3/4] mb-6">
-                  <SmartImage
-                    src={`/images/team/dimitar-full.jpg`}
+                  <CloudinaryImage
+                    src="images/team/dimitar-full_g77zy5"
                     alt="Dimitar Inchev"
                     fill
                     className="object-cover rounded-lg"
@@ -190,7 +189,6 @@ export default async function About({ params }: Props) {
                 <h3 className="text-2xl font-bold mb-2">Dimitar Inchev</h3>
                 <p className="text-gray-600 mb-4">Co-founder & CTO</p>
                 <p className="text-gray-600 mb-4">
-                  Startup accelerator veteran and community builder
                 </p>
                 <a
                   href="https://www.linkedin.com/in/inchev/"
