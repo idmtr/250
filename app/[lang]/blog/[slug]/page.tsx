@@ -290,7 +290,7 @@ export default async function BlogPost({ params }: Props) {
           {post.coverImage && (
             <figure className="relative h-[460px] mb-8">
               <SmartImage
-                src={post.coverImage}
+                src={post.coverImage} // This will use the URL directly
                 alt={post.title || "Blog post cover image"}
                 fill
                 className="object-cover rounded-lg"
@@ -307,8 +307,9 @@ export default async function BlogPost({ params }: Props) {
                 /<img([^>]+)src="([^"]+)"([^>]*)>/g,
                 (match, before, src, after) => {
                   const alt = /alt="([^"]+)"/.exec(match)?.[1] || ''
+                  // Use the src directly without mapping
                   return `<div class="relative aspect-[16/9] my-8">
-                    <img${before}src="${getImageInfo(src).url}"${after} 
+                    <img${before}src="${src}"${after} 
                       alt="${alt}"
                       class="rounded-lg object-cover"
                       loading="lazy"

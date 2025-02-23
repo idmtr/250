@@ -57,11 +57,11 @@ export default async function BlogPage(props: Props) {
     }
 
     // Debug the incoming posts
-    console.log('Raw posts:', allPosts.map(p => ({
-      title: p.title,
-      published: p.published,
-      frontmatterPublished: p.data?.published // Check if we have raw frontmatter
-    })));
+    // console.log('Raw posts:', allPosts.map(p => ({
+    //   title: p.title,
+    //   published: p.published,
+    //   frontmatterPublished: p.data?.published // Check if we have raw frontmatter
+    // })));
 
     // Filter posts based on published status
     const publishedPosts = allPosts.filter(post => post.published !== false);
@@ -71,11 +71,11 @@ export default async function BlogPage(props: Props) {
     const regularPosts = publishedPosts.filter(post => !post.featured);
 
     // Debug filtered posts
-    console.log('Filtered posts:', {
-      total: publishedPosts.length,
-      featured: featuredPost?.title,
-      regular: regularPosts.map(p => p.title)
-    });
+    // console.log('Filtered posts:', {
+    //   total: publishedPosts.length,
+    //   featured: featuredPost?.title,
+    //   regular: regularPosts.map(p => p.title)
+    // });
 
     return (
       <div className="min-h-screen">

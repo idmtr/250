@@ -1,5 +1,5 @@
 import { v2 as cloudinary } from 'cloudinary'
-import { getImageInfo } from './mappings'
+// import { getImageInfo } from './mappings'
 import { cloudinaryConfig } from './config'
 
 // Configure cloudinary

@@ -1,7 +1,6 @@
 import { readFile, readdir, access, mkdir } from 'fs/promises'
 import matter from 'gray-matter'
 import { join } from 'path'
-import { getImageInfo } from '@/lib/cloudinary/mappings'
 
 export interface Article {
   title: string
@@ -20,25 +19,13 @@ export interface Article {
   readingTime?: string
 }
 
-// Add helper function for image path processing
-function processImagePath(path: string | undefined): string | undefined {
-  if (!path) return undefined
-  
-  // If it's already a Cloudinary URL, return as is
-  if (path.includes('res.cloudinary.com')) return path
-  
-  // If it's a local path, get the Cloudinary URL
-  const { url } = getImageInfo(path)
-  return url
-}
-
 async function ensureContentDir(lang: string) {
   const contentDir = join(process.cwd(), 'content/blog', lang)
   try {
     await access(contentDir)
-    console.log(`Content directory exists: ${contentDir}`)
+    // console.log(`Content directory exists: ${contentDir}`)npm run dev
   } catch {
-    console.log(`Creating directory: ${contentDir}`)
+    // console.log(`Creating directory: ${contentDir}`)
     await mkdir(contentDir, { recursive: true })
   }
   return contentDir
@@ -49,18 +36,13 @@ export async function getArticleBySlug(slug: string, lang: string): Promise<Arti
     const contentDir = await ensureContentDir(lang)
     const normalizedSlug = slug.replace(/--+/g, '-').trim()
     
-    // Log the actual file path we're trying to read
     const filePath = join(contentDir, `${normalizedSlug}.md`)
     console.log('Reading article from:', filePath)
 
     const content = await readFile(filePath, 'utf8')
     const { data, content: markdown } = matter(content)
     
-    // Process images through Cloudinary
-    const coverImage = processImagePath(data.coverImage)
-    const authorImage = processImagePath(data.authorImage)
-    
-    // Transform and validate the data
+    // Use image URLs directly from frontmatter
     const article: Article = {
       title: data.title || '',
       slug: normalizedSlug,
@@ -70,8 +52,8 @@ export async function getArticleBySlug(slug: string, lang: string): Promise<Arti
       content: markdown || '',
       author: data.author || '',
       authorRole: data.authorRole || '',
-      authorImage,
-      coverImage,
+      authorImage: data.authorImage, // Use directly
+      coverImage: data.coverImage, // Use directly
       tags: Array.isArray(data.tags) ? data.tags : [],
       featured: !!data.featured,
       published: data.published !== false,
@@ -107,17 +89,13 @@ export async function getArticles(lang: string): Promise<Article[]> {
             const content = await readFile(join(contentDir, file), 'utf8')
             const { data } = matter(content)
             
-            // Process images through Cloudinary
-            const coverImage = processImagePath(data.coverImage)
-            const authorImage = processImagePath(data.authorImage)
-            
             // Use filename as slug if not specified in frontmatter
             const fileSlug = file.replace(/\.md$/, '')
             return {
               ...data,
               slug: data.slug || fileSlug,
-              coverImage,
-              authorImage
+              coverImage: data.coverImage, // Use directly
+              authorImage: data.authorImage // Use directly
             }
           } catch (error) {
             console.error(`Error reading article ${file}:`, error)
