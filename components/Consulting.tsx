@@ -1,7 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+// import Image from "next/image";
+import { CldImage } from 'next-cloudinary';
 import Link from "next/link";
 
 import type { Locale } from "@/i18n-config";
@@ -60,9 +61,8 @@ export default function Consulting({ lang, dictionary }: ConsultingProps) {
             </Button>
           </div>
           <div className="relative h-[600px] group">
-          <Image
-            // src="https://twofifty.co/wp-content/uploads/2023/09/twofifty-coworking-consulting-service-1024x768.jpg"
-            src="https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302476/images/pages/twofifty-coworking-consulting-service_drvax1.jpg"
+          <CldImage
+            src="images/pages/twofifty-coworking-consulting-service_drvax1.jpg"
             alt="Coworking space consultation"
             fill
             className="object-cover rounded-lg transition-transform duration-500 opacity-80 group-hover:scale-105"

@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return generatePageMetadata({
     lang,
-    title: "TwoFifty Consulting",
-    description: "Digital Transformation Consulting",
+    title: "TwoFifty - Coworking Consultancy",
+    description: "TwoFifty specializes in crafting sustainable, adaptable workspaces that streamline processes, foster team dynamics, and enhance community engagement.",
   });
 }
 

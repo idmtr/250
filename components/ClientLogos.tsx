@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/image"
+// import Image from "next/image"
+import { CldImage } from 'next-cloudinary';
 import type { Locale } from "@/i18n-config";
 
 interface ClientLogosProps {
@@ -36,8 +37,8 @@ export default function ClientLogos({ lang, dictionary }: ClientLogosProps) {
             </div>
           ))} */}
         <div className="relative rounded-md h-[600px]">
-          <Image
-            src="/images/pages/two-fifty-co-bw-sml.jpg"
+          <CldImage
+            src="images/pages/two-fifty-co-bw-sml_qn74ma"
             alt="Coworking consulting companies/brands we’ve collaborated"
             fill
             className="object-contain drop-shadow-2xl rounded-md opacity-75 rounded-lg"

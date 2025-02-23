@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
+import { CldImage } from 'next-cloudinary';
 import type { Locale } from "@/i18n-config";
 
 interface OtherProjectsProps {
@@ -25,25 +26,25 @@ export default function OtherProjects({ lang, dictionary }: OtherProjectsProps) 
     {
       title: dictionary.communityManagersGroup,
       alt: "Community Managers",
-      image: "/images/pages/community-managers-group.png",
+      image: "images/pages/community-managers-group_glare1",
       aspectRatio: "aspect-[3/1]",
     },
     {
       title: dictionary.coworkingJobBoard,
       alt: "Coworkies",
-      image: "/images/pages/coworkies-logo.png",
+      image: "images/team/coworkies-logo_w7nzqp",
       aspectRatio: "aspect-[2/1]",
     },
     {
       title: dictionary.coworkingHackathon,
       alt: "Hack Coworking",
-      image: "/images/pages/hack-coworking-logo.png",
+      image: "images/pages/hack-coworking-logo_tv7csa",
       aspectRatio: "aspect-square",
     },
     {
       title: dictionary.coworkingPodcast,
       alt: "Hot Water Podcast",
-      image: "/images/pages/hot-water-podcast.png",
+      image: "images/pages/hot-water-podcast_rnyoki",
       aspectRatio: "aspect-[3/2]",
     },
   ];
@@ -61,7 +62,7 @@ export default function OtherProjects({ lang, dictionary }: OtherProjectsProps) 
               className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="relative w-full h-32 mb-4">
-                <Image
+                <CldImage
                   src={project.image}
                   alt={project.alt}
                   fill

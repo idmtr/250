@@ -1,7 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+// import Image from "next/image";
+import { CldImage } from 'next-cloudinary';
 import Link from "next/link";
 import type { Locale } from "@/i18n-config";
 
@@ -40,12 +41,11 @@ export default function Education({ lang, dictionary }: EducationProps) {
       <div className="container mx-auto px-6 relative">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative h-[600px] order-2 md:order-1 group">
-            <Image
-              src="/images/pages/twofiflty-workshops2.png"
+            <CldImage
+              src="images/pages/twofiflty-workshops2_s69jih"
               alt="What is coworking workshop session"
               fill
               className="object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
-              transformation="hero"
             />
             <div className="absolute inset-0 bg-black/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>

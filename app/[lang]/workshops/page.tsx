@@ -151,7 +151,6 @@ export default async function Workshops(props: Props) {
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
-                  overrideTransformation="hero"
                 />
               </div>
               <div>

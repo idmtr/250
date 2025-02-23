@@ -1,7 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+// import Image from "next/image";
+import { CldImage } from 'next-cloudinary';
 import type { Locale } from "@/i18n-config";
 
 interface BookShowcaseProps {
@@ -45,8 +46,8 @@ export default function BookShowcase({ lang, dictionary }: BookShowcaseProps) {
             </a>
           </div>
           <div className="relative h-[400px]">
-            <Image
-              src="https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302485/images/pages/coworking-book-cover_yusy5e.jpg"
+            <CldImage
+              src="images/pages/coworking-book-cover_yusy5e.jpg"
               alt="Around the World in 250 Coworking Spaces book"
               fill
               className="object-contain"
