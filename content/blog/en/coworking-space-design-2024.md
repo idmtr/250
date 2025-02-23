@@ -1,23 +1,26 @@
 ---
-title: "Coworking Space Design Trends 2024: A Comprehensive Guide to Modern Workspace Innovation"
-date: "2024-02-10"
-excerpt: "Discover how cutting-edge design trends are revolutionizing coworking spaces in 2024, featuring expert insights on biophilic design, smart technology integration, and flexible architecture."
-author: "Alex Martinez"
-authorRole: "Design Director"
-authorImage: "https://avatar.iran.liara.run/public"
-coverImage: "/images/blog/design-trends.jpg"
+title: >-
+  Coworking Space Design Trends 2024: A Comprehensive Guide to Modern Workspace
+  Innovation
+date: '2024-02-10'
+excerpt: >-
+  Discover how cutting-edge design trends are revolutionizing coworking spaces
+  in 2024, featuring expert insights on biophilic design, smart technology
+  integration, and flexible architecture.
+author: Alex Martinez
+authorRole: Design Director
+authorImage: 'https://avatar.iran.liara.run/public'
+coverImage: /images/blog/design-trends.jpg
 featured: true
-readingTime: "12 min read"
+readingTime: 12 min read
 tags:
-  [
-    "coworking design",
-    "workspace trends",
-    "office architecture",
-    "smart office",
-    "sustainable design",
-  ]
-slug: "coworking-space-design-2024"
-lang: "en"
+  - coworking design
+  - workspace trends
+  - office architecture
+  - smart office
+  - sustainable design
+slug: coworking-space-design-2024
+lang: en
 published: false
 ---
 

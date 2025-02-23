@@ -1,24 +1,27 @@
 ---
-title: "Guiding Principles at TwoFifty: How We Work, Collaborate, and Thrive"
-date: "2025-02-21"
-excerpt: "Discover TwoFifty's core principles that guide our project selection, trust-building, and client collaboration. Get an inside look at our commitment to transparency, accountability, and effective teamwork."
-author: "TwoFifty Team"
-authorRole: "Collective Voice of TwoFifty.co"
-authorImage: "/images/team/twofifty-team.jpg"
-coverImage: "/images/blog/how-we-wrok.webp"
+title: 'Guiding Principles at TwoFifty: How We Work, Collaborate, and Thrive'
+date: '2025-02-21'
+excerpt: >-
+  Discover TwoFifty's core principles that guide our project selection,
+  trust-building, and client collaboration. Get an inside look at our commitment
+  to transparency, accountability, and effective teamwork.
+author: TwoFifty Team
+authorRole: Collective Voice of TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302460/images/team/twofifty-team_ecvhkp.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302503/images/blog/how-we-wrok_pnpvhf.webp
 featured: true
-readingTime: "6-8 min read"
+readingTime: 6-8 min read
 tags:
-  [
-    "collaboration",
-    "teamwork principles",
-    "client relationships",
-    "transparency",
-    "work culture",
-    "TwoFifty consultancy",
-  ]
-slug: "how-we-work-guiding-principles"
-lang: "en"
+  - collaboration
+  - teamwork principles
+  - client relationships
+  - transparency
+  - work culture
+  - TwoFifty consultancy
+slug: how-we-work-guiding-principles
+lang: en
 ---
 
 ## Welcome to TwoFifty!

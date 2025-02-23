@@ -1,6 +1,7 @@
 import { readFile, readdir, access, mkdir } from 'fs/promises'
 import matter from 'gray-matter'
 import { join } from 'path'
+import { getImageInfo } from '@/lib/cloudinary/mappings'
 
 export interface Article {
   title: string
@@ -17,6 +18,18 @@ export interface Article {
   featured?: boolean
   published?: boolean
   readingTime?: string
+}
+
+// Add helper function for image path processing
+function processImagePath(path: string | undefined): string | undefined {
+  if (!path) return undefined
+  
+  // If it's already a Cloudinary URL, return as is
+  if (path.includes('res.cloudinary.com')) return path
+  
+  // If it's a local path, get the Cloudinary URL
+  const { url } = getImageInfo(path)
+  return url
 }
 
 async function ensureContentDir(lang: string) {
@@ -43,6 +56,10 @@ export async function getArticleBySlug(slug: string, lang: string): Promise<Arti
     const content = await readFile(filePath, 'utf8')
     const { data, content: markdown } = matter(content)
     
+    // Process images through Cloudinary
+    const coverImage = processImagePath(data.coverImage)
+    const authorImage = processImagePath(data.authorImage)
+    
     // Transform and validate the data
     const article: Article = {
       title: data.title || '',
@@ -53,8 +70,8 @@ export async function getArticleBySlug(slug: string, lang: string): Promise<Arti
       content: markdown || '',
       author: data.author || '',
       authorRole: data.authorRole || '',
-      authorImage: data.authorImage || '',
-      coverImage: data.coverImage || '',
+      authorImage,
+      coverImage,
       tags: Array.isArray(data.tags) ? data.tags : [],
       featured: !!data.featured,
       published: data.published !== false,
@@ -90,11 +107,17 @@ export async function getArticles(lang: string): Promise<Article[]> {
             const content = await readFile(join(contentDir, file), 'utf8')
             const { data } = matter(content)
             
+            // Process images through Cloudinary
+            const coverImage = processImagePath(data.coverImage)
+            const authorImage = processImagePath(data.authorImage)
+            
             // Use filename as slug if not specified in frontmatter
             const fileSlug = file.replace(/\.md$/, '')
             return {
               ...data,
-              slug: data.slug || fileSlug
+              slug: data.slug || fileSlug,
+              coverImage,
+              authorImage
             }
           } catch (error) {
             console.error(`Error reading article ${file}:`, error)

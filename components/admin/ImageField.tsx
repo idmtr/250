@@ -33,17 +33,21 @@ export function ImageField({
   const [isValidImage, setIsValidImage] = useState(true);
 
   // Validate if URL is from allowed domains
-  const isAllowedImageUrl = (url: string) => {
-    if (!url) return true;
-    if (url.startsWith('/')) return true;
-    
+  const isValidImageUrl = (url: string) => {
+    if (!url) return true
+    const validDomains = [
+      'localhost',
+      'twofifty-consulting.com',
+      'res.cloudinary.com',
+      'cloudinary.com'
+    ]
     try {
-      const { hostname } = new URL(url);
-      return ALLOWED_DOMAINS.includes(hostname);
+      const parsedUrl = new URL(url)
+      return validDomains.some(domain => parsedUrl.hostname.includes(domain))
     } catch {
-      return false;
+      return false
     }
-  };
+  }
 
   const handleImageSelect = (imageUrl: string) => {
     setError(null);
@@ -53,7 +57,7 @@ export function ImageField({
       return;
     }
 
-    if (!isAllowedImageUrl(imageUrl)) {
+    if (!isValidImageUrl(imageUrl)) {
       setError(`Image URL must be from an allowed domain. Please upload the image first or use a URL from: ${ALLOWED_DOMAINS.join(', ')}`);
       return;
     }

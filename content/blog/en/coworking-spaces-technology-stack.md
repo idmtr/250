@@ -1,19 +1,36 @@
 ---
-title: "Coworking Spaces Technology Stack in 2025"
-date: "2025-02-20"
-excerpt: "Discover the ultimate 2025 coworking tech stack—from Nexudus to AI tools—that TwoFifty recommends to run your space flawlessly, boost efficiency, and keep members coming back."
-author: "Dimitar Inchev"
-authorRole: "TwoFIfty.co Partner"
-authorImage: "/images/team/dimitar.jpg"
-coverImage: "/images/blog/coworking-tech-stack-2025.webp"
+title: Coworking Spaces Technology Stack in 2025
+date: '2025-02-20'
+excerpt: >-
+  Discover the ultimate 2025 coworking tech stack—from Nexudus to AI tools—that
+  TwoFifty recommends to run your space flawlessly, boost efficiency, and keep
+  members coming back.
+author: Dimitar Inchev
+authorRole: TwoFIfty.co Partner
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302505/images/blog/coworking-tech-stack-2025_wkfyvm.webp
 featured: false
-readingTime: "8-10 min read"
-tags: ["coworking technology stack", "coworking management software", "AI in coworking", "door access control", "payment gateways", "coworking efficiency", "member experience"]
-slug: "coworking-spaces-technology-stack"
-lang: "en"
+readingTime: 8-10 min read
+tags:
+  - coworking technology stack
+  - coworking management software
+  - AI in coworking
+  - door access control
+  - payment gateways
+  - coworking efficiency
+  - member experience
+slug: coworking-spaces-technology-stack
+lang: en
 published: false
-metaDescription: "Explore the essential 2025 coworking tech stack—management software, AI tools, and more—that TwoFifty uses to help operators streamline operations and thrive."
-keywords: "coworking technology stack, coworking management software, AI tools for coworking, coworking efficiency, TwoFifty consultancy, 2025 coworking trends"
+metaDescription: >-
+  Explore the essential 2025 coworking tech stack—management software, AI tools,
+  and more—that TwoFifty uses to help operators streamline operations and
+  thrive.
+keywords: >-
+  coworking technology stack, coworking management software, AI tools for
+  coworking, coworking efficiency, TwoFifty consultancy, 2025 coworking trends
 ---
 
 ## Explore Our Comprehensive Analysis of the 2025 Essential Tools to Run Your Space Flawlessly

@@ -1,16 +1,23 @@
 ---
-title: "Essential Strategies for Building a Thriving Coworking Community"
-date: "2024-02-13"
-excerpt: "Learn data-driven techniques for fostering engagement, inclusivity, and a lasting sense of belonging in your coworking space."
-author: "Pauline Roussel"
-authorRole: "Community Strategist"
-authorImage: "/images/team/pauline.jpg"
-coverImage: "/images/blog/community-building-essentials.webp"
+title: Essential Strategies for Building a Thriving Coworking Community
+date: '2024-02-13'
+excerpt: >-
+  Learn data-driven techniques for fostering engagement, inclusivity, and a
+  lasting sense of belonging in your coworking space.
+author: Pauline Roussel
+authorRole: Community Strategist
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302461/images/team/pauline_h3fh0v.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302508/images/blog/community-building-essentials_tt9a5c.webp
 featured: false
-readingTime: "10-12 min read"
-tags: ["community", "engagement", "events"]
-slug: "community-building-essentials"
-lang: "en"
+readingTime: 10-12 min read
+tags:
+  - community
+  - engagement
+  - events
+slug: community-building-essentials
+lang: en
 published: true
 ---
 

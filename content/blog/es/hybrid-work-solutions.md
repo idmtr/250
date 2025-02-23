@@ -1,16 +1,22 @@
 ---
-title: "Implementación de Soluciones Exitosas de Trabajo Híbrido"
-date: "2024-02-06"
-excerpt: "Descubre cómo crear entornos de trabajo híbridos eficaces que combinen a la perfección la colaboración remota y en persona."
-author: "Dimitar Inchev"
-authorRole: "Consultor de Espacios de Trabajo"
-authorImage: "/images/team/james.jpg"
-coverImage: "/images/blog/hybrid-solutions.webp"
+title: Implementación de Soluciones Exitosas de Trabajo Híbrido
+date: '2024-02-06'
+excerpt: >-
+  Descubre cómo crear entornos de trabajo híbridos eficaces que combinen a la
+  perfección la colaboración remota y en persona.
+author: Dimitar Inchev
+authorRole: Consultor de Espacios de Trabajo
+authorImage: /images/team/james.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302502/images/blog/hybrid-solutions_fkoaiy.webp
 featured: false
-readingTime: "6 min read"
-tags: ["trabajo híbrido", "tecnología", "colaboración"]
-slug: "hybrid-work-solutions"
-lang: "es"
+readingTime: 6 min read
+tags:
+  - trabajo híbrido
+  - tecnología
+  - colaboración
+slug: hybrid-work-solutions
+lang: es
 ---
 
 # Implementación de Soluciones Exitosas de Trabajo Híbrido

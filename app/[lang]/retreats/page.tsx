@@ -1,7 +1,7 @@
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { SmartImage } from "@/components/common/SmartImage";
 
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
@@ -61,13 +61,14 @@ export default async function RetreatsPage(props: Props) {
                 </Button>
               </div>
               <div>
-                <Image
+                <SmartImage
                   src="/images/pages/The-Community-Managers-Retreat.png"
                   alt="Coworking Retreat in Morocco"
                   width={1080}
                   height={720}
                   className="rounded-lg shadow-lg"
                   priority
+                  transformation="hero"
                 />
               </div>
             </div>
@@ -125,7 +126,7 @@ export default async function RetreatsPage(props: Props) {
             <div className="grid md:grid-cols-2 gap-12">
               {retreats.facilitators.team.map((member, index) => (
                 <div key={index} className="flex space-x-6">
-                  <Image
+                  <SmartImage
                     src={`/images/team/${member.name
                       .split(" ")[0]
                       .toLowerCase()}.jpg`}
@@ -133,6 +134,7 @@ export default async function RetreatsPage(props: Props) {
                     width={120}
                     height={120}
                     className="rounded-full"
+                    transformation="avatar"
                   />
                   <div>
                     <h3 className="font-bold text-xl">{member.name}</h3>
@@ -164,12 +166,13 @@ export default async function RetreatsPage(props: Props) {
                 </ul>
               </div>
               <div>
-                <Image
+                <SmartImage
                   src="/images/pages/morocco-coworking-retreat.jpeg"
                   alt="Retreat Location in Marrakesh"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
+                  transformation="hero"
                 />
               </div>
             </div>

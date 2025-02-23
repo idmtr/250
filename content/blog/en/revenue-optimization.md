@@ -1,19 +1,37 @@
 ---
-title: "Why Coworking Spaces Struggle with Revenue Generation"
-date: "2025-02-20"
-excerpt: "High costs, unstable revenue, and fierce competition—discover why coworking spaces struggle to turn a profit and how TwoFifty’s proven strategies can help operators thrive without sacrificing community."
-author: "Dimitar Inchev"
-authorRole: "TwoFIfty.co Partner"
-authorImage: "/images/team/dimitar.jpg"
-coverImage: "/images/blog/coworking-revenue-struggles.webp"
+title: Why Coworking Spaces Struggle with Revenue Generation
+date: '2025-02-20'
+excerpt: >-
+  High costs, unstable revenue, and fierce competition—discover why coworking
+  spaces struggle to turn a profit and how TwoFifty’s proven strategies can help
+  operators thrive without sacrificing community.
+author: Dimitar Inchev
+authorRole: TwoFIfty.co Partner
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302507/images/blog/coworking-revenue-struggles_ztx2pu.webp
 featured: false
-readingTime: "8-10 min read"
-tags: ["coworking revenue generation", "coworking financial challenges", "flexible memberships", "competition in coworking", "coworking profitability", "revenue strategies", "community building"]
-slug: "why-coworking-spaces-struggle-with-revenue-generation"
-lang: "en"
+readingTime: 8-10 min read
+tags:
+  - coworking revenue generation
+  - coworking financial challenges
+  - flexible memberships
+  - competition in coworking
+  - coworking profitability
+  - revenue strategies
+  - community building
+slug: why-coworking-spaces-struggle-with-revenue-generation
+lang: en
 published: true
-metaDescription: "Learn why coworking spaces face revenue challenges—high costs, flexible membership pitfalls, and competition—and how TwoFifty’s expert strategies boost profitability."
-keywords: "coworking revenue generation, why coworking spaces struggle, coworking financial challenges, coworking profitability, revenue strategies for coworking spaces, TwoFifty consultancy"
+metaDescription: >-
+  Learn why coworking spaces face revenue challenges—high costs, flexible
+  membership pitfalls, and competition—and how TwoFifty’s expert strategies
+  boost profitability.
+keywords: >-
+  coworking revenue generation, why coworking spaces struggle, coworking
+  financial challenges, coworking profitability, revenue strategies for
+  coworking spaces, TwoFifty consultancy
 ---
 
 # Why Coworking Spaces Struggle with Revenue Generation

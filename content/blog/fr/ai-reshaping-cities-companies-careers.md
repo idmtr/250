@@ -1,25 +1,31 @@
 ---
-title: "Comment l’intelligence artificielle va transformer nos villes, nos entreprises et nos carrières"
-date: "2025-02-21"
-excerpt: "Découvrez comment l’intelligence artificielle redessine les paysages urbains, les stratégies d’entreprise et les parcours professionnels. Plongez dans des exemples concrets, des analyses basées sur des données et explorez les défis et opportunités que l’IA offre pour un avenir plus intelligent et innovant."
-author: "Pauline Roussel"
-authorRole: "Voix collective de TwoFifty.co"
-authorImage: "/images/team/pauline.jpg"
-coverImage: "/images/blog/ai-reshaping-future.jpeg"
+title: >-
+  Comment l’intelligence artificielle va transformer nos villes, nos entreprises
+  et nos carrières
+date: '2025-02-21'
+excerpt: >-
+  Découvrez comment l’intelligence artificielle redessine les paysages urbains,
+  les stratégies d’entreprise et les parcours professionnels. Plongez dans des
+  exemples concrets, des analyses basées sur des données et explorez les défis
+  et opportunités que l’IA offre pour un avenir plus intelligent et innovant.
+author: Pauline Roussel
+authorRole: Voix collective de TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302461/images/team/pauline_h3fh0v.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302510/images/blog/ai-reshaping-future_ashrc9.jpg
 featured: false
-readingTime: "10-12 min de lecture"
+readingTime: 10-12 min de lecture
 tags:
-  [
-    "intelligence artificielle",
-    "villes intelligentes",
-    "innovation en entreprise",
-    "futur du travail",
-    "transformation par l’IA",
-    "durabilité",
-    "tendances technologiques"
-  ]
-slug: "ia-transformation-villes-entreprises-carrieres"
-lang: "fr"
+  - intelligence artificielle
+  - villes intelligentes
+  - innovation en entreprise
+  - futur du travail
+  - transformation par l’IA
+  - durabilité
+  - tendances technologiques
+slug: ia-transformation-villes-entreprises-carrieres
+lang: fr
 published: true
 ---
 

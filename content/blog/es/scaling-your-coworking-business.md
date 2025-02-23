@@ -1,26 +1,35 @@
 ---
-title: "Escalando Espacios de Coworking: Una Guía Estratégica de Crecimiento para 2025 de TwoFifty Consulting"
-date: "2024-02-11"
-excerpt: "TwoFifty Consulting ayuda a los espacios de coworking a superar los desafíos de escalado mediante la planificación estratégica, la optimización de operaciones y las iniciativas centradas en la comunidad para un crecimiento sostenible en 2025."
-metaDescription: "¿Enfrentas obstáculos para escalar tu negocio de coworking? TwoFifty Consulting ofrece una hoja de ruta estratégica para optimizar ingresos, operaciones y el compromiso comunitario. Agenda una consulta."
-author: "Dimitar Inchev"
-authorRole: "Socio de TwoFifty.co"
-authorImage: "/images/team/dimitar.jpg"
-coverImage: "/images/blog/scaling-coworking-business.webp"
+title: >-
+  Escalando Espacios de Coworking: Una Guía Estratégica de Crecimiento para 2025
+  de TwoFifty Consulting
+date: '2024-02-11'
+excerpt: >-
+  TwoFifty Consulting ayuda a los espacios de coworking a superar los desafíos
+  de escalado mediante la planificación estratégica, la optimización de
+  operaciones y las iniciativas centradas en la comunidad para un crecimiento
+  sostenible en 2025.
+metaDescription: >-
+  ¿Enfrentas obstáculos para escalar tu negocio de coworking? TwoFifty
+  Consulting ofrece una hoja de ruta estratégica para optimizar ingresos,
+  operaciones y el compromiso comunitario. Agenda una consulta.
+author: Dimitar Inchev
+authorRole: Socio de TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302501/images/blog/scaling-coworking-business_coebsw.webp
 featured: false
-readingTime: "15 min de lectura"
+readingTime: 15 min de lectura
 tags:
-  [
-    "crecimiento de negocio de coworking",
-    "estrategia de escalado de espacios",
-    "excelencia operativa",
-    "gestión de comunidad",
-    "operaciones de coworking",
-    "expansión de negocios",
-    "gestión de espacios de trabajo"
-  ]
-slug: "escalando-tu-negocio-de-coworking"
-lang: "es"
+  - crecimiento de negocio de coworking
+  - estrategia de escalado de espacios
+  - excelencia operativa
+  - gestión de comunidad
+  - operaciones de coworking
+  - expansión de negocios
+  - gestión de espacios de trabajo
+slug: escalando-tu-negocio-de-coworking
+lang: es
 published: true
 ---
 

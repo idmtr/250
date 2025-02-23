@@ -1,13 +1,13 @@
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import OtherProjects from "@/components/OtherProjects"; // Add this import
 import { generatePageMetadata } from "@/lib/metadata";
+import { SmartImage } from "@/components/common/SmartImage"; // Add this import
 
 type Props = {
   params: { lang: Locale };
@@ -77,12 +77,13 @@ export default async function About({ params }: Props) {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <Image
+                <SmartImage
                   src="/images/pages/twofifty-coworkies-founders-portrait.jpg"
                   alt="TwoFifty Workspace"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg object-cover"
+                  transformation="hero"
                 />
               </div>
               <div className="space-y-6">
@@ -152,12 +153,13 @@ export default async function About({ params }: Props) {
             <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
               <div className="text-center">
                 <div className="relative aspect-[3/4] mb-6">
-                  <Image
-                    src="/images/team/pauline-full.jpg"
+                  <SmartImage
+                    src={`/images/team/pauline-full.jpg`}
                     alt="Pauline Roussel"
                     fill
                     className="object-cover rounded-lg"
                     sizes="(max-width: 768px) 100vw, 50vw"
+                    transformation="avatar"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Pauline Roussel</h3>
@@ -176,12 +178,13 @@ export default async function About({ params }: Props) {
               </div>
               <div className="text-center">
                 <div className="relative aspect-[3/4] mb-6">
-                  <Image
-                    src="/images/team/dimitar-full.jpg"
+                  <SmartImage
+                    src={`/images/team/dimitar-full.jpg`}
                     alt="Dimitar Inchev"
                     fill
                     className="object-cover rounded-lg"
                     sizes="(max-width: 768px) 100vw, 50vw"
+                    transformation="avatar"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Dimitar Inchev</h3>

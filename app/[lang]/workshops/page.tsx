@@ -7,6 +7,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/metadata'
+import { SmartImage } from "@/components/common/SmartImage"
 
 type Props = {
   params: { lang: Locale }
@@ -113,12 +114,13 @@ export default async function Workshops(props: Props) {
                 <Button className="mt-8">Send an Enquiry</Button>
               </div>
               <div>
-                <Image
+                <SmartImage
                   src="/images/workshops/presentations.jpg"
                   alt="Coworking Around the World Presentation"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
+                  overrideTransformation="hero"
                 />
               </div>
             </div>
@@ -130,12 +132,13 @@ export default async function Workshops(props: Props) {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <Image
+                <SmartImage
                   src="/images/workshops/workshop.jpg"
                   alt="Coworking Workshop Session"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
+                  overrideTransformation="hero"
                 />
               </div>
               <div>

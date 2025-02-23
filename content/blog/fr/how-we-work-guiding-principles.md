@@ -1,24 +1,30 @@
 ---
-title: "Principes directeurs chez TwoFifty : Comment nous travaillons, collaborons et prospérons"
-date: "2025-02-21"
-excerpt: "Découvrez les principes fondamentaux de TwoFifty qui guident notre sélection de projets, la création de confiance et notre collaboration avec les clients. Plongez au cœur de notre engagement pour la transparence, la responsabilité et un travail d’équipe efficace."
-author: "Équipe TwoFifty"
-authorRole: "Voix collective de TwoFifty.co"
-authorImage: "/images/team/twofifty-team.jpg"
-coverImage: "/images/blog/how-we-wrok.webp"
+title: >-
+  Principes directeurs chez TwoFifty : Comment nous travaillons, collaborons et
+  prospérons
+date: '2025-02-21'
+excerpt: >-
+  Découvrez les principes fondamentaux de TwoFifty qui guident notre sélection
+  de projets, la création de confiance et notre collaboration avec les clients.
+  Plongez au cœur de notre engagement pour la transparence, la responsabilité et
+  un travail d’équipe efficace.
+author: Équipe TwoFifty
+authorRole: Voix collective de TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302460/images/team/twofifty-team_ecvhkp.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302503/images/blog/how-we-wrok_pnpvhf.webp
 featured: true
-readingTime: "6-8 min de lecture"
+readingTime: 6-8 min de lecture
 tags:
-  [
-    "collaboration",
-    "principes de travail d’équipe",
-    "relations avec les clients",
-    "transparence",
-    "culture de travail",
-    "conseil TwoFifty"
-  ]
-slug: "comment-nous-travaillons-principes-directeurs"
-lang: "fr"
+  - collaboration
+  - principes de travail d’équipe
+  - relations avec les clients
+  - transparence
+  - culture de travail
+  - conseil TwoFifty
+slug: comment-nous-travaillons-principes-directeurs
+lang: fr
 ---
 
 ## Bienvenue chez TwoFifty !

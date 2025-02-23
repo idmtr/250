@@ -1,25 +1,30 @@
 ---
-title: "Sur la route de la connexion : Un voyage beat à travers les communautés de coworking"
-date: "2024-10-10"
-excerpt: "Embarquez pour une virée sauvage à travers le territoire indompté des espaces de coworking, où les âmes se rencontrent et où la magie opère dans l’énergie brute de la construction communautaire."
-author: "Voyageur Communautaire"
-authorRole: "Voyageur Communautaire"
-authorImage: "/images/team/twofifty-team.jpg"
-coverImage: "/images/blog/the-mad-ones-coworking-holy-fools.webp"
+title: >-
+  Sur la route de la connexion : Un voyage beat à travers les communautés de
+  coworking
+date: '2024-10-10'
+excerpt: >-
+  Embarquez pour une virée sauvage à travers le territoire indompté des espaces
+  de coworking, où les âmes se rencontrent et où la magie opère dans l’énergie
+  brute de la construction communautaire.
+author: Voyageur Communautaire
+authorRole: Voyageur Communautaire
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302460/images/team/twofifty-team_ecvhkp.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302493/images/blog/the-mad-ones-coworking-holy-fools_q51vqz.webp
 featured: false
-readingTime: "12 min de lecture"
+readingTime: 12 min de lecture
 tags:
-  [
-    "coworking",
-    "esprit communautaire",
-    "vibrations de l’espace de travail",
-    "connexions spontanées",
-    "tribus urbaines",
-    "culture du lieu de travail",
-    "esprit humain"
-  ]
-slug: "sur-la-route-de-la-connexion"
-lang: "fr"
+  - coworking
+  - esprit communautaire
+  - vibrations de l’espace de travail
+  - connexions spontanées
+  - tribus urbaines
+  - culture du lieu de travail
+  - esprit humain
+slug: sur-la-route-de-la-connexion
+lang: fr
 published: true
 ---
 

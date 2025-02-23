@@ -1,25 +1,30 @@
 ---
-title: "En el Camino hacia la Conexión: Un Viaje al Ritmo de las Comunidades de Coworking"
-date: "2024-10-10"
-excerpt: "Únete a nosotros en una aventura salvaje a través del territorio indómito de los espacios de coworking, donde las almas chocan y la magia surge en la energía cruda de la construcción de comunidades."
-author: "Viajero Comunitario"
-authorRole: "Viajero Comunitario"
-authorImage: "/images/team/twofifty-team.jpg"
-coverImage: "/images/blog/the-mad-ones-coworking-holy-fools.webp"
+title: >-
+  En el Camino hacia la Conexión: Un Viaje al Ritmo de las Comunidades de
+  Coworking
+date: '2024-10-10'
+excerpt: >-
+  Únete a nosotros en una aventura salvaje a través del territorio indómito de
+  los espacios de coworking, donde las almas chocan y la magia surge en la
+  energía cruda de la construcción de comunidades.
+author: Viajero Comunitario
+authorRole: Viajero Comunitario
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302460/images/team/twofifty-team_ecvhkp.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302493/images/blog/the-mad-ones-coworking-holy-fools_q51vqz.webp
 featured: false
-readingTime: "12 min de lectura"
+readingTime: 12 min de lectura
 tags:
-  [
-    "coworking",
-    "espíritu comunitario",
-    "vibras de espacio de trabajo",
-    "conexiones espontáneas",
-    "tribus urbanas",
-    "cultura laboral",
-    "espíritu humano"
-  ]
-slug: "en-el-camino-hacia-la-conexion"
-lang: "es"
+  - coworking
+  - espíritu comunitario
+  - vibras de espacio de trabajo
+  - conexiones espontáneas
+  - tribus urbanas
+  - cultura laboral
+  - espíritu humano
+slug: en-el-camino-hacia-la-conexion
+lang: es
 published: true
 ---
 

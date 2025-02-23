@@ -1,6 +1,9 @@
 "use client";
-import Image from "next/image";
+
 import { Button } from "@/components/ui/button";
+import { SmartImage } from "@/components/common/SmartImage";
+import type { Locale } from "@/i18n-config";
+
 interface BookShowcaseProps {
   lang: Locale;
   dictionary: {
@@ -42,11 +45,12 @@ export default function BookShowcase({ lang, dictionary }: BookShowcaseProps) {
             </a>
           </div>
           <div className="relative h-[400px]">
-            <Image
+            <SmartImage
               src="/images/pages/coworking-book-cover.jpg"
               alt="Around the World in 250 Coworking Spaces book"
               fill
               className="object-contain"
+              transformation="optimized"
             />
           </div>
         </div>

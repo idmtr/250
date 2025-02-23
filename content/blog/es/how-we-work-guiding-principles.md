@@ -1,24 +1,28 @@
 ---
-title: "Principios Rectores en TwoFifty: Cómo Trabajamos, Colaboramos y Prosperamos"
-date: "2025-02-21"
-excerpt: "Descubre los principios fundamentales de TwoFifty que guían la selección de nuestros proyectos, el establecimiento de la confianza y la colaboración con nuestros clientes. Obtén una visión interna de nuestro compromiso con la transparencia, la responsabilidad y el trabajo en equipo eficaz."
-author: "Equipo TwoFifty"
-authorRole: "Voz Colectiva de TwoFifty.co"
-authorImage: "/images/team/twofifty-team.jpg"
-coverImage: "/images/blog/how-we-wrok.webp"
+title: 'Principios Rectores en TwoFifty: Cómo Trabajamos, Colaboramos y Prosperamos'
+date: '2025-02-21'
+excerpt: >-
+  Descubre los principios fundamentales de TwoFifty que guían la selección de
+  nuestros proyectos, el establecimiento de la confianza y la colaboración con
+  nuestros clientes. Obtén una visión interna de nuestro compromiso con la
+  transparencia, la responsabilidad y el trabajo en equipo eficaz.
+author: Equipo TwoFifty
+authorRole: Voz Colectiva de TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302460/images/team/twofifty-team_ecvhkp.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302503/images/blog/how-we-wrok_pnpvhf.webp
 featured: true
-readingTime: "6-8 min de lectura"
+readingTime: 6-8 min de lectura
 tags:
-  [
-    "colaboración",
-    "principios de trabajo en equipo",
-    "relaciones con clientes",
-    "transparencia",
-    "cultura laboral",
-    "consultoría TwoFifty",
-  ]
-slug: "como-trabajamos-principios-rectores"
-lang: "es"
+  - colaboración
+  - principios de trabajo en equipo
+  - relaciones con clientes
+  - transparencia
+  - cultura laboral
+  - consultoría TwoFifty
+slug: como-trabajamos-principios-rectores
+lang: es
 ---
 
 ## ¡Bienvenido a TwoFifty!

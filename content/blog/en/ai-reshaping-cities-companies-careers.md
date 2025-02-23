@@ -1,25 +1,29 @@
 ---
-title: "How Artificial Intelligence Will Reshape Our Cities, Companies, and Careers"
-date: "2025-02-21"
-excerpt: "Explore how artificial intelligence is transforming urban landscapes, corporate strategies, and career paths. Dive into real-world examples, data-driven insights, and the challenges and opportunities AI presents for a smarter, more innovative future."
-author: "Dimitar Inchev"
-authorRole: "Collective Voice of TwoFifty.co"
-authorImage: "/images/team/dimitar.jpg"
-coverImage: "/images/blog/ai-reshaping-future.jpeg"
+title: 'How Artificial Intelligence Will Reshape Our Cities, Companies, and Careers'
+date: '2025-02-21'
+excerpt: >-
+  Explore how artificial intelligence is transforming urban landscapes,
+  corporate strategies, and career paths. Dive into real-world examples,
+  data-driven insights, and the challenges and opportunities AI presents for a
+  smarter, more innovative future.
+author: Dimitar Inchev
+authorRole: Collective Voice of TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302510/images/blog/ai-reshaping-future_ashrc9.jpg
 featured: false
-readingTime: "10-12 min read"
+readingTime: 10-12 min read
 tags:
-  [
-    "artificial intelligence",
-    "smart cities",
-    "corporate innovation",
-    "future of work",
-    "AI transformation",
-    "sustainability",
-    "technology trends"
-  ]
-slug: "ai-reshaping-cities-companies-careers"
-lang: "en"
+  - artificial intelligence
+  - smart cities
+  - corporate innovation
+  - future of work
+  - AI transformation
+  - sustainability
+  - technology trends
+slug: ai-reshaping-cities-companies-careers
+lang: en
 published: true
 ---
 

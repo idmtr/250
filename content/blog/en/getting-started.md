@@ -1,16 +1,21 @@
 ---
-title: "Getting Started with Our Consulting Services"
-date: "2024-02-14"
-excerpt: "Learn how our award-winning consulting services can transform your coworking space into a thriving community hub."
-author: "Dimitar Inchev"
-authorRole: "Lead Consultant"
-authorImage: "https://avatar.iran.liara.run/public"
-coverImage: "https://picsum.photos/1280/720"
+title: Getting Started with Our Consulting Services
+date: '2024-02-14'
+excerpt: >-
+  Learn how our award-winning consulting services can transform your coworking
+  space into a thriving community hub.
+author: Dimitar Inchev
+authorRole: Lead Consultant
+authorImage: 'https://avatar.iran.liara.run/public'
+coverImage: 'https://picsum.photos/1280/720'
 featured: true
-readingTime: "5 min read"
-tags: ["consulting", "coworking", "getting-started"]
-slug: "getting-started"
-lang: "en"
+readingTime: 5 min read
+tags:
+  - consulting
+  - coworking
+  - getting-started
+slug: getting-started
+lang: en
 published: false
 ---
 

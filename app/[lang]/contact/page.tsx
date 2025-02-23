@@ -1,7 +1,7 @@
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
-import Image from "next/image"
+import { SmartImage } from "@/components/common/SmartImage"
 // import CustomImage from "@/components/CustomImage";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
@@ -50,13 +50,12 @@ export default async function ContactPage(props: Props) {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[600px]">
-                <Image
-                  // src="/images/placeholders/placeholder.svg"
-                  // src="/images/pages/contact-us-space.webp"
-                  src="https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740253441/images/blog/qsdq4c4xeplgvlwcsgfj.webp"
-                  alt="team 250co"
+                <SmartImage
+                  src="/images/pages/contact-us-space.webp"
+                  alt="Team TwoFift.co"
                   fill
                   className="object-cover rounded-lg"
+                  transformation="hero"
                 />
               </div>
               <div className="space-y-8">

@@ -1,16 +1,23 @@
 ---
-title: "Essenzielle Strategien zum Aufbau einer florierenden Coworking-Community"
-date: "2024-02-13"
-excerpt: "Entdecken Sie datengestützte Techniken, um Engagement, Inklusivität und ein nachhaltiges Zugehörigkeitsgefühl in Ihrem Coworking-Space zu fördern."
-author: "Pauline Roussel"
-authorRole: "Community-Strategin"
-authorImage: "/images/team/pauline.jpg"
-coverImage: "/images/blog/community-building-essentials.webp"
+title: Essenzielle Strategien zum Aufbau einer florierenden Coworking-Community
+date: '2024-02-13'
+excerpt: >-
+  Entdecken Sie datengestützte Techniken, um Engagement, Inklusivität und ein
+  nachhaltiges Zugehörigkeitsgefühl in Ihrem Coworking-Space zu fördern.
+author: Pauline Roussel
+authorRole: Community-Strategin
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302461/images/team/pauline_h3fh0v.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302508/images/blog/community-building-essentials_tt9a5c.webp
 featured: false
-readingTime: "10-12 min Lesezeit"
-tags: ["Community", "Engagement", "Events"]
-slug: "essentielle-community-entwicklung"
-lang: "de"
+readingTime: 10-12 min Lesezeit
+tags:
+  - Community
+  - Engagement
+  - Events
+slug: essentielle-community-entwicklung
+lang: de
 published: true
 ---
 

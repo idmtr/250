@@ -3,7 +3,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 import type { Locale } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { SmartImage } from "@/components/common/SmartImage";
 import { getValidatedParams } from "@/lib/params-helper";
 
 type Props = {
@@ -42,12 +42,14 @@ export default async function MissionPage(props: Props) {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <Image
+              <SmartImage
                 src="/images/pages/twofifty-coworkies-founders-portrait.jpg"
                 alt="TwoFifty Co coworking consulting Team"
                 width={600}
                 height={400}
-                className="rounded-lg"
+                className="rounded-lg shadow-lg"
+                transformation="hero"
+                priority
               />
             </div>
             <div className="space-y-6">

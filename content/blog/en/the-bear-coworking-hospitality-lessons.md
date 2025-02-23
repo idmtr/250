@@ -1,19 +1,37 @@
 ---
-title: "\"The Bear\": Coworking Lessons on Hospitality and Resilience"
-date: "2025-02-20"
-excerpt: "Explore how *The Bear*—a gritty tale of a struggling sandwich shop—serves up essential coworking lessons on hospitality, innovation, and teamwork, with a spotlight on Richie Jerimovich’s transformation, straight from TwoFifty’s playbook."
-author: "Dimitar Inchev"
-authorRole: "TwoFIfty.co Partner"
-authorImage: "/images/team/dimitar.jpg"
-coverImage: "/images/blog/the-bear-coworking-advice.jpg"
+title: '"The Bear": Coworking Lessons on Hospitality and Resilience'
+date: '2025-02-20'
+excerpt: >-
+  Explore how *The Bear*—a gritty tale of a struggling sandwich shop—serves up
+  essential coworking lessons on hospitality, innovation, and teamwork, with a
+  spotlight on Richie Jerimovich’s transformation, straight from TwoFifty’s
+  playbook.
+author: Dimitar Inchev
+authorRole: TwoFIfty.co Partner
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302499/images/blog/the-bear-coworking-advice_yot1tr.jpg
 featured: false
-readingTime: "7-9 min read"
-tags: ["coworking hospitality", "customer service in coworking", "team dynamics", "coworking innovation", "mental health in coworking", "TwoFifty consultancy"]
-slug: "the-bear-coworking-hospitality-lessons"
-lang: "en"
-canonicalUrl: "https://twofifty.co/blog/the-bear-coworking-hospitality-lessons/"
-metaDescription: "Discover how *The Bear* reveals coworking lessons on hospitality, leadership, and resilience—especially through Richie Jerimovich’s journey—that TwoFifty uses to help operators create unforgettable member experiences."
-keywords: "coworking hospitality, customer service coworking, coworking management, innovation in coworking, mental health coworking, TwoFifty consultancy, coworking lessons 2025"
+readingTime: 7-9 min read
+tags:
+  - coworking hospitality
+  - customer service in coworking
+  - team dynamics
+  - coworking innovation
+  - mental health in coworking
+  - TwoFifty consultancy
+slug: the-bear-coworking-hospitality-lessons
+lang: en
+canonicalUrl: 'https://twofifty.co/blog/the-bear-coworking-hospitality-lessons/'
+metaDescription: >-
+  Discover how *The Bear* reveals coworking lessons on hospitality, leadership,
+  and resilience—especially through Richie Jerimovich’s journey—that TwoFifty
+  uses to help operators create unforgettable member experiences.
+keywords: >-
+  coworking hospitality, customer service coworking, coworking management,
+  innovation in coworking, mental health coworking, TwoFifty consultancy,
+  coworking lessons 2025
 schema: |
   {
     "@context": "https://schema.org",
@@ -55,7 +73,7 @@ schema: |
 
 Managing a coworking space shares striking parallels with running a high-pressure restaurant kitchen—both environments live or die by their commitment to hospitality, innovation, and seamless teamwork. *The Bear*, the critically acclaimed series, follows Chef Carmen "Carmy" Berzatto's journey of transforming his inherited family sandwich shop in Chicago. Season 2 pivots to Richie Jerimovich's evolution, whose transformation from chaos to hospitality champion mirrors the essence of successful coworking: creating an environment where every member feels welcomed, valued, and exceptionally served.
 
-![The Bear](/images/blog/the-bear-team.jpg)
+![The Bear](https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302496/images/blog/the-bear-team_xfiu3u.jpg)
 
 At TwoFifty, our boutique coworking consultancy draws powerful parallels between *The Bear* and successful space operations. Through Richie's transformative journey and the show's gritty narrative, we've identified key principles that help operators build resilient, hospitality-focused spaces. Let's explore these essential lessons that shape exceptional coworking experiences.
 
@@ -65,9 +83,9 @@ The challenges depicted in "The Bear" closely match coworking realities. Carmy's
 
 Market dynamics, like the post-pandemic workplace evolution and rising operational costs, add extra layers of complexity, making Carmy's journey feel particularly relevant to today's coworking landscape.
 
-![Carmy](/images/blog/the-bera-carmy.jpg)
-![Richie](/images/blog/the-bear-richie.jpg)
-!["The Bear" cooking, learning, together.](/images/blog/the-berar-cooking-learningtogether.webp)
+![Carmy](https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302495/images/blog/the-bera-carmy_nabw9l.jpg)
+![Richie](https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302497/images/blog/the-bear-richie_otpsd2.jpg)
+!["The Bear" cooking, learning, together.](https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302494/images/blog/the-berar-cooking-learningtogether_enm3tl.webp)
 
 Carmy’s fine-dining background brings fresh ideas, but they clash with the shop’s traditions—just as coworking operators must innovate (think: hybrid work solutions or smart tech integrations) while honoring the space’s established culture and loyal members. This tension is at the heart of both the series and the coworking industry, where success depends on evolving without losing your soul.
 
@@ -117,7 +135,7 @@ The characters in *The Bear* map to coworking roles, with Richie’s journey anc
 
 ## The Surprising Element: Hospitality’s Ripple Effect
 
-![Carmy & Richie](/images/blog/carmy-and-richie-in-the-bear.jpg)
+![Carmy & Richie](https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302509/images/blog/carmy-and-richie-in-the-bear_bhf4gw.jpg)
 
 ## Richie's Transformation: A Journey of Self-Discovery and Growth
 
@@ -125,11 +143,11 @@ Richie Jerimovich, portrayed by Ebon Moss-Bachrach in *The Bear*, experiences a 
 
 ### From Chaos to Clarity
 
-![Rishie Seaason 1](/images/blog/the-bear-richie.jpg)
+![Rishie Seaason 1](https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302497/images/blog/the-bear-richie_otpsd2.jpg)
 
 In Season 1, Richie is a volatile presence—angry, impulsive, and stuck in old patterns. His arrest for assaulting a customer and his side hustle selling drugs behind the restaurant paint him as a man at odds with the world around him, particularly with Carmy, the new head of The Beef. Season 2, however, peels back the layers of Richie’s bravado, revealing a man wrestling with loss, identity, and the need for belonging after the death of his best friend, Mikey.
 
-![Roishie Season 2](/images/blog/the-bear-richie-forks-seasin2.jpg)
+![Roishie Season 2](https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302498/images/blog/the-bear-richie-forks-seasin2_thhen7.jpg)
 
 The turning point arrives in the episode "Forks," where Carmy sends Richie to stage at a Michelin-starred restaurant. What begins as an apparent banishment becomes a crucible for change. Tasked with polishing endless forks, Richie initially bristles at the menial work, but the rhythm of the task and the ethos of the restaurant—precision, care, and pride—begin to sink in. As [Vulture notes](https://www.vulture.com/article/the-bear-richie-season-2-redemption-hero-arc.html), this experience shifts Richie from a “slovenly, grieving fuck-up” to someone who discovers pride in the grind and a sense of purpose in service.
 
@@ -166,7 +184,7 @@ Richie’s transformation underscores that coworking isn’t just about managing
 
 Since 2015, our team has traveled the globe to meet and understand coworking spaces and their teams. One thing we often say is that "Coworking is the same dish—everyone cooks it differently." In the context of *The Bear*, this reminder seems particularly fitting.
 
-![The Bear Characters](/images/blog/the-bear-all-characters.jpg)
+![The Bear Characters](https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302500/images/blog/the-bear-all-characters_w3ypwe.jpg)
 
 At TwoFifty, we partner with operators to bring this vision to life, offering strategies to infuse hospitality and uniquness into every aspect of your space. Whether it’s inspired by Richie’s customer-first mindset or Carmy’s relentless innovation, *The Bear* proves that success lies in balancing growth with exceptional service.
 

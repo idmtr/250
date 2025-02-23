@@ -1,19 +1,38 @@
 ---
-title: "Pourquoi les espaces de coworking peinent à générer des revenus"
-date: "2025-02-20"
-excerpt: "Coûts élevés, revenus instables et concurrence féroce : découvrez pourquoi les espaces de coworking luttent pour être rentables et comment les stratégies éprouvées de TwoFifty peuvent aider les opérateurs à prospérer sans sacrifier la communauté."
-author: "Pauline Roussel"
-authorRole: "Partenaire de TwoFifty.co"
-authorImage: "/images/team/pauline.jpg"
-coverImage: "/images/blog/coworking-revenue-struggles.webp"
+title: Pourquoi les espaces de coworking peinent à générer des revenus
+date: '2025-02-20'
+excerpt: >-
+  Coûts élevés, revenus instables et concurrence féroce : découvrez pourquoi les
+  espaces de coworking luttent pour être rentables et comment les stratégies
+  éprouvées de TwoFifty peuvent aider les opérateurs à prospérer sans sacrifier
+  la communauté.
+author: Pauline Roussel
+authorRole: Partenaire de TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302461/images/team/pauline_h3fh0v.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302507/images/blog/coworking-revenue-struggles_ztx2pu.webp
 featured: false
-readingTime: "8-10 min de lecture"
-tags: ["génération de revenus en coworking", "défis financiers du coworking", "abonnements flexibles", "concurrence dans le coworking", "rentabilité du coworking", "stratégies de revenus", "construction de communauté"]
-slug: "pourquoi-les-espaces-de-coworking-peinent-a-generer-des-revenus"
-lang: "fr"
+readingTime: 8-10 min de lecture
+tags:
+  - génération de revenus en coworking
+  - défis financiers du coworking
+  - abonnements flexibles
+  - concurrence dans le coworking
+  - rentabilité du coworking
+  - stratégies de revenus
+  - construction de communauté
+slug: pourquoi-les-espaces-de-coworking-peinent-a-generer-des-revenus
+lang: fr
 published: true
-metaDescription: "Découvrez pourquoi les espaces de coworking font face à des défis de revenus – coûts élevés, pièges des abonnements flexibles et concurrence – et comment les stratégies expertes de TwoFifty boostent leur rentabilité."
-keywords: "génération de revenus en coworking, pourquoi les espaces de coworking peinent, défis financiers du coworking, rentabilité du coworking, stratégies de revenus pour les espaces de coworking, conseil TwoFifty"
+metaDescription: >-
+  Découvrez pourquoi les espaces de coworking font face à des défis de revenus –
+  coûts élevés, pièges des abonnements flexibles et concurrence – et comment les
+  stratégies expertes de TwoFifty boostent leur rentabilité.
+keywords: >-
+  génération de revenus en coworking, pourquoi les espaces de coworking peinent,
+  défis financiers du coworking, rentabilité du coworking, stratégies de revenus
+  pour les espaces de coworking, conseil TwoFifty
 ---
 
 # Pourquoi les espaces de coworking peinent à générer des revenus

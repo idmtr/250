@@ -1,25 +1,28 @@
 ---
-title: "The Ultimate Guide to Coworking Space Design Trends 2024: Data-Driven Insights and Implementation Strategies"
-date: "2024-02-12"
-excerpt: "Discover how cutting-edge design trends are transforming coworking spaces in 2024, with expert insights on ROI, implementation strategies, and future-proof solutions."
-author: "Alex Martinez"
-authorRole: "Design Consultant"
-authorImage: "https://avatar.iran.liara.run/public"
-coverImage: "https://picsum.photos/1280/720"
+title: >-
+  The Ultimate Guide to Coworking Space Design Trends 2024: Data-Driven Insights
+  and Implementation Strategies
+date: '2024-02-12'
+excerpt: >-
+  Discover how cutting-edge design trends are transforming coworking spaces in
+  2024, with expert insights on ROI, implementation strategies, and future-proof
+  solutions.
+author: Alex Martinez
+authorRole: Design Consultant
+authorImage: 'https://avatar.iran.liara.run/public'
+coverImage: 'https://picsum.photos/1280/720'
 featured: true
-readingTime: "15 min read"
+readingTime: 15 min read
 tags:
-  [
-    "workspace design",
-    "coworking trends",
-    "office innovation",
-    "biophilic design",
-    "smart workspace",
-    "flexible office",
-    "sustainable design",
-  ]
-slug: "workspace-design-trends-2024"
-lang: "en"
+  - workspace design
+  - coworking trends
+  - office innovation
+  - biophilic design
+  - smart workspace
+  - flexible office
+  - sustainable design
+slug: workspace-design-trends-2024
+lang: en
 published: false
 ---
 

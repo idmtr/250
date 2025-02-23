@@ -1,9 +1,7 @@
 "use client";
 
-// import { motion } from "framer-motion";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import CustomImage from "@/components/CustomImage";
+import { SmartImage } from "@/components/common/SmartImage";
 import Link from "next/link";
 
 import type { Locale } from "@/i18n-config";
@@ -61,14 +59,14 @@ export default function Consulting({ lang, dictionary }: ConsultingProps) {
               </Link>
             </Button>
           </div>
-          {/* https://twofifty.co/wp-content/uploads/2019/08/IMG_0945.jpg */}
           <div className="relative h-[600px] group">
-            <Image
-              // src="https://twofifty.co/wp-content/uploads/2023/09/twofifty-coworking-consulting-service-1024x768.jpg"
+            <SmartImage
               src="/images/pages/twofifty-coworking-consulting-service.jpg"
               alt="Coworking space consultation"
               fill
               className="object-cover rounded-lg transition-transform duration-500 opacity-80 group-hover:scale-105"
+              transformation="hero"
+              priority
             />
             <div className="absolute inset-0 bg-black/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>

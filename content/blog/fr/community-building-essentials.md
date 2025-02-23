@@ -1,16 +1,24 @@
 ---
-title: "Stratégies essentielles pour bâtir une communauté de coworking florissante"
-date: "2024-02-13"
-excerpt: "Découvrez des techniques basées sur des données pour favoriser l’engagement, l’inclusivité et un sentiment d’appartenance durable dans votre espace de coworking."
-author: "Pauline Roussel"
-authorRole: "Stratège communautaire"
-authorImage: "/images/team/pauline.jpg"
-coverImage: "/images/blog/community-building-essentials.webp"
+title: Stratégies essentielles pour bâtir une communauté de coworking florissante
+date: '2024-02-13'
+excerpt: >-
+  Découvrez des techniques basées sur des données pour favoriser l’engagement,
+  l’inclusivité et un sentiment d’appartenance durable dans votre espace de
+  coworking.
+author: Pauline Roussel
+authorRole: Stratège communautaire
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302461/images/team/pauline_h3fh0v.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302508/images/blog/community-building-essentials_tt9a5c.webp
 featured: false
-readingTime: "10-12 min de lecture"
-tags: ["communauté", "engagement", "événements"]
-slug: "essentiels-construction-communaute"
-lang: "fr"
+readingTime: 10-12 min de lecture
+tags:
+  - communauté
+  - engagement
+  - événements
+slug: essentiels-construction-communaute
+lang: fr
 published: true
 ---
 

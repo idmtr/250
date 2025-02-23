@@ -1,7 +1,7 @@
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { SmartImage } from "@/components/common/SmartImage";
 import Link from "next/link";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
@@ -73,12 +73,13 @@ export default async function Education(props: Props) {
                 <p className="text-lg">{education.process.description}</p>
               </div>
               <div>
-                <Image
+                <SmartImage
                   src="/images/pages/coworking-education-workshhop-copenhagen.jpg"
                   alt="Coworkies Coworking Workshop Presentation"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
+                  transformation="hero"
                 />
               </div>
             </div>
@@ -90,12 +91,13 @@ export default async function Education(props: Props) {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <Image
+                <SmartImage
                   src="/images/pages/coworking-education-workshhop-copenhagen-2.jpg"
                   alt="Coworking Workshop Group Work"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
+                  transformation="hero"
                 />
               </div>
               <div>

@@ -3,8 +3,10 @@ title: 'The Mad Ones: A Coworking Space for The Holy Fools of Our Time'
 date: '2025-02-22'
 author: Community Wanderer
 authorRole: Community Wanderer
-authorImage: /images/team/twofifty-team.jpg
-coverImage: /images/blog/on-the-road-to-connection.jpg
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302460/images/team/twofifty-team_ecvhkp.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302501/images/blog/on-the-road-to-connection_qgiiln.jpg
 excerpt: >-
   Join us on a wild ride through the untamed territory of coworking spaces,
   where souls collide and magic happens in the raw energy of community building.

@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image"
-// import CustomImage from "@/components/CustomImage";
 import { Button } from "@/components/ui/button";
+import { SmartImage } from "@/components/common/SmartImage";
 import Link from "next/link";
 
 import type { Locale } from "@/i18n-config";
@@ -49,11 +48,12 @@ export default function OurStory({ lang, dictionary }: OurStoryProps) {
             </Button>
           </div>
           <div className="relative h-[600px]">
-            <Image
+            <SmartImage
               src="/images/pages/twofifty-coworkies-founders-portrait.jpg"
               alt="TwoFifty team"
               fill
               className="object-cover rounded-lg"
+              transformation="hero"
             />
           </div>
         </div>

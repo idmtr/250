@@ -1,16 +1,23 @@
 ---
-title: "Tendencias de Diseño de Espacios de Coworking para 2024"
-date: "2024-02-10"
-excerpt: "Explora las últimas tendencias de diseño que dan forma a los espacios de coworking exitosos en 2024, desde elementos biofílicos hasta la integración de tecnología inteligente."
-author: "Alex Martinez"
-authorRole: "Director de Diseño"
-authorImage: "/images/team/alex.jpg"
-coverImage: "/images/blog/design-trends.jpg"
+title: Tendencias de Diseño de Espacios de Coworking para 2024
+date: '2024-02-10'
+excerpt: >-
+  Explora las últimas tendencias de diseño que dan forma a los espacios de
+  coworking exitosos en 2024, desde elementos biofílicos hasta la integración de
+  tecnología inteligente.
+author: Alex Martinez
+authorRole: Director de Diseño
+authorImage: /images/team/alex.jpg
+coverImage: /images/blog/design-trends.jpg
 featured: true
-readingTime: "7 min read"
-tags: ["diseño", "tendencias", "espacio de trabajo", "arquitectura"]
-slug: "coworking-space-design-2024"
-lang: "es"
+readingTime: 7 min read
+tags:
+  - diseño
+  - tendencias
+  - espacio de trabajo
+  - arquitectura
+slug: coworking-space-design-2024
+lang: es
 ---
 
 # Tendencias de Diseño de Espacios de Coworking para 2024

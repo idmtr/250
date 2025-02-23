@@ -1,26 +1,35 @@
 ---
-title: "Développer les espaces de coworking : Guide stratégique de croissance pour 2025 par TwoFifty Consulting"
-date: "2024-02-11"
-excerpt: "TwoFifty Consulting aide les espaces de coworking à surmonter les défis de la montée en échelle grâce à une planification stratégique, des opérations optimisées et des initiatives centrées sur la communauté pour une croissance durable en 2025."
-metaDescription: "Vous rencontrez des obstacles pour développer votre activité de coworking ? TwoFifty Consulting propose une feuille de route stratégique pour optimiser revenus, opérations et engagement communautaire. Planifiez une consultation."
-author: "Pauline Roussel"
-authorRole: "Partenaire de TwoFifty.co"
-authorImage: "/images/team/pauline.jpg"
-coverImage: "/images/blog/scaling-coworking-business.webp"
+title: >-
+  Développer les espaces de coworking : Guide stratégique de croissance pour
+  2025 par TwoFifty Consulting
+date: '2024-02-11'
+excerpt: >-
+  TwoFifty Consulting aide les espaces de coworking à surmonter les défis de la
+  montée en échelle grâce à une planification stratégique, des opérations
+  optimisées et des initiatives centrées sur la communauté pour une croissance
+  durable en 2025.
+metaDescription: >-
+  Vous rencontrez des obstacles pour développer votre activité de coworking ?
+  TwoFifty Consulting propose une feuille de route stratégique pour optimiser
+  revenus, opérations et engagement communautaire. Planifiez une consultation.
+author: Pauline Roussel
+authorRole: Partenaire de TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302461/images/team/pauline_h3fh0v.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302501/images/blog/scaling-coworking-business_coebsw.webp
 featured: false
-readingTime: "15 min de lecture"
+readingTime: 15 min de lecture
 tags:
-  [
-    "croissance des affaires en coworking",
-    "stratégie de montée en échelle",
-    "excellence opérationnelle",
-    "gestion communautaire",
-    "opérations de coworking",
-    "expansion des affaires",
-    "gestion des espaces de travail"
-  ]
-slug: "developper-votre-entreprise-de-coworking"
-lang: "fr"
+  - croissance des affaires en coworking
+  - stratégie de montée en échelle
+  - excellence opérationnelle
+  - gestion communautaire
+  - opérations de coworking
+  - expansion des affaires
+  - gestion des espaces de travail
+slug: developper-votre-entreprise-de-coworking
+lang: fr
 published: true
 ---
 

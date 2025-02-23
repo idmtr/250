@@ -1,23 +1,31 @@
 ---
-title: "Wie künstliche Intelligenz unsere Städte, Unternehmen und Karrieren neu gestalten wird"
-date: "2025-02-21"
-excerpt: "Erkunden Sie, wie künstliche Intelligenz urbane Landschaften, Unternehmensstrategien und Karrierewege transformiert. Tauchen Sie ein in praxisnahe Beispiele, datengestützte Erkenntnisse sowie die Herausforderungen und Chancen, die KI für eine intelligentere, innovativere Zukunft bietet."
-author: "Dimitar Inchev"
-authorRole: "Kollektive Stimme von TwoFifty.co"
-authorImage: "/images/team/dimitar.jpg"
-coverImage: "/images/blog/ai-reshaping-future.jpeg"
+title: >-
+  Wie künstliche Intelligenz unsere Städte, Unternehmen und Karrieren neu
+  gestalten wird
+date: '2025-02-21'
+excerpt: >-
+  Erkunden Sie, wie künstliche Intelligenz urbane Landschaften,
+  Unternehmensstrategien und Karrierewege transformiert. Tauchen Sie ein in
+  praxisnahe Beispiele, datengestützte Erkenntnisse sowie die Herausforderungen
+  und Chancen, die KI für eine intelligentere, innovativere Zukunft bietet.
+author: Dimitar Inchev
+authorRole: Kollektive Stimme von TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302510/images/blog/ai-reshaping-future_ashrc9.jpg
 featured: false
-readingTime: "10-12 min Lesezeit"
+readingTime: 10-12 min Lesezeit
 tags:
-  - "künstliche Intelligenz"
-  - "intelligente Städte"
-  - "Unternehmensinnovation"
-  - "Arbeitswelt der Zukunft"
-  - "KI-Transformation"
-  - "Nachhaltigkeit"
-  - "Technologietrends"
-slug: "ki-neugestaltung-staedte-unternehmen-karrieren"
-lang: "de"
+  - künstliche Intelligenz
+  - intelligente Städte
+  - Unternehmensinnovation
+  - Arbeitswelt der Zukunft
+  - KI-Transformation
+  - Nachhaltigkeit
+  - Technologietrends
+slug: ki-neugestaltung-staedte-unternehmen-karrieren
+lang: de
 published: true
 ---
 

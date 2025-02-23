@@ -76,8 +76,8 @@ const articleSchema = z.object({
   content: z.string().min(1, 'Content is required'),
   author: z.string().min(1, 'Author is required'),
   authorRole: z.string().optional(),
-  authorImage: z.string().optional(),
-  coverImage: z.string().optional(),
+  coverImage: z.string().url().optional(),
+  authorImage: z.string().url().optional(),
   featured: z.boolean().default(false),
   readingTime: z.string().optional(),
   tags: z.array(z.string()).default([]),
@@ -95,6 +95,8 @@ export function ArticleForm({ lang, article, mode = 'create' }: ArticleFormProps
   // Replace initializedWith state with more specific dateInitialized
   const [dateInitialized, setDateInitialized] = useState(false)
   const [dateError, setDateError] = useState<string | null>(null)
+  const [isImageDialogOpen, setIsImageDialogOpen] = useState(false)
+  const [imageField, setImageField] = useState<'cover' | 'author'>('cover')
 
   // Improve date parsing for form initialization
   const form = useForm<z.infer<typeof articleSchema>>({
@@ -797,8 +799,9 @@ export function ArticleForm({ lang, article, mode = 'create' }: ArticleFormProps
                 label="Author Image"
                 value={field.value}
                 onChange={(value) => field.onChange(value)}
-                folder="images/team"
+                folder="/team"
               />
+
             )}
           />
 
@@ -809,8 +812,11 @@ export function ArticleForm({ lang, article, mode = 'create' }: ArticleFormProps
               <ImageField
                 label="Cover Image"
                 value={field.value}
-                onChange={(value) => field.onChange(value)}
-                folder="images/blog"
+                onChange={(url) => {
+                  // Accept the URL directly from Cloudinary
+                  field.onChange(url)
+                }}
+                folder="blog"
               />
             )}
           />
@@ -1011,6 +1017,22 @@ export function ArticleForm({ lang, article, mode = 'create' }: ArticleFormProps
           </AlertDialogContent>
         </AlertDialog>
       )}
+
+      {/* Image Upload Dialog */}
+      <ImageUploadDialog
+        open={isImageDialogOpen}
+        onOpenChange={setIsImageDialogOpen}
+        onImageSelect={(url: string) => {
+          if (imageField === 'cover') {
+            form.setValue('coverImage', url)
+          } else {
+            form.setValue('authorImage', url)
+          }
+          setIsImageDialogOpen(false)
+        }}
+        folder={imageField === 'cover' ? 'blog' : 'team'} // Match Cloudinary folder structure
+        title={`Select ${imageField === 'cover' ? 'Cover' : 'Author'} Image`}
+      />
     </Form>
   )
 }

@@ -1,26 +1,34 @@
 ---
-title: "Scaling Coworking Spaces: A Strategic Growth Guide for 2025 from TwoFifty Consulting"
-date: "2024-02-11"
-excerpt: "TwoFifty Consulting assists coworking spaces in overcoming scaling challenges through strategic planning, optimized operations, and community-focused initiatives for sustainable growth in 2025."
-metaDescription: "Facing obstacles in scaling your coworking business? TwoFifty Consulting offers a strategic roadmap to optimize revenue, operations, and community engagement. Schedule a consultation."
-author: "Dimitar Inchev"
-authorRole: "TwoFIfty.co Partner"
-authorImage: "/images/team/dimitar.jpg"
-coverImage: "/images/blog/scaling-coworking-business.webp"
+title: >-
+  Scaling Coworking Spaces: A Strategic Growth Guide for 2025 from TwoFifty
+  Consulting
+date: '2024-02-11'
+excerpt: >-
+  TwoFifty Consulting assists coworking spaces in overcoming scaling challenges
+  through strategic planning, optimized operations, and community-focused
+  initiatives for sustainable growth in 2025.
+metaDescription: >-
+  Facing obstacles in scaling your coworking business? TwoFifty Consulting
+  offers a strategic roadmap to optimize revenue, operations, and community
+  engagement. Schedule a consultation.
+author: Dimitar Inchev
+authorRole: TwoFIfty.co Partner
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302501/images/blog/scaling-coworking-business_coebsw.webp
 featured: false
-readingTime: "15 min read"
+readingTime: 15 min read
 tags:
-  [
-    "coworking business growth",
-    "space scaling strategy",
-    "operational excellence",
-    "community management",
-    "coworking operations",
-    "business expansion",
-    "workspace management"
-  ]
-slug: "scaling-your-coworking-business"
-lang: "en"
+  - coworking business growth
+  - space scaling strategy
+  - operational excellence
+  - community management
+  - coworking operations
+  - business expansion
+  - workspace management
+slug: scaling-your-coworking-business
+lang: en
 published: true
 ---
 

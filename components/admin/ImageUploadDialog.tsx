@@ -14,9 +14,21 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Upload, Link2, FolderOpen } from 'lucide-react'
 // import { uploadImage, createImageMarkdown } from '@/lib/utils/image'
-import Image from "next/image"
+// import Image from "next/image"
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { AlertCircle } from 'lucide-react'
+
+import { SmartImage } from "@/components/common/SmartImage";
+import { CldImage } from 'next-cloudinary'
+import { cloudinaryConfig } from '@/lib/cloudinary/config'
+
+interface CloudinaryImage {
+  url: string;
+  publicId: string;
+  created: string;
+  width: number;
+  height: number;
+}
 
 interface ImageUploadDialogProps {
   open: boolean;
@@ -35,7 +47,7 @@ export function ImageUploadDialog({
   title = 'Select Image',
   mode = 'field'
 }: ImageUploadDialogProps) {
-  const [images, setImages] = useState<string[]>([]);
+  const [images, setImages] = useState<Array<{ url: string; publicId: string; width: number; height: number }>>([])
   const [loading, setLoading] = useState(false);
   const [urlInput, setUrlInput] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -47,41 +59,38 @@ export function ImageUploadDialog({
     }
   }, [open, folder]);
 
+  const normalizeFolder = (path: string): string => {
+    return path
+      .replace(/^\//, '')          // Remove leading slash
+      .replace(/\/$/, '')          // Remove trailing slash
+      .replace(/^images\//, '')    // Remove 'images/' prefix if present
+  }
+
   const fetchImages = async () => {
     try {
-      setLoading(true);
-      setError(null);
+      setLoading(true)
+      setError(null)
       
-      const res = await fetch(`/api/images?folder=${folder}`);
-      const data = await res.json();
+      // Remove leading slash if present
+      const normalizedFolder = folder.replace(/^\/+/, '')
+      
+      const res = await fetch(`/api/images?folder=${encodeURIComponent(normalizedFolder)}`)
+      const data = await res.json()
 
-      // Handle both array response and error response
-      if (data.error) {
-        throw new Error(data.error);
+      if (!res.ok || data.error) {
+        throw new Error(data.error || 'Failed to fetch images')
       }
 
-      // Ensure we have an array of images
-      const imageArray = Array.isArray(data.images) ? data.images : [];
-      
-      // Format paths based on mode
-      const formattedImages = imageArray.map((img: string) => {
-        if (mode === 'editor') {
-          // For editor, return markdown format
-          return img.startsWith('/') ? img : `/${img}`;
-        }
-        // For field mode, return normal path
-        return img.startsWith('/') ? img : `/${img}`;
-      });
-
-      setImages(formattedImages);
+      console.log(`Loaded ${data.images?.length || 0} images`)
+      setImages(data.images || [])
     } catch (error) {
-      console.error('Failed to fetch images:', error);
-      setError('Failed to load images. Please try again.');
-      setImages([]);
+      console.error('Failed to fetch images:', error)
+      setError(error.message || 'Failed to load images')
+      setImages([])
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
   const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0]
@@ -89,30 +98,46 @@ export function ImageUploadDialog({
 
     const formData = new FormData()
     formData.append("file", file)
-    formData.append("folder", folder)
+    formData.append("folder", normalizeFolder(folder))
 
     try {
       setLoading(true)
+      setError(null)
+      
       const res = await fetch("/api/upload", {
         method: "POST",
         body: formData
       })
+      
       const data = await res.json()
+      
+      if (data.error) {
+        throw new Error(data.error)
+      }
+
+      // Use the Cloudinary URL directly
       onImageSelect(data.url)
       onOpenChange(false)
+      
+      // Refresh the image list
+      fetchImages()
     } catch (error) {
       console.error("Failed to upload image:", error)
+      setError(error.message || 'Failed to upload image')
     } finally {
       setLoading(false)
     }
   }
 
-  const handleImageSelect = (image: string) => {
-    // Ensure image path starts with a slash
-    const imagePath = image.startsWith('/') ? image : `/${image}`
-    
-    // For editor mode, just return the URL
-    onImageSelect(imagePath)
+  const handleImageSelect = (imageUrl: string) => {
+    // For Cloudinary images, use the secure_url directly
+    if (imageUrl.includes('cloudinary.com')) {
+      onImageSelect(imageUrl)
+    } else {
+      // For other images, ensure proper path formatting
+      const imagePath = imageUrl.startsWith('/') ? imageUrl : `/${imageUrl}`
+      onImageSelect(imagePath)
+    }
     onOpenChange(false)
   }
 
@@ -193,22 +218,23 @@ export function ImageUploadDialog({
                 <div className="grid grid-cols-3 gap-4 p-2">
                   {images.map((image) => (
                     <div
-                      key={image}
-                      onClick={() => handleImageSelect(image)}
+                      key={image.publicId}
+                      onClick={() => handleImageSelect(image.url)} // Use image.url instead of transforming
                       className="relative aspect-video cursor-pointer rounded-md overflow-hidden hover:ring-2 hover:ring-primary"
                     >
-                      <Image
-                        src={image}
+                      <CldImage
+                        src={image.publicId}
+                        width={300}
+                        height={200}
                         alt=""
-                        fill
                         className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 33vw"
+                        {...cloudinaryConfig.transformations.preview}
                       />
                     </div>
                   ))}
                   {images.length === 0 && (
                     <div className="col-span-3 text-center py-8 text-muted-foreground">
-                      No images found in this folder
+                      No images found in folder: {folder}
                     </div>
                   )}
                 </div>

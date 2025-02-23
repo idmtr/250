@@ -1,23 +1,26 @@
 ---
-title: "Becoming a Coliving Community Manager: Responsibilities, Skills, and Career Path"
-date: "2024-02-13"
-excerpt: "Explore coliving community manager roles in coliving London. Learn about responsibilities, skills, & career prospects in this growing field."
-author: "Pauline Roussel"
-authorRole: "Community Strategist"
-authorImage: "/images/team/mariya.webp"
-coverImage: "https://picsum.photos/1280/720"
+title: >-
+  Becoming a Coliving Community Manager: Responsibilities, Skills, and Career
+  Path
+date: '2024-02-13'
+excerpt: >-
+  Explore coliving community manager roles in coliving London. Learn about
+  responsibilities, skills, & career prospects in this growing field.
+author: Pauline Roussel
+authorRole: Community Strategist
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302463/images/team/mariya_vtgs37.webp
+coverImage: 'https://picsum.photos/1280/720'
 featured: false
-readingTime: "10-12 min read"
+readingTime: 10-12 min read
 tags:
-  [
-    "coworking growth",
-    "business scaling",
-    "operational excellence",
-    "expansion strategy",
-    "community management",
-  ]
-slug: "becoming-coliving-community-manager"
-lang: "en"
+  - coworking growth
+  - business scaling
+  - operational excellence
+  - expansion strategy
+  - community management
+slug: becoming-coliving-community-manager
+lang: en
 published: false
 ---
 

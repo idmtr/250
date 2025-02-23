@@ -1,7 +1,7 @@
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { SmartImage } from "@/components/common/SmartImage";
 import Link from "next/link";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
@@ -114,12 +114,13 @@ export default async function GetFeedback(props: Props) {
                 </Button>
               </div>
               <div>
-                <Image
+                <SmartImage
                   src="/images/pages/coworkies-manhattan-coworking-event.jpg"
                   alt="Around the world"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
+                  transformation="hero"
                 />
               </div>
             </div>

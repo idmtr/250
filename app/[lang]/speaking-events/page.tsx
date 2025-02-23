@@ -7,6 +7,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/metadata'
+import { SmartImage } from "@/components/common/SmartImage"
 
 type Props = {
   params: { lang: Locale }
@@ -70,12 +71,13 @@ export default async function SpeakingEvents(props: Props) {
                 </a>
               </div>
               <div>
-                <Image
+                <SmartImage
                   src="/images/speaking/vivatech.jpg"
                   alt="Future of Work Panel at Vivatech"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
+                  transformation="hero"
                 />
               </div>
             </div>
@@ -99,12 +101,13 @@ export default async function SpeakingEvents(props: Props) {
                 <p className="text-lg">{speakingEvents.presentations.description}</p>
               </div>
               <div>
-                <Image
+                <SmartImage
                   src="/images/speaking/conferences.jpg"
                   alt="Speaking at Coworking Conferences"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
+                  transformation="hero"
                 />
               </div>
             </div>
@@ -126,12 +129,13 @@ export default async function SpeakingEvents(props: Props) {
                 <p className="text-lg">{speakingEvents.educate.description}</p>
               </div>
               <div>
-                <Image
+                <SmartImage
                   src="/images/speaking/educate.jpg"
                   alt="Private Events and Meetups"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg"
+                  transformation="hero"
                 />
               </div>
             </div>
@@ -151,13 +155,14 @@ export default async function SpeakingEvents(props: Props) {
             <p className="text-lg mb-12">{speakingEvents.hackathon.description}</p>
             <div className="grid md:grid-cols-3 gap-6">
               {[1, 2, 3].map((i) => (
-                <Image
+                <SmartImage
                   key={i}
                   src={`/images/speaking/hackathon-${i}.jpg`}
                   alt={`Coworking Hackathon ${i}`}
                   width={400}
                   height={300}
                   className="rounded-lg shadow-lg"
+                  transformation="preview"
                 />
               ))}
             </div>

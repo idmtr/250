@@ -1,16 +1,22 @@
 ---
-title: "Primeros pasos con nuestros servicios de consultoría"
-date: "2024-02-14"
-excerpt: "Descubre cómo nuestros galardonados servicios de consultoría pueden transformar tu espacio de coworking en un próspero centro comunitario."
-author: "Dimitar Inchev"
-authorRole: "Consultor Principal"
-authorImage: "/images/team/dimitar.jpg"
-coverImage: "/images/blog/consulting-services.jpg"
+title: Primeros pasos con nuestros servicios de consultoría
+date: '2024-02-14'
+excerpt: >-
+  Descubre cómo nuestros galardonados servicios de consultoría pueden
+  transformar tu espacio de coworking en un próspero centro comunitario.
+author: Dimitar Inchev
+authorRole: Consultor Principal
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg
+coverImage: /images/blog/consulting-services.jpg
 featured: true
-readingTime: "5 min read"
-tags: ["consultoría", "coworking", "primeros pasos"]
-slug: "getting-started"
-lang: "es"
+readingTime: 5 min read
+tags:
+  - consultoría
+  - coworking
+  - primeros pasos
+slug: getting-started
+lang: es
 ---
 
 # Primeros pasos con nuestros servicios de consultoría

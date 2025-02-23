@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image"
-// import CustomImage from "@/components/CustomImage";
 import type { Locale } from "@/i18n-config";
 
 interface ClientLogosProps {
@@ -11,15 +10,6 @@ interface ClientLogosProps {
     subtitle: string;
   };
 }
-
-// const PLACEHOLDER_LOGOS = [
-//   { src: '/images/placeholders/placeholder.svg', alt: 'alt={`Client logo ${i +  1}`}' },
-//   { src: '/images/placeholders/placeholder.svg', alt: 'alt={`Client logo ${i +  2}`}' },
-//   { src: '/images/placeholders/placeholder.svg', alt: 'alt={`Client logo ${i +  3}`}' },
-//   { src: '/images/placeholders/placeholder.svg', alt: 'alt={`Client logo ${i +  4}`}' },
-//   { src: '/images/placeholders/placeholder.svg', alt: 'alt={`Client logo ${i +  5}`}' },
-//   { src: '/images/placeholders/placeholder.svg', alt: 'alt={`Client logo ${i +  6}`}' },
-// ]
 
 export default function ClientLogos({ lang, dictionary }: ClientLogosProps) {
   if (!dictionary || !dictionary.title || !dictionary.subtitle) {

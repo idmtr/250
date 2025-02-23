@@ -31,6 +31,11 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
+        pathname: `/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/**`,
+      },
+      {
+        protocol: 'https',
+        hostname: '*.cloudinary.com', // Allow all Cloudinary subdomains
       },
       {
         protocol: 'https',

@@ -1,12 +1,11 @@
-import { writeFile, mkdir } from 'fs/promises'
-import { join } from 'path'
 import { NextRequest, NextResponse } from 'next/server'
+import { v2 as cloudinary } from 'cloudinary'
 
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData()
     const file = formData.get('file') as File
-    const folder = formData.get('folder') as string
+    let folder = formData.get('folder') as string || ''
 
     if (!file) {
       return NextResponse.json(
@@ -15,28 +14,37 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Normalize the folder path
+    folder = folder
+      .replace(/^\//, '')
+      .replace(/\/$/, '')
+      .replace(/^images\//, '')
+
     const bytes = await file.arrayBuffer()
     const buffer = Buffer.from(bytes)
 
-    // Create folders if they don't exist
-    const publicPath = join(process.cwd(), 'public')
-    const folderPath = join(publicPath, folder)
-    await mkdir(folderPath, { recursive: true })
+    // Upload to Cloudinary with normalized folder path
+    const result = await new Promise((resolve, reject) => {
+      cloudinary.uploader
+        .upload_stream(
+          {
+            folder: `twofifty/${folder}`,
+            resource_type: 'auto',
+            public_id: `${Date.now()}-${file.name.replace(/\.[^/.]+$/, '')}`,
+          },
+          (error, result) => {
+            if (error) reject(error)
+            else resolve(result)
+          }
+        )
+        .end(buffer)
+    })
 
-    // Generate unique filename
-    const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1E9)}`
-    const filename = file.name.replace(/\.[^/.]+$/, '') + '-' + uniqueSuffix + (file.name.match(/\.[^/.]+$/) || ['.jpg'])[0]
-    const filepath = join(folderPath, filename)
-
-    // Write file
-    await writeFile(filepath, buffer)
-
-    // Return public URL
-    return NextResponse.json({ url: `/${folder}/${filename}` })
+    return NextResponse.json(result)
   } catch (error) {
     console.error('Upload error:', error)
     return NextResponse.json(
-      { error: 'Upload failed' },
+      { error: `Upload failed: ${error.message}` },
       { status: 500 }
     )
   }

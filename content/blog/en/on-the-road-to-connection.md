@@ -1,25 +1,27 @@
 ---
-title: "On The Road to Connection: A Beat Journey Through Coworking Communities"
-date: "2024-10-10"
-excerpt: "Join us on a wild ride through the untamed territory of coworking spaces, where souls collide and magic happens in the raw energy of community building."
-author: "Community Wanderer"
-authorRole: "Community Wanderer"
-authorImage: "/images/team/twofifty-team.jpg"
-coverImage: "/images/blog/the-mad-ones-coworking-holy-fools.webp"
+title: 'On The Road to Connection: A Beat Journey Through Coworking Communities'
+date: '2024-10-10'
+excerpt: >-
+  Join us on a wild ride through the untamed territory of coworking spaces,
+  where souls collide and magic happens in the raw energy of community building.
+author: Community Wanderer
+authorRole: Community Wanderer
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302460/images/team/twofifty-team_ecvhkp.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302493/images/blog/the-mad-ones-coworking-holy-fools_q51vqz.webp
 featured: false
-readingTime: "12 min read"
+readingTime: 12 min read
 tags:
-  [
-    "coworking",
-    "community spirit",
-    "workspace vibes",
-    "spontaneous connections",
-    "urban tribes",
-    "workplace culture",
-    "human spirit"
-  ]
-slug: "on-the-road-to-connection"
-lang: "en"
+  - coworking
+  - community spirit
+  - workspace vibes
+  - spontaneous connections
+  - urban tribes
+  - workplace culture
+  - human spirit
+slug: on-the-road-to-connection
+lang: en
 published: true
 ---
 

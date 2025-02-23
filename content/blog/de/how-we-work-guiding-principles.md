@@ -1,22 +1,28 @@
 ---
-title: "Leitprinzipien bei TwoFifty: Wie wir arbeiten, zusammenarbeiten und gedeihen"
-date: "2025-02-21"
-excerpt: "Entdecken Sie die Kernprinzipien von TwoFifty, die unsere Projektauswahl, den Vertrauensaufbau und die Zusammenarbeit mit Kunden leiten. Erhalten Sie einen Einblick in unser Engagement für Transparenz, Verantwortlichkeit und effektive Teamarbeit."
-author: "TwoFifty Team"
-authorRole: "Kollektive Stimme von TwoFifty.co"
-authorImage: "/images/team/twofifty-team.jpg"
-coverImage: "/images/blog/how-we-wrok.webp"
+title: 'Leitprinzipien bei TwoFifty: Wie wir arbeiten, zusammenarbeiten und gedeihen'
+date: '2025-02-21'
+excerpt: >-
+  Entdecken Sie die Kernprinzipien von TwoFifty, die unsere Projektauswahl, den
+  Vertrauensaufbau und die Zusammenarbeit mit Kunden leiten. Erhalten Sie einen
+  Einblick in unser Engagement für Transparenz, Verantwortlichkeit und effektive
+  Teamarbeit.
+author: TwoFifty Team
+authorRole: Kollektive Stimme von TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302460/images/team/twofifty-team_ecvhkp.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302503/images/blog/how-we-wrok_pnpvhf.webp
 featured: true
-readingTime: "6-8 Min. Lesezeit"
+readingTime: 6-8 Min. Lesezeit
 tags:
-  - "collaboration"
-  - "teamwork principles"
-  - "client relationships"
-  - "transparency"
-  - "work culture"
-  - "TwoFifty consultancy"
-slug: "wie-wir-arbeiten-leitprinzipien"
-lang: "de"
+  - collaboration
+  - teamwork principles
+  - client relationships
+  - transparency
+  - work culture
+  - TwoFifty consultancy
+slug: wie-wir-arbeiten-leitprinzipien
+lang: de
 ---
 
 ## Willkommen bei TwoFifty!

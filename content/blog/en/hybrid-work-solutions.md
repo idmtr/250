@@ -1,16 +1,23 @@
 ---
-title: "Implementing Successful Hybrid Work Solutions"
-date: "2024-02-06"
-excerpt: "Discover how to create effective hybrid work environments that blend remote and in-person collaboration seamlessly."
-author: "Dimitar Inchev"
-authorRole: "Workspace Consultant"
-authorImage: "/images/team/twofifty-team.jpg"
-coverImage: "/images/blog/hybrid-solutions.webp"
+title: Implementing Successful Hybrid Work Solutions
+date: '2024-02-06'
+excerpt: >-
+  Discover how to create effective hybrid work environments that blend remote
+  and in-person collaboration seamlessly.
+author: Dimitar Inchev
+authorRole: Workspace Consultant
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302460/images/team/twofifty-team_ecvhkp.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302502/images/blog/hybrid-solutions_fkoaiy.webp
 featured: false
-readingTime: "6 min read"
-tags: ["hybrid work", "technology", "collaboration"]
-slug: "hybrid-work-solutions"
-lang: "en"
+readingTime: 6 min read
+tags:
+  - hybrid work
+  - technology
+  - collaboration
+slug: hybrid-work-solutions
+lang: en
 published: false
 ---
 

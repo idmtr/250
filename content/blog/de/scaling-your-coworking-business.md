@@ -1,24 +1,35 @@
 ---
-title: "Skalierung von Coworking Spaces: Ein strategischer Wachstumsleitfaden für 2025 von TwoFifty Consulting"
-date: "2024-02-11"
-excerpt: "TwoFifty Consulting unterstützt Coworking Spaces dabei, Skalierungsherausforderungen durch strategische Planung, optimierte Abläufe und community-orientierte Initiativen für nachhaltiges Wachstum im Jahr 2025 zu überwinden."
-metaDescription: "Stehen Sie vor Herausforderungen bei der Skalierung Ihres Coworking-Geschäfts? TwoFifty Consulting bietet Ihnen eine strategische Roadmap zur Optimierung von Umsatz, Betrieb und Community-Engagement. Vereinbaren Sie eine Beratung."
-author: "Dimitar Inchev"
-authorRole: "TwoFifty.co Partner"
-authorImage: "/images/team/dimitar.jpg"
-coverImage: "/images/blog/scaling-coworking-business.webp"
+title: >-
+  Skalierung von Coworking Spaces: Ein strategischer Wachstumsleitfaden für 2025
+  von TwoFifty Consulting
+date: '2024-02-11'
+excerpt: >-
+  TwoFifty Consulting unterstützt Coworking Spaces dabei,
+  Skalierungsherausforderungen durch strategische Planung, optimierte Abläufe
+  und community-orientierte Initiativen für nachhaltiges Wachstum im Jahr 2025
+  zu überwinden.
+metaDescription: >-
+  Stehen Sie vor Herausforderungen bei der Skalierung Ihres Coworking-Geschäfts?
+  TwoFifty Consulting bietet Ihnen eine strategische Roadmap zur Optimierung von
+  Umsatz, Betrieb und Community-Engagement. Vereinbaren Sie eine Beratung.
+author: Dimitar Inchev
+authorRole: TwoFifty.co Partner
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302501/images/blog/scaling-coworking-business_coebsw.webp
 featured: false
-readingTime: "15 Min. Lesezeit"
+readingTime: 15 Min. Lesezeit
 tags:
-  - "coworking business growth"
-  - "space scaling strategy"
-  - "operational excellence"
-  - "community management"
-  - "coworking operations"
-  - "business expansion"
-  - "workspace management"
-slug: "scaling-your-coworking-business"
-lang: "en"
+  - coworking business growth
+  - space scaling strategy
+  - operational excellence
+  - community management
+  - coworking operations
+  - business expansion
+  - workspace management
+slug: scaling-your-coworking-business
+lang: en
 published: true
 ---
 

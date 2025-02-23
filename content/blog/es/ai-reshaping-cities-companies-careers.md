@@ -1,25 +1,31 @@
 ---
-title: "Cómo la inteligencia artificial transformará nuestras ciudades, empresas y carreras"
-date: "2025-02-21"
-excerpt: "Explora cómo la inteligencia artificial está transformando los paisajes urbanos, las estrategias corporativas y las trayectorias profesionales. Sumérgete en ejemplos del mundo real, análisis basados en datos y los desafíos y oportunidades que presenta la IA para un futuro más inteligente e innovador."
-author: "Dimitar Inchev"
-authorRole: "Voz colectiva de TwoFifty.co"
-authorImage: "/images/team/dimitar.jpg"
-coverImage: "/images/blog/ai-reshaping-future.jpeg"
+title: >-
+  Cómo la inteligencia artificial transformará nuestras ciudades, empresas y
+  carreras
+date: '2025-02-21'
+excerpt: >-
+  Explora cómo la inteligencia artificial está transformando los paisajes
+  urbanos, las estrategias corporativas y las trayectorias profesionales.
+  Sumérgete en ejemplos del mundo real, análisis basados en datos y los desafíos
+  y oportunidades que presenta la IA para un futuro más inteligente e innovador.
+author: Dimitar Inchev
+authorRole: Voz colectiva de TwoFifty.co
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302510/images/blog/ai-reshaping-future_ashrc9.jpg
 featured: false
-readingTime: "10-12 min de lectura"
+readingTime: 10-12 min de lectura
 tags:
-  [
-    "inteligencia artificial",
-    "ciudades inteligentes",
-    "innovación corporativa",
-    "futuro del trabajo",
-    "transformación por IA",
-    "sostenibilidad",
-    "tendencias tecnológicas"
-  ]
-slug: "ia-transformando-ciudades-empresas-carreras"
-lang: "es"
+  - inteligencia artificial
+  - ciudades inteligentes
+  - innovación corporativa
+  - futuro del trabajo
+  - transformación por IA
+  - sostenibilidad
+  - tendencias tecnológicas
+slug: ia-transformando-ciudades-empresas-carreras
+lang: es
 published: true
 ---
 

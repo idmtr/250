@@ -1,0 +1,474 @@
+{
+  "mappings": [
+    {
+      "localPath": "public/images/placeholder.svg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302456/images/placeholder_i6nhov.svg",
+      "folder": "images",
+      "size": 3253,
+      "uploadedAt": "2025-02-23T09:20:58.360Z",
+      "publicId": "images/placeholder_i6nhov"
+    },
+    {
+      "localPath": "public/images/workshops/workshop.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302458/images/workshops/workshop_fb3ci4.jpg",
+      "folder": "images/workshops",
+      "size": 73042,
+      "uploadedAt": "2025-02-23T09:20:59.273Z",
+      "publicId": "images/workshops/workshop_fb3ci4"
+    },
+    {
+      "localPath": "public/images/workshops/presentations.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302459/images/workshops/presentations_lykmbc.jpg",
+      "folder": "images/workshops",
+      "size": 91674,
+      "uploadedAt": "2025-02-23T09:21:00.311Z",
+      "publicId": "images/workshops/presentations_lykmbc"
+    },
+    {
+      "localPath": "public/images/team/twofifty-team.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302460/images/team/twofifty-team_ecvhkp.jpg",
+      "folder": "images/team",
+      "size": 153445,
+      "uploadedAt": "2025-02-23T09:21:01.235Z",
+      "publicId": "images/team/twofifty-team_ecvhkp"
+    },
+    {
+      "localPath": "public/images/team/pauline.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302461/images/team/pauline_h3fh0v.jpg",
+      "folder": "images/team",
+      "size": 20325,
+      "uploadedAt": "2025-02-23T09:21:02.161Z",
+      "publicId": "images/team/pauline_h3fh0v"
+    },
+    {
+      "localPath": "public/images/team/pauline-full.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302462/images/team/pauline-full_onzqiy.jpg",
+      "folder": "images/team",
+      "size": 219167,
+      "uploadedAt": "2025-02-23T09:21:03.127Z",
+      "publicId": "images/team/pauline-full_onzqiy"
+    },
+    {
+      "localPath": "public/images/team/mariya.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302463/images/team/mariya_vtgs37.webp",
+      "folder": "images/team",
+      "size": 233440,
+      "uploadedAt": "2025-02-23T09:21:04.299Z",
+      "publicId": "images/team/mariya_vtgs37"
+    },
+    {
+      "localPath": "public/images/team/dimitar.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302464/images/team/dimitar_nmeo81.jpg",
+      "folder": "images/team",
+      "size": 19452,
+      "uploadedAt": "2025-02-23T09:21:05.172Z",
+      "publicId": "images/team/dimitar_nmeo81"
+    },
+    {
+      "localPath": "public/images/team/dimitar-full.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302465/images/team/dimitar-full_g77zy5.jpg",
+      "folder": "images/team",
+      "size": 66791,
+      "uploadedAt": "2025-02-23T09:21:06.039Z",
+      "publicId": "images/team/dimitar-full_g77zy5"
+    },
+    {
+      "localPath": "public/images/team/coworkies-logo.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302466/images/team/coworkies-logo_w7nzqp.png",
+      "folder": "images/team",
+      "size": 12991,
+      "uploadedAt": "2025-02-23T09:21:06.960Z",
+      "publicId": "images/team/coworkies-logo_w7nzqp"
+    },
+    {
+      "localPath": "public/images/speaking/vivatech.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302467/images/speaking/vivatech_tpmti2.jpg",
+      "folder": "images/speaking",
+      "size": 90930,
+      "uploadedAt": "2025-02-23T09:21:07.843Z",
+      "publicId": "images/speaking/vivatech_tpmti2"
+    },
+    {
+      "localPath": "public/images/speaking/hackathon-3.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302468/images/speaking/hackathon-3_vf3cdv.jpg",
+      "folder": "images/speaking",
+      "size": 32536,
+      "uploadedAt": "2025-02-23T09:21:08.595Z",
+      "publicId": "images/speaking/hackathon-3_vf3cdv"
+    },
+    {
+      "localPath": "public/images/speaking/hackathon-2.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302469/images/speaking/hackathon-2_j1pbjq.jpg",
+      "folder": "images/speaking",
+      "size": 49287,
+      "uploadedAt": "2025-02-23T09:21:09.412Z",
+      "publicId": "images/speaking/hackathon-2_j1pbjq"
+    },
+    {
+      "localPath": "public/images/speaking/hackathon-1.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302469/images/speaking/hackathon-1_zeavto.jpg",
+      "folder": "images/speaking",
+      "size": 68347,
+      "uploadedAt": "2025-02-23T09:21:10.404Z",
+      "publicId": "images/speaking/hackathon-1_zeavto"
+    },
+    {
+      "localPath": "public/images/speaking/educate.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302470/images/speaking/educate_wjlisv.jpg",
+      "folder": "images/speaking",
+      "size": 42927,
+      "uploadedAt": "2025-02-23T09:21:11.252Z",
+      "publicId": "images/speaking/educate_wjlisv"
+    },
+    {
+      "localPath": "public/images/speaking/conferences.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302471/images/speaking/conferences_wjmgjx.jpg",
+      "folder": "images/speaking",
+      "size": 72359,
+      "uploadedAt": "2025-02-23T09:21:12.126Z",
+      "publicId": "images/speaking/conferences_wjmgjx"
+    },
+    {
+      "localPath": "public/images/placeholders/placeholder.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302472/images/placeholders/placeholder_eipmhp.webp",
+      "folder": "images/placeholders",
+      "size": 728362,
+      "uploadedAt": "2025-02-23T09:21:13.124Z",
+      "publicId": "images/placeholders/placeholder_eipmhp"
+    },
+    {
+      "localPath": "public/images/placeholders/placeholder.svg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302473/images/placeholders/placeholder_jatxbs.svg",
+      "folder": "images/placeholders",
+      "size": 3253,
+      "uploadedAt": "2025-02-23T09:21:15.136Z",
+      "publicId": "images/placeholders/placeholder_jatxbs"
+    },
+    {
+      "localPath": "public/images/pages/workspace-building-sketch.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302475/images/pages/workspace-building-sketch_mdr9jc.png",
+      "folder": "images/pages",
+      "size": 464889,
+      "uploadedAt": "2025-02-23T09:21:16.159Z",
+      "publicId": "images/pages/workspace-building-sketch_mdr9jc"
+    },
+    {
+      "localPath": "public/images/pages/twofifty-coworking-consulting-service.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302476/images/pages/twofifty-coworking-consulting-service_drvax1.jpg",
+      "folder": "images/pages",
+      "size": 166045,
+      "uploadedAt": "2025-02-23T09:21:17.085Z",
+      "publicId": "images/pages/twofifty-coworking-consulting-service_drvax1"
+    },
+    {
+      "localPath": "public/images/pages/twofifty-coworkies-founders-portrait.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302477/images/pages/twofifty-coworkies-founders-portrait_dxrd2e.jpg",
+      "folder": "images/pages",
+      "size": 359988,
+      "uploadedAt": "2025-02-23T09:21:18.064Z",
+      "publicId": "images/pages/twofifty-coworkies-founders-portrait_dxrd2e"
+    },
+    {
+      "localPath": "public/images/pages/twofiflty-workshops2.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302478/images/pages/twofiflty-workshops2_s69jih.png",
+      "folder": "images/pages",
+      "size": 260367,
+      "uploadedAt": "2025-02-23T09:21:19.076Z",
+      "publicId": "images/pages/twofiflty-workshops2_s69jih"
+    },
+    {
+      "localPath": "public/images/pages/two-fifty-co-bw-sml.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302479/images/pages/two-fifty-co-bw-sml_qn74ma.jpg",
+      "folder": "images/pages",
+      "size": 78024,
+      "uploadedAt": "2025-02-23T09:21:19.892Z",
+      "publicId": "images/pages/two-fifty-co-bw-sml_qn74ma"
+    },
+    {
+      "localPath": "public/images/pages/morocco-coworking-retreat.jpeg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302480/images/pages/morocco-coworking-retreat_jqq3n2.jpg",
+      "folder": "images/pages",
+      "size": 113497,
+      "uploadedAt": "2025-02-23T09:21:20.770Z",
+      "publicId": "images/pages/morocco-coworking-retreat_jqq3n2"
+    },
+    {
+      "localPath": "public/images/pages/hot-water-podcast.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302481/images/pages/hot-water-podcast_rnyoki.png",
+      "folder": "images/pages",
+      "size": 4831,
+      "uploadedAt": "2025-02-23T09:21:21.574Z",
+      "publicId": "images/pages/hot-water-podcast_rnyoki"
+    },
+    {
+      "localPath": "public/images/pages/hack-coworking-logo.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302482/images/pages/hack-coworking-logo_tv7csa.png",
+      "folder": "images/pages",
+      "size": 2321,
+      "uploadedAt": "2025-02-23T09:21:22.378Z",
+      "publicId": "images/pages/hack-coworking-logo_tv7csa"
+    },
+    {
+      "localPath": "public/images/pages/coworking-travel.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302482/images/pages/coworking-travel_drvqnf.jpg",
+      "folder": "images/pages",
+      "size": 110002,
+      "uploadedAt": "2025-02-23T09:21:23.270Z",
+      "publicId": "images/pages/coworking-travel_drvqnf"
+    },
+    {
+      "localPath": "public/images/pages/coworking-education-workshhop-copenhagen.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302483/images/pages/coworking-education-workshhop-copenhagen_nmsjow.jpg",
+      "folder": "images/pages",
+      "size": 67407,
+      "uploadedAt": "2025-02-23T09:21:24.038Z",
+      "publicId": "images/pages/coworking-education-workshhop-copenhagen_nmsjow"
+    },
+    {
+      "localPath": "public/images/pages/coworking-education-workshhop-copenhagen-2.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302484/images/pages/coworking-education-workshhop-copenhagen-2_d8whyn.jpg",
+      "folder": "images/pages",
+      "size": 73320,
+      "uploadedAt": "2025-02-23T09:21:24.965Z",
+      "publicId": "images/pages/coworking-education-workshhop-copenhagen-2_d8whyn"
+    },
+    {
+      "localPath": "public/images/pages/coworking-book-cover.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302485/images/pages/coworking-book-cover_yusy5e.jpg",
+      "folder": "images/pages",
+      "size": 33678,
+      "uploadedAt": "2025-02-23T09:21:25.794Z",
+      "publicId": "images/pages/coworking-book-cover_yusy5e"
+    },
+    {
+      "localPath": "public/images/pages/coworkies-teach.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302486/images/pages/coworkies-teach_ho15ue.jpg",
+      "folder": "images/pages",
+      "size": 84748,
+      "uploadedAt": "2025-02-23T09:21:26.623Z",
+      "publicId": "images/pages/coworkies-teach_ho15ue"
+    },
+    {
+      "localPath": "public/images/pages/coworkies-manhattan-coworking-event.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302487/images/pages/coworkies-manhattan-coworking-event_nblqwa.jpg",
+      "folder": "images/pages",
+      "size": 91674,
+      "uploadedAt": "2025-02-23T09:21:27.617Z",
+      "publicId": "images/pages/coworkies-manhattan-coworking-event_nblqwa"
+    },
+    {
+      "localPath": "public/images/pages/coworkies-logo.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302488/images/pages/coworkies-logo_mvpboa.png",
+      "folder": "images/pages",
+      "size": 2909,
+      "uploadedAt": "2025-02-23T09:21:28.551Z",
+      "publicId": "images/pages/coworkies-logo_mvpboa"
+    },
+    {
+      "localPath": "public/images/pages/contact-us-space.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302489/images/pages/contact-us-space_h1ey90.webp",
+      "folder": "images/pages",
+      "size": 183522,
+      "uploadedAt": "2025-02-23T09:21:30.029Z",
+      "publicId": "images/pages/contact-us-space_h1ey90"
+    },
+    {
+      "localPath": "public/images/pages/community-managers-group.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302490/images/pages/community-managers-group_glare1.png",
+      "folder": "images/pages",
+      "size": 11530,
+      "uploadedAt": "2025-02-23T09:21:30.903Z",
+      "publicId": "images/pages/community-managers-group_glare1"
+    },
+    {
+      "localPath": "public/images/pages/at-work-coworking.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302491/images/pages/at-work-coworking_klfw1g.jpg",
+      "folder": "images/pages",
+      "size": 71105,
+      "uploadedAt": "2025-02-23T09:21:31.926Z",
+      "publicId": "images/pages/at-work-coworking_klfw1g"
+    },
+    {
+      "localPath": "public/images/pages/The-Community-Managers-Retreat.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302492/images/pages/The-Community-Managers-Retreat_cgq1ct.png",
+      "folder": "images/pages",
+      "size": 491911,
+      "uploadedAt": "2025-02-23T09:21:33.052Z",
+      "publicId": "images/pages/The-Community-Managers-Retreat_cgq1ct"
+    },
+    {
+      "localPath": "public/images/blog/the-mad-ones-coworking-holy-fools.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302493/images/blog/the-mad-ones-coworking-holy-fools_q51vqz.webp",
+      "folder": "images/blog",
+      "size": 405290,
+      "uploadedAt": "2025-02-23T09:21:34.297Z",
+      "publicId": "images/blog/the-mad-ones-coworking-holy-fools_q51vqz"
+    },
+    {
+      "localPath": "public/images/blog/the-berar-cooking-learningtogether.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302494/images/blog/the-berar-cooking-learningtogether_enm3tl.webp",
+      "folder": "images/blog",
+      "size": 250600,
+      "uploadedAt": "2025-02-23T09:21:35.219Z",
+      "publicId": "images/blog/the-berar-cooking-learningtogether_enm3tl"
+    },
+    {
+      "localPath": "public/images/blog/the-bera-carmy.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302495/images/blog/the-bera-carmy_nabw9l.jpg",
+      "folder": "images/blog",
+      "size": 127303,
+      "uploadedAt": "2025-02-23T09:21:36.216Z",
+      "publicId": "images/blog/the-bera-carmy_nabw9l"
+    },
+    {
+      "localPath": "public/images/blog/the-bear-team.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302496/images/blog/the-bear-team_xfiu3u.jpg",
+      "folder": "images/blog",
+      "size": 137137,
+      "uploadedAt": "2025-02-23T09:21:37.026Z",
+      "publicId": "images/blog/the-bear-team_xfiu3u"
+    },
+    {
+      "localPath": "public/images/blog/the-bear-richie.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302497/images/blog/the-bear-richie_otpsd2.jpg",
+      "folder": "images/blog",
+      "size": 266499,
+      "uploadedAt": "2025-02-23T09:21:38.077Z",
+      "publicId": "images/blog/the-bear-richie_otpsd2"
+    },
+    {
+      "localPath": "public/images/blog/the-bear-richie-forks-seasin2.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302498/images/blog/the-bear-richie-forks-seasin2_thhen7.jpg",
+      "folder": "images/blog",
+      "size": 196612,
+      "uploadedAt": "2025-02-23T09:21:38.869Z",
+      "publicId": "images/blog/the-bear-richie-forks-seasin2_thhen7"
+    },
+    {
+      "localPath": "public/images/blog/the-bear-coworking-advice.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302499/images/blog/the-bear-coworking-advice_yot1tr.jpg",
+      "folder": "images/blog",
+      "size": 295057,
+      "uploadedAt": "2025-02-23T09:21:39.728Z",
+      "publicId": "images/blog/the-bear-coworking-advice_yot1tr"
+    },
+    {
+      "localPath": "public/images/blog/the-bear-all-characters.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302500/images/blog/the-bear-all-characters_w3ypwe.jpg",
+      "folder": "images/blog",
+      "size": 794092,
+      "uploadedAt": "2025-02-23T09:21:40.664Z",
+      "publicId": "images/blog/the-bear-all-characters_w3ypwe"
+    },
+    {
+      "localPath": "public/images/blog/scaling-coworking-business.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302501/images/blog/scaling-coworking-business_coebsw.webp",
+      "folder": "images/blog",
+      "size": 282880,
+      "uploadedAt": "2025-02-23T09:21:41.475Z",
+      "publicId": "images/blog/scaling-coworking-business_coebsw"
+    },
+    {
+      "localPath": "public/images/blog/on-the-road-to-connection.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302501/images/blog/on-the-road-to-connection_qgiiln.jpg",
+      "folder": "images/blog",
+      "size": 51883,
+      "uploadedAt": "2025-02-23T09:21:42.296Z",
+      "publicId": "images/blog/on-the-road-to-connection_qgiiln"
+    },
+    {
+      "localPath": "public/images/blog/hybrid-solutions.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302502/images/blog/hybrid-solutions_fkoaiy.webp",
+      "folder": "images/blog",
+      "size": 290282,
+      "uploadedAt": "2025-02-23T09:21:43.244Z",
+      "publicId": "images/blog/hybrid-solutions_fkoaiy"
+    },
+    {
+      "localPath": "public/images/blog/how-we-wrok.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302503/images/blog/how-we-wrok_pnpvhf.webp",
+      "folder": "images/blog",
+      "size": 184170,
+      "uploadedAt": "2025-02-23T09:21:44.249Z",
+      "publicId": "images/blog/how-we-wrok_pnpvhf"
+    },
+    {
+      "localPath": "public/images/blog/fiji.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302504/images/blog/fiji_smmcs0.jpg",
+      "folder": "images/blog",
+      "size": 69814,
+      "uploadedAt": "2025-02-23T09:21:45.187Z",
+      "publicId": "images/blog/fiji_smmcs0"
+    },
+    {
+      "localPath": "public/images/blog/coworking-tech-stack-2025.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302505/images/blog/coworking-tech-stack-2025_wkfyvm.webp",
+      "folder": "images/blog",
+      "size": 302254,
+      "uploadedAt": "2025-02-23T09:21:46.112Z",
+      "publicId": "images/blog/coworking-tech-stack-2025_wkfyvm"
+    },
+    {
+      "localPath": "public/images/blog/coworking-revenue.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302506/images/blog/coworking-revenue_omi11f.webp",
+      "folder": "images/blog",
+      "size": 380498,
+      "uploadedAt": "2025-02-23T09:21:47.112Z",
+      "publicId": "images/blog/coworking-revenue_omi11f"
+    },
+    {
+      "localPath": "public/images/blog/coworking-revenue-struggles.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302507/images/blog/coworking-revenue-struggles_ztx2pu.webp",
+      "folder": "images/blog",
+      "size": 283346,
+      "uploadedAt": "2025-02-23T09:21:48.113Z",
+      "publicId": "images/blog/coworking-revenue-struggles_ztx2pu"
+    },
+    {
+      "localPath": "public/images/blog/community-building-essentials.webp",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302508/images/blog/community-building-essentials_tt9a5c.webp",
+      "folder": "images/blog",
+      "size": 227468,
+      "uploadedAt": "2025-02-23T09:21:49.025Z",
+      "publicId": "images/blog/community-building-essentials_tt9a5c"
+    },
+    {
+      "localPath": "public/images/blog/carmy-and-richie-in-the-bear.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302509/images/blog/carmy-and-richie-in-the-bear_bhf4gw.jpg",
+      "folder": "images/blog",
+      "size": 98811,
+      "uploadedAt": "2025-02-23T09:21:49.867Z",
+      "publicId": "images/blog/carmy-and-richie-in-the-bear_bhf4gw"
+    },
+    {
+      "localPath": "public/images/blog/ai-reshaping-future.jpeg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302510/images/blog/ai-reshaping-future_ashrc9.jpg",
+      "folder": "images/blog",
+      "size": 136655,
+      "uploadedAt": "2025-02-23T09:21:50.737Z",
+      "publicId": "images/blog/ai-reshaping-future_ashrc9"
+    },
+    {
+      "localPath": "public/images/blog/Downtown-Chicago-Tour-Mr-Beef.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302511/images/blog/Downtown-Chicago-Tour-Mr-Beef_zmqtnp.jpg",
+      "folder": "images/blog",
+      "size": 346131,
+      "uploadedAt": "2025-02-23T09:21:51.689Z",
+      "publicId": "images/blog/Downtown-Chicago-Tour-Mr-Beef_zmqtnp"
+    },
+    {
+      "localPath": "public/images/blog/1018-1280x720.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302512/images/blog/1018-1280x720_aiam7q.jpg",
+      "folder": "images/blog",
+      "size": 122198,
+      "uploadedAt": "2025-02-23T09:21:52.542Z",
+      "publicId": "images/blog/1018-1280x720_aiam7q"
+    }
+  ],
+  "stats": {
+    "totalProcessed": 58,
+    "totalUploaded": 58,
+    "totalExisting": 0,
+    "totalSize": 9902329
+  }
+}

@@ -1,16 +1,23 @@
 ---
-title: "Estrategias esenciales para construir una comunidad de coworking próspera"
-date: "2024-02-13"
-excerpt: "Aprende técnicas basadas en datos para fomentar el compromiso, la inclusión y un sentido de pertenencia duradero en tu espacio de coworking."
-author: "Pauline Roussel"
-authorRole: "Estratega Comunitaria"
-authorImage: "/images/team/pauline.jpg"
-coverImage: "/images/blog/community-building-essentials.webp"
+title: Estrategias esenciales para construir una comunidad de coworking próspera
+date: '2024-02-13'
+excerpt: >-
+  Aprende técnicas basadas en datos para fomentar el compromiso, la inclusión y
+  un sentido de pertenencia duradero en tu espacio de coworking.
+author: Pauline Roussel
+authorRole: Estratega Comunitaria
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302461/images/team/pauline_h3fh0v.jpg
+coverImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302508/images/blog/community-building-essentials_tt9a5c.webp
 featured: false
-readingTime: "10-12 min de lectura"
-tags: ["comunidad", "compromiso", "eventos"]
-slug: "esenciales-construccion-comunidad"
-lang: "es"
+readingTime: 10-12 min de lectura
+tags:
+  - comunidad
+  - compromiso
+  - eventos
+slug: esenciales-construccion-comunidad
+lang: es
 published: true
 ---
 

@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 import { getValidatedParams } from "@/lib/params-helper";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import Image from "next/image";
+import { SmartImage } from "@/components/common/SmartImage";
 import { formatDate } from "@/lib/utils";
 // import CustomImage from "@/components/CustomImage";
 import BlogGrid from "@/components/BlogGrid";
@@ -254,12 +254,13 @@ export default async function BlogPost({ params }: Props) {
               {post.author && (
                 <div className="flex items-center">
                   {post.authorImage && (
-                    <Image
+                    <SmartImage
                       src={post.authorImage}
                       alt={post.author}
                       width={40}
                       height={40}
                       className="rounded-full mr-2"
+                      transformation="avatar"
                     />
                   )}
                   <span>
@@ -288,19 +289,34 @@ export default async function BlogPost({ params }: Props) {
 
           {post.coverImage && (
             <figure className="relative h-[460px] mb-8">
-              <Image
+              <SmartImage
                 src={post.coverImage}
                 alt={post.title || "Blog post cover image"}
                 fill
                 className="object-cover rounded-lg"
-                priority // Add priority loading for cover images
+                priority
+                transformation="blogCover"
               />
             </figure>
           )}
 
           <div
-            className="prose prose-lg max-w-none"
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            className="prose prose-lg max-w-none prose-img:rounded-lg"
+            dangerouslySetInnerHTML={{
+              __html: post.content.replace(
+                /<img([^>]+)src="([^"]+)"([^>]*)>/g,
+                (match, before, src, after) => {
+                  const alt = /alt="([^"]+)"/.exec(match)?.[1] || ''
+                  return `<div class="relative aspect-[16/9] my-8">
+                    <img${before}src="${getImageInfo(src).url}"${after} 
+                      alt="${alt}"
+                      class="rounded-lg object-cover"
+                      loading="lazy"
+                    />
+                  </div>`
+                }
+              )
+            }}
           />
 
           {post.tags && post.tags.length > 0 && (

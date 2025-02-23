@@ -1,27 +1,30 @@
 ---
-title: "Coworking Tech Stacks by Region: Essential Tools for 2025"
-date: "2025-01-16"
-excerpt: "Explore the tech stacks powering coworking spaces in the USA, Europe, Southeast Asia, South America, and Africa. Learn about top tools for booking, billing, community, access, and Wi-Fi, tailored to regional needs. Updated for 2025!"
-author: "Pauline Roussel"
-authorRole: "Community Strategist"
-authorImage: "/images/team/mariya.webp"
-coverImage: "https://picsum.photos/1280/720"
+title: 'Coworking Tech Stacks by Region: Essential Tools for 2025'
+date: '2025-01-16'
+excerpt: >-
+  Explore the tech stacks powering coworking spaces in the USA, Europe,
+  Southeast Asia, South America, and Africa. Learn about top tools for booking,
+  billing, community, access, and Wi-Fi, tailored to regional needs. Updated for
+  2025!
+author: Pauline Roussel
+authorRole: Community Strategist
+authorImage: >-
+  https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302463/images/team/mariya_vtgs37.webp
+coverImage: 'https://picsum.photos/1280/720'
 featured: false
-readingTime: "12-15 min read"
+readingTime: 12-15 min read
 tags:
-  [
-    "coworking tech stack",
-    "regional coworking tools",
-    "booking software",
-    "billing systems",
-    "community platforms",
-    "access control",
-    "Wi-Fi management",
-    "global coworking trends",
-    "coworking technology"
-  ]
-slug: "coworking-tech-stacks-by-region"
-lang: "en"
+  - coworking tech stack
+  - regional coworking tools
+  - booking software
+  - billing systems
+  - community platforms
+  - access control
+  - Wi-Fi management
+  - global coworking trends
+  - coworking technology
+slug: coworking-tech-stacks-by-region
+lang: en
 published: false
 ---
 
