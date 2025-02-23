@@ -52,7 +52,8 @@ export default async function ContactPage(props: Props) {
               <div className="relative h-[600px]">
                 <Image
                   // src="/images/placeholders/placeholder.svg"
-                  src="/images/pages/contact-us-space.webp"
+                  // src="/images/pages/contact-us-space.webp"
+                  src="https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740253441/images/blog/qsdq4c4xeplgvlwcsgfj.webp"
                   alt="team 250co"
                   fill
                   className="object-cover rounded-lg"

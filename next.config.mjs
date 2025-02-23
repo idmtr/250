@@ -29,8 +29,8 @@ const nextConfig = {
         pathname: '/wp-content/uploads/**',
       },
       {
-        protocol: 'http',
-        hostname: 'www.fillmurray.com',
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
       },
       {
         protocol: 'https',
