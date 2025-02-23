@@ -1,3 +1,11 @@
 User-agent: *
 Allow: /
-Disallow: /*/blog/tag/
+
+# Old URLs
+Disallow: /speaking/
+Disallow: /presentations-workshops/
+Disallow: /coworking-community-retreats/
+Disallow: /fr/coworking-mission-francais/
+
+# Sitemap
+Sitemap: https://twofifty.co/sitemap.xml

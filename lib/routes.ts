@@ -104,7 +104,7 @@ export const routes: Record<string, LocalizedRouteConfig> = {
   retreats: {
     standard: "retreats",
     localized: {
-      en: { path: "community-retreats", title: "Community Retreats" },
+      en: { path: "community-retreats", title: "Coworking Community Retreats" },
       fr: {
         path: "retraites-communautaires",
         title: "Retraites Communautaires",

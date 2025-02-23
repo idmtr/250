@@ -1,8 +1,32 @@
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
 let userConfig = undefined
 try {
   userConfig = await import('./v0-user-next.config')
 } catch (e) {
   // ignore error
+}
+
+function parseRedirects() {
+  try {
+    const content = readFileSync(join(process.cwd(), 'public/_redirects'), 'utf8')
+    return content
+      .split('\n')
+      .filter(line => line && !line.startsWith('#'))
+      .map(line => {
+        const [from, to, code] = line.trim().split(/\s+/)
+        return {
+          source: from,
+          destination: to,
+          permanent: code === '308'
+        }
+      })
+      .filter(redirect => redirect.source && redirect.destination)
+  } catch (error) {
+    console.warn('No _redirects file found or error reading it:', error)
+    return []
+  }
 }
 
 /** @type {import('next').NextConfig} */
@@ -58,6 +82,9 @@ const nextConfig = {
         destination: '/images/:path*',
       },
     ]
+  },
+  async redirects() {
+    return parseRedirects()
   },
   webpack(config) {
     config.module.rules.push({

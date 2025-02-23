@@ -1,0 +1,46 @@
+# English redirects
+/speaking                          /en/speaking-events              308
+/presentations-workshops           /en/workshops                    308
+/coworking-community-retreats     /en/community-retreats          308
+/coworking-consulting-services    /en/coworking-consulting-services 308
+/about                            /en/about                        308
+/our-coworking-mission           /en/our-mission                  308
+/coworking-education             /en/coworking-education          308
+/privacy                         /en/privacy                       308
+/contact                         /en/contact                       308
+
+# Handle trailing slashes
+/speaking/                        /en/speaking-events              308
+/presentations-workshops/         /en/workshops                    308
+/coworking-community-retreats/   /en/community-retreats          308
+/coworking-consulting-services/  /en/coworking-consulting-services 308
+/about/                          /en/about                        308
+/our-coworking-mission/         /en/our-mission                  308
+/coworking-education/           /en/coworking-education          308
+/privacy/                       /en/privacy                       308
+/contact/                       /en/contact                       308
+
+# French redirects
+/fr/coworking-mission-francais   /fr/notre-mission               308
+/fr/interventions-evenements     /fr/conferences                 308
+/fr/privacy-fr                   /fr/privacy                     308
+/fr/a-propos                     /fr/a-propos                    308
+/fr/nos-presentations-workshops  /fr/ateliers                    308
+
+# French with trailing slashes
+/fr/coworking-mission-francais/  /fr/notre-mission               308
+/fr/interventions-evenements/    /fr/conferences                 308
+/fr/privacy-fr/                  /fr/privacy                     308
+/fr/a-propos/                    /fr/a-propos                    308
+/fr/nos-presentations-workshops/ /fr/ateliers                    308
+
+# German redirects
+/de/uberuns                      /de/ueber-uns                   308
+/de/privacy-de                   /de/privacy                     308
+
+# German with trailing slashes
+/de/uberuns/                     /de/ueber-uns                   308
+/de/privacy-de/                  /de/privacy                     308
+
+# Root path handling
+/                               /en                              308
