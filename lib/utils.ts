@@ -10,7 +10,8 @@ export const formatDate = (date: string, locale: string): string => {
     return new Date(date).toLocaleDateString(locale, {
       year: 'numeric',
       month: 'long',
-      day: 'numeric'
+      day: 'numeric',
+      timeZone: 'UTC'
     });
   } catch (error) {
     console.error('Error formatting date:', error);

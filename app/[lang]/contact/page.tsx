@@ -6,7 +6,7 @@ import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
 import { generatePageMetadata } from "@/lib/metadata";
-import { routes } from "@/lib/routes";
+import { routes } from "@/lib/url-utils";
 
 type Props = {
   params: { lang: Locale };
@@ -23,8 +23,6 @@ export async function generateMetadata({ params }: Props) {
   return generatePageMetadata({
     lang,
     path: currentPath, // Use the localized path
-    title: contactRoute.localized[lang].title,
-    description: dictionary.contact.hero.description,
   });
 }
 
