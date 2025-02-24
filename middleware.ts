@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { i18n } from "./i18n-config";
+import { i18n } from "@/i18n-config";
 import { getLocalizedPath, getStandardPath, routes } from "./lib/url-utils";
 
 // Helper function for tag URL generation
@@ -23,15 +23,30 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Skip middleware for static files, API routes, and sitemap
+  // Check if it's an admin-login attempt with language prefix
+  if (pathname.match(/^\/[a-z]{2}\/admin-login$/)) {
+    return NextResponse.redirect(new URL("/admin-login", request.url));
+  }
+
+  // Skip middleware for static files, API routes, and admin paths
   if (
     pathname.startsWith("/_next/") ||
     pathname.startsWith("/api/") ||
     pathname.includes("/favicon") ||
     pathname.includes(".ico") ||
     pathname === "/sitemap.xml" ||
+    pathname === "/admin-login" ||
     /\.(jpg|jpeg|png|gif|svg|css|js)$/i.test(pathname)
   ) {
+    return NextResponse.next();
+  }
+
+  // Handle admin routes
+  if (pathname.startsWith("/admin/")) {
+    const adminCookie = request.cookies.get("admin_access");
+    if (!adminCookie || adminCookie.value !== process.env.ADMIN_SECRET) {
+      return NextResponse.redirect(new URL("/admin-login", request.url));
+    }
     return NextResponse.next();
   }
 
@@ -45,38 +60,11 @@ export function middleware(request: NextRequest) {
   const potentialLocale = pathSegments[1];
   const path = pathSegments.slice(2).join("/");
 
-  // If accessing a path without language code, redirect to /en/
+  // If accessing a non-admin path without language code, redirect to /en/
   if (!i18n.locales.includes(potentialLocale as any)) {
     return NextResponse.redirect(
       new URL(`/en/${pathname.replace(/^\/+/, "")}`, request.url)
     );
-  }
-
-  // Check if it's an admin route
-  if (
-    request.nextUrl.pathname.startsWith("/api/admin") ||
-    request.nextUrl.pathname.includes("/admin/")
-  ) {
-    const adminCookie = request.cookies.get("admin_access");
-    const isApiRoute = request.nextUrl.pathname.startsWith("/api/admin");
-
-    // Allow login API route
-    if (request.nextUrl.pathname === "/api/admin/login") {
-      return NextResponse.next();
-    }
-
-    // Check for valid admin cookie
-    if (!adminCookie || adminCookie.value !== process.env.ADMIN_SECRET) {
-      // For API routes, return 401
-      if (isApiRoute) {
-        return new NextResponse(JSON.stringify({ error: "Unauthorized" }), {
-          status: 401,
-          headers: { "Content-Type": "application/json" },
-        });
-      }
-      // For page routes, redirect to login
-      return NextResponse.redirect(new URL("/admin-login", request.url));
-    }
   }
 
   // Special handling for tag routes
@@ -131,11 +119,8 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Match all admin routes including those with language prefixes
-    "/((?!api|_next/static|_next/image|favicon.ico).*)",
-    "/admin/:path*",
+    "/((?!_next/static|_next/image|favicon.ico).*)",
     "/admin-login",
-    "/:lang/admin/:path*", // Add this to catch language-prefixed admin routes
-    "/api/admin/:path*",
+    "/:lang/admin-login",
   ],
 };

@@ -2,24 +2,12 @@ import { getDictionary } from "@/get-dictionary";
 import { i18n } from "@/i18n-config";
 import type { Locale } from "@/i18n-config";
 import type { Metadata } from "next";
-import { Inter, Geist } from "next/font/google";
 import "@/app/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getValidatedParams } from "@/lib/params-helper";
 import { generatePageMetadata } from "@/lib/metadata";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
-
-const geist = Geist({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-geist",
-});
+import { layoutClasses } from "../layout";
 
 export const dynamicParams = false;
 
@@ -36,7 +24,6 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
-
   return generatePageMetadata({
     lang,
     title: "TwoFifty",
@@ -49,8 +36,8 @@ export default async function Layout({ children, params }: Props) {
   const dictionary = await getDictionary(lang);
 
   return (
-    <html lang={lang} className={`${inter.variable} ${geist.variable}`}>
-      <body className="min-h-screen font-sans antialiased">
+    <html lang={lang} className={layoutClasses.html}>
+      <body className={layoutClasses.body}>
         <Header lang={lang} dictionary={dictionary} />
         <main className="min-h-screen bg-[#F5EBE0]">{children}</main>
         <Footer lang={lang} dictionary={dictionary} />
