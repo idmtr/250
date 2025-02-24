@@ -127,22 +127,26 @@ curl -I http://localhost:3000/fr/notre-mission
 
 ## Best Practices
 
-1. **URL Structure**
+### URL Management
 
-   - Use consistent patterns
-   - Keep URLs meaningful in each language
-   - Maintain standard/localized path mapping
+- Always use full language prefix
+- Normalize paths across languages
+- Handle special characters in URLs
+- Maintain consistent URL structure
 
-2. **SEO Optimization**
+### SEO Optimization
 
-   - Set proper canonical URLs
-   - Include language alternates
-   - Use localized metadata
+- Proper canonical URLs
+- Complete language alternates
+- Structured data per language
+- Consistent metadata across translations
 
-3. **Content Management**
-   - Keep translations in sync
-   - Update all language versions
-   - Maintain consistent routing
+### Content Strategy
+
+- Maintain content parity when possible
+- Clear fallback strategy
+- Market-specific adaptations when needed
+- Regular content audits
 
 ## Common Issues
 
@@ -220,3 +224,26 @@ curl -I http://localhost:3000/fr/notre-mission
     ```
 
 This structured approach ensures that users have a consistent and localized experience across the application, enhancing usability and SEO performance.
+
+## Testing & Validation
+
+### URL Validation
+
+- Test all language variations
+- Verify redirects
+- Check canonical URLs
+- Validate alternates
+
+### SEO Checks
+
+- Verify metadata generation
+- Test search engine indexing
+- Check structured data
+- Validate hreflang implementation
+
+## Future Considerations
+
+1. Market-specific variations (e.g., fr-CA vs fr-FR)
+2. Right-to-left language support
+3. Content synchronization improvements
+4. Translation workflow optimization

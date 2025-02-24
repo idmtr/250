@@ -40,16 +40,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: new Date(post.modified || post.date).toISOString(),
         changeFrequency: "weekly" as const,
         priority: post.featured ? 1 : 0.7,
-        // Add alternates if post exists in other languages
-        alternates: post.alternates
-          ? Object.entries(post.alternates).reduce(
-              (acc, [altLocale, altSlug]) => ({
-                ...acc,
-                [altLocale]: `${baseUrl}/${altLocale}/blog/${altSlug}`,
-              }),
-              {}
-            )
-          : undefined,
       }));
     })
   );
