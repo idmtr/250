@@ -1,10 +1,65 @@
 User-agent: *
 Allow: /
 
-# Old URLs
-Disallow: /speaking/
-Disallow: /presentations-workshops/
-Disallow: /fr/coworking-mission-francais/
-
-# Sitemap
+# Sitemaps
 Sitemap: https://twofifty.co/sitemap.xml
+
+# Localized sitemaps
+# Sitemap: https://twofifty.co/en/sitemap.xml
+# Sitemap: https://twofifty.co/fr/sitemap.xml
+# Sitemap: https://twofifty.co/de/sitemap.xml
+# Sitemap: https://twofifty.co/es/sitemap.xml
+
+# Disallow old URLs to prevent duplicate content
+Disallow: /speaking
+Disallow: /workshops
+Disallow: /retreats
+Disallow: /consulting
+Disallow: /about
+Disallow: /mission
+Disallow: /education
+Disallow: /blog
+Disallow: /contact
+
+# Disallow old French URLs
+Disallow: /fr/conferences-old
+Disallow: /fr/ateliers-old
+Disallow: /fr/retraites-old
+Disallow: /fr/conseil-old
+Disallow: /fr/a-propos-old
+Disallow: /fr/mission-old
+Disallow: /fr/formation-old
+Disallow: /fr/blog-old
+Disallow: /fr/contact-old
+
+# Disallow old German URLs
+Disallow: /de/vortraege-old
+Disallow: /de/workshops-old
+Disallow: /de/retreats-old
+Disallow: /de/beratung-old
+Disallow: /de/ueber-uns-old
+Disallow: /de/mission-old
+Disallow: /de/bildung-old
+Disallow: /de/blog-old
+Disallow: /de/kontakt-old
+
+# Disallow old Spanish URLs
+Disallow: /es/conferencias-old
+Disallow: /es/talleres-old
+Disallow: /es/retiros-old
+Disallow: /es/consultoria-old
+Disallow: /es/sobre-nosotros-old
+Disallow: /es/mision-old
+Disallow: /es/educacion-old
+Disallow: /es/blog-old
+Disallow: /es/contacto-old
+
+# Common files to disallow
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /*.php$
+Disallow: /*.json$
+Disallow: /*?*
+Disallow: /*?
+Disallow: /*~
+Disallow: /*_

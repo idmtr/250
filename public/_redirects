@@ -1,46 +1,74 @@
 # English redirects
-/speaking                          /en/speaking-events              308
-/presentations-workshops           /en/workshops                    308
-/coworking-community-retreats     /en/community-retreats          308
-/coworking-consulting-services    /en/coworking-consulting-services 308
-/about                            /en/about                        308
-/our-coworking-mission           /en/our-mission                  308
-/coworking-education             /en/coworking-education          308
-/privacy                         /en/privacy                       308
-/contact                         /en/contact                       308
+/                                /en                              308
+/speaking                        /en/speaking-events              308
+/workshops                       /en/coworking-workshops-training-programs 308
+/retreats                       /en/coworking-community-retreats 308
+/consulting                     /en/coworking-consulting-services 308
+/about                          /en/about                        308
+/mission                        /en/our-mission                  308
+/education                      /en/coworking-education          308
+/blog                          /en/blog                          308
+/contact                        /en/contact                      308
 
 # Handle trailing slashes
-/speaking/                        /en/speaking-events              308
-/presentations-workshops/         /en/workshops                    308
-/coworking-community-retreats/   /en/community-retreats          308
-/coworking-consulting-services/  /en/coworking-consulting-services 308
-/about/                          /en/about                        308
-/our-coworking-mission/         /en/our-mission                  308
-/coworking-education/           /en/coworking-education          308
-/privacy/                       /en/privacy                       308
-/contact/                       /en/contact                       308
+/speaking/                      /en/speaking-events              308
+/workshops/                     /en/coworking-workshops-training-programs 308
+/retreats/                     /en/coworking-community-retreats 308
+/consulting/                   /en/coworking-consulting-services 308
+/about/                        /en/about                        308
+/mission/                      /en/our-mission                  308
+/education/                    /en/coworking-education          308
+/blog/                        /en/blog                          308
+/contact/                      /en/contact                      308
 
 # French redirects
-/fr/coworking-mission-francais   /fr/notre-mission               308
-/fr/interventions-evenements     /fr/conferences                 308
-/fr/privacy-fr                   /fr/privacy                     308
-/fr/a-propos                     /fr/a-propos                    308
-/fr/nos-presentations-workshops  /fr/ateliers                    308
-
-# French with trailing slashes
-/fr/coworking-mission-francais/  /fr/notre-mission               308
-/fr/interventions-evenements/    /fr/conferences                 308
-/fr/privacy-fr/                  /fr/privacy                     308
-/fr/a-propos/                    /fr/a-propos                    308
-/fr/nos-presentations-workshops/ /fr/ateliers                    308
+/fr                            /fr                              308
+/fr/conferences               /fr/conferences                   308
+/fr/ateliers                 /fr/ateliers-formation-espaces-coworking 308
+/fr/retraites                /fr/retraites-de-communaute-coworking 308
+/fr/conseil                  /fr/services-conseil-coworking    308
+/fr/a-propos                 /fr/a-propos                      308
+/fr/mission                  /fr/notre-mission-excellence-coworking 308
+/fr/formation                /fr/formation-coworking           308
+/fr/blog                     /fr/blog                          308
+/fr/contact                  /fr/contactez-nous                308
 
 # German redirects
-/de/uberuns                      /de/ueber-uns                   308
-/de/privacy-de                   /de/privacy                     308
+/de                           /de                              308
+/de/vortraege                /de/vortraege                    308
+/de/workshops                /de/coworking-workshops-trainingsprogramme 308
+/de/retreats                 /de/coworking-community-retreats 308
+/de/beratung                /de/coworking-beratung           308
+/de/ueber-uns               /de/ueber-uns                    308
+/de/mission                 /de/unsere-mission-coworking-exzellenz 308
+/de/bildung                 /de/coworking-ausbildung         308
+/de/blog                    /de/blog                         308
+/de/kontakt                 /de/kontakt                      308
 
-# German with trailing slashes
-/de/uberuns/                     /de/ueber-uns                   308
-/de/privacy-de/                  /de/privacy                     308
+# Spanish redirects
+/es                           /es                              308
+/es/conferencias             /es/conferencias                 308
+/es/talleres                 /es/talleres-formacion-espacios-coworking 308
+/es/retiros                  /es/retiros-comunitarios-de-coworking 308
+/es/consultoria              /es/servicios-consultoria-coworking 308
+/es/sobre-nosotros          /es/sobre-nosotros               308
+/es/mision                   /es/nuestra-mision              308
+/es/educacion                /es/educacion-coworking         308
+/es/blog                     /es/blog                         308
+/es/contacto                 /es/contacto                     308
 
-# Root path handling
-/                               /en                              308
+# Old URL redirects
+/de/uberuns/                               /de/ueber-uns                               301
+/fr/nos-presentations-workshops/          /fr/ateliers-formation-espaces-coworking   301
+/de/coworking-mission-deutsch/            /de/unsere-mission-coworking-exzellenz      301
+/fr/accueil/                               /fr                                          301
+/presentations-workshops/                  /en/coworking-workshops-training-programs                     301
+/coworking-community-retreats/             /en/coworking-community-retreats             301
+/coworking-consulting-services/            /en/coworking-consulting-services            301
+/our-coworking-mission/                   /en/our-mission                              301
+/fr/coworking-mission-francais/           /fr/notre-mission-excellence-coworking      301
+/fr/interventions-evenements/             /fr/conferences                               301
+/fr/privacy-fr/                           /fr/                                          301
+/de/privacy-de/                           /de/                                          301
+/privacy/                                 /en/                                          301
+/fr/a-propos/                              /fr/a-propos                                 301
