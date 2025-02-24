@@ -6,7 +6,7 @@ import "@/app/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getValidatedParams } from "@/lib/params-helper";
-import { generatePageMetadata } from "@/lib/metadata";
+import { getBaseUrl } from "@/lib/url";
 import { layoutClasses } from "../layout";
 
 export const dynamicParams = false;
@@ -17,18 +17,26 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return i18n.locales.map((locale) => ({
-    lang: locale,
-  }));
+  return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
-  return generatePageMetadata({
-    lang,
-    title: "TwoFifty",
-    description: "Your default description",
-  });
+
+  return {
+    title: "TwoFifty - Expert Coworking Consultancy",
+    description:
+      "Transform your workspace with TwoFifty's global coworking expertise.",
+    alternates: {
+      canonical: `${getBaseUrl()}/${lang}`,
+      languages: {
+        en: `${getBaseUrl()}/en`,
+        fr: `${getBaseUrl()}/fr`,
+        de: `${getBaseUrl()}/de`,
+        es: `${getBaseUrl()}/es`,
+      },
+    },
+  };
 }
 
 export default async function Layout({ children, params }: Props) {

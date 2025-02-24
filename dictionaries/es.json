@@ -478,5 +478,257 @@
       "paragraph3": "En TwoFifty, organizamos y participamos activamente en eventos relacionados con el coworking. Nuestro objetivo es compartir nuestro conocimiento y experiencias de las prácticas de coworking alrededor del mundo. A medida que el lugar de trabajo sigue evolucionando, estamos dedicados a educar a individuos y organizaciones sobre los beneficios y posibilidades del coworking."
     },
     "cta": "Contacta con Nosotros"
+  },
+  "consulting_services": {
+    "meta": {
+      "title": "Servicios de Consultoría en Coworking Expertos | TwoFifty",
+      "description": "Optimice las operaciones de su espacio de trabajo flexible con los servicios de consultoría en coworking de TwoFifty. Especializados en operaciones, ventas, creación de comunidad y más."
+    },
+    "hero_section": {
+      "image": {
+        "src": "images/pages/twofifty-coworking-consulting-service_drvax1",
+        "alt": "Servicio de consultoría en coworking TwoFifty",
+        "class": "object-cover"
+      },
+      "content": {
+        "badge": "Consultoría Experta en Coworking",
+        "title": {
+          "line1": "Optimice el",
+          "line2": "Funcionamiento de Su",
+          "line3": "Espacio Flexible"
+        },
+        "services_list_label": "Podemos ayudarle con:",
+        "services_list": [
+          "Operaciones",
+          "Ventas",
+          "Construcción de Comunidad",
+          "Formación de Equipos",
+          "Experiencia de Miembros"
+        ],
+        "cta_buttons": [
+          {
+            "text": "Reservar una Consulta Gratis",
+            "href": "https://calendar.app.google/zYZVFkH2prid92Wq5",
+            "target": "_blank"
+          },
+          {
+            "text": "Saber Más",
+            "href": "#benefits"
+          }
+        ],
+        "trust_indicators": {
+          "text": "Con la confianza de espacios de coworking en todo el mundo",
+          "stats": [
+            {
+              "value": "500+",
+              "label": "Espacios Visitados"
+            },
+            {
+              "value": "50+",
+              "label": "Ciudades"
+            },
+            {
+              "value": "10+",
+              "label": "Años de Experiencia"
+            }
+          ]
+        }
+      }
+    },
+    "benefits_section": {
+      "header": {
+        "label": "BENEFICIOS",
+        "title": "Beneficios Clave de Nuestros Servicios de Consultoría en Coworking",
+        "description": "Descubra cómo nuestros servicios de consultoría pueden transformar su espacio de trabajo en un centro comunitario próspero y eficiente."
+      },
+      "benefits": [
+        {
+          "title": "Optimizar Procesos",
+          "description": "Analizamos sus flujos operativos actuales y detectamos áreas de mejora. Al optimizar la estructura, tareas administrativas, implementar automatización y fomentar un uso eficiente del espacio, le ayudamos a ahorrar tiempo y gestionar una operación más ágil. El resultado: una experiencia fluida para todos, desde la gestión hasta los miembros.",
+          "icon": "Settings"
+        },
+        {
+          "title": "Fortalecer la Dinámica de Equipo",
+          "description": "Nuestros servicios van más allá del espacio físico: profundizamos en las dinámicas interpersonales que definen una comunidad de coworking. Con ejercicios de team-building, diseño colaborativo y enfoques probados, creamos un entorno donde los equipos destacan. Potencie el espíritu colaborativo y vea cómo crecen la motivación y la productividad.",
+          "icon": "Users"
+        },
+        {
+          "title": "Impulsar el Compromiso Comunitario",
+          "description": "Creemos que una comunidad cuidada es el alma de un espacio de coworking exitoso. Nuestras estrategias incluyen eventos, talleres y plataformas digitales para involucrar a sus miembros, creando un sentido de pertenencia que retiene a los actuales y atrae a nuevos. Convierta su espacio en una comunidad vibrante.",
+          "icon": "Network"
+        }
+      ],
+      "cta": {
+        "image": {
+          "src": "images/pages/coworking-travel_drvqnf",
+          "alt": "Seminario de coworking",
+          "class": "object-cover"
+        },
+        "title": "¿Listo para Transformar Su Espacio de Trabajo?",
+        "description": "Hablemos sobre cómo optimizar las operaciones de su espacio de coworking y construir una comunidad más sólida.",
+        "buttons": [
+          {
+            "text": "Reservar una Llamada",
+            "href": "https://calendar.app.google/zYZVFkH2prid92Wq5",
+            "target": "_blank"
+          },
+          {
+            "text": "Enviar una Consulta",
+            "href": "mailto:mail@twofifty.co"
+          }
+        ]
+      }
+    },
+    "expert_services_section": {
+      "label": "EXPERTO",
+      "title": "Consultoría en Coworking Orientada a Resultados",
+      "description": "Bienvenido a TwoFifty, donde nuestros servicios de consultoría en coworking lideran el futuro de los espacios de trabajo flexibles y modernos. En una era de cambios rápidos y necesidades de adaptabilidad, el sector del coworking crece como nunca antes, enfrentando nuevos retos."
+    },
+    "process_section": {
+      "header": {
+        "label": "PROCESO",
+        "title": "Cómo Funciona: Su Viaje a un Mejor Espacio de Coworking",
+        "description": "Emprender un proyecto con TwoFifty es un proceso claro y diseñado para garantizar el éxito desde el inicio hasta el final. Así funcionan nuestros servicios en cuatro pasos sencillos:"
+      },
+      "steps": [
+        {
+          "title": "Consulta Inicial",
+          "description": "Comience reservando una consulta gratuita con nuestro equipo. Evaluaremos sus necesidades, discutiremos su visión y detectaremos las áreas clave que pueden beneficiarse de nuestros servicios especializados.",
+          "icon": "Handshake"
+        },
+        {
+          "title": "Creación de un Plan Personalizado",
+          "description": "Basándonos en nuestra charla inicial, elaboramos un plan a medida adaptado a sus desafíos y metas. Incluye recomendaciones, un cronograma y un presupuesto estimado para una hoja de ruta clara.",
+          "icon": "ClipboardList"
+        },
+        {
+          "title": "Implementación y Formación",
+          "description": "Ponemos el plan en marcha: optimizamos procesos, rediseñamos espacios y aseguramos sostenibilidad y adaptabilidad. También ofrecemos formación para que su equipo domine las mejores prácticas y nuevos sistemas.",
+          "icon": "Target"
+        },
+        {
+          "title": "Evaluación y Soporte Post-Proyecto",
+          "description": "Nuestro compromiso continúa tras el proyecto. Evaluamos los resultados, identificamos mejoras y ofrecemos soporte continuo para que su espacio de coworking prospere a largo plazo.",
+          "icon": "LineChart"
+        }
+      ],
+      "cta": {
+        "image": {
+          "src": "images/pages/coworkies-teach_ho15ue",
+          "alt": "Estudiantes en un seminario de coworking",
+          "class": "object-cover"
+        },
+        "title": "¿Listo para Empezar?",
+        "description": "Dé el primer paso para optimizar su espacio de coworking. Reserve una consulta gratuita o envíenos una consulta hoy mismo.",
+        "buttons": [
+          {
+            "text": "Reservar una Llamada",
+            "href": "https://calendar.app.google/zYZVFkH2prid92Wq5",
+            "target": "_blank"
+          },
+          {
+            "text": "Enviar una Consulta",
+            "href": "mailto:mail@twofifty.co"
+          }
+        ]
+      }
+    },
+    "focus_section": {
+      "header": {
+        "label": "ENFOQUE",
+        "title": "Nuestro Enfoque en la Consultoría de Coworking",
+        "description": "En TwoFifty, hemos creado una metodología integral que convierte su espacio de coworking en un entorno dinámico donde la productividad y la comunidad florecen. Estos son los pilares de nuestro enfoque."
+      },
+      "focus_areas": [
+        {
+          "title": "Soluciones de Coworking Sostenibles",
+          "description": "La sostenibilidad es clave. Nuestros servicios aplican prácticas avanzadas para crear espacios ecológicos y viables económicamente, con diseños eficientes y procesos que reducen residuos.",
+          "icon": "LeafyGreen"
+        },
+        {
+          "title": "Estrategias Adaptables de Espacio",
+          "description": "El cambio es constante. Nuestras estrategias aseguran que su espacio de coworking evolucione con sus necesidades, ya sea para crecer, pivotar o integrar nuevas tecnologías.",
+          "icon": "Layers"
+        },
+        {
+          "title": "Optimización para la Excelencia Operativa",
+          "description": "Cada minuto importa. Analizamos sus operaciones, eliminamos obstáculos y aplicamos mejoras que optimizan procesos, elevando productividad y satisfacción.",
+          "icon": "Workflow"
+        },
+        {
+          "title": "Planificación Centrada en la Comunidad",
+          "description": "Un espacio de coworking es tan fuerte como su comunidad. Nuestra planificación fomenta el compromiso y la pertenencia con eventos y metas compartidas, impulsando colaboración y crecimiento.",
+          "icon": "Users2"
+        }
+      ],
+      "cta": {
+        "image": {
+          "src": "images/pages/twofifty-coworking-consulting-service_drvax1",
+          "alt": "Enfoque de consultoría en coworking TwoFifty",
+          "class": "object-cover"
+        },
+        "title": "¿Listo para Transformar Su Espacio de Trabajo?",
+        "description": "Hablemos sobre cómo nuestro enfoque experto puede optimizar las operaciones de su espacio de coworking.",
+        "button": {
+          "text": "Reservar una Llamada",
+          "href": "https://calendar.app.google/zYZVFkH2prid92Wq5",
+          "target": "_blank"
+        }
+      }
+    },
+    "faq_section": {
+      "title": "Preguntas Frecuentes Sobre Nuestra Consultoría en Coworking",
+      "description": "Encuentre respuestas a las dudas más comunes sobre nuestros servicios de consultoría en coworking y comprenda cómo funciona nuestro proceso.",
+      "faqs": [
+        {
+          "question": "¿Qué hace única a la consultoría de TwoFifty?",
+          "answer": "Destacamos por nuestro enfoque en sostenibilidad, adaptabilidad y comunidad. Ofrecemos soluciones personalizadas, no genéricas, para sus necesidades específicas."
+        },
+        {
+          "question": "¿Cómo funciona la consulta inicial?",
+          "answer": "Es una sesión gratuita donde evaluamos sus necesidades, revisamos su espacio y definimos mejoras clave para un plan a medida."
+        },
+        {
+          "question": "¿Qué incluye el plan personalizado?",
+          "answer": "Optimización de espacios, mejora de procesos, fortalecimiento de equipos y estrategias comunitarias, con cronograma y presupuesto detallados."
+        },
+        {
+          "question": "¿Cuánto dura un proyecto típico?",
+          "answer": "Varía según el alcance, pero acordamos un cronograma claro en la consulta inicial."
+        },
+        {
+          "question": "¿Ofrecen formación para equipos?",
+          "answer": "Sí, brindamos sesiones completas para capacitar a su equipo en sistemas, prácticas y gestión de espacios productivos."
+        },
+        {
+          "question": "¿Cómo aseguran la sostenibilidad?",
+          "answer": "Promovemos opciones ecológicas, como diseños eficientes y procesos que minimizan residuos, para espacios sostenibles económica y ambientalmente."
+        }
+      ]
+    },
+    "cta_section": {
+      "title": "¿Listo para Transformar Su Espacio de Trabajo?",
+      "description": "Programe una consulta inicial con nuestro equipo para optimizar las operaciones de su espacio de coworking.",
+      "buttons": [
+        {
+          "text": "Reservar una Llamada de 30 min",
+          "href": "https://calendar.app.google/zYZVFkH2prid92Wq5",
+          "target": "_blank",
+          "icon": "calendar"
+        },
+        {
+          "text": "Conectar en LinkedIn",
+          "href": "https://www.linkedin.com/in/paulineroussel/",
+          "target": "_blank",
+          "icon": "linkedin"
+        },
+        {
+          "text": "Contactar por Email",
+          "href": "mailto:hello@twofifty.co",
+          "target": "_blank",
+          "icon": "email"
+        }
+      ]
+    }
   }
 }

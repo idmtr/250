@@ -1,5 +1,4 @@
 import { Locale } from "@/i18n-config";
-import { routes } from "@/config/url-config";
 
 export type LocalizedRouteConfig = {
   standard: string;
@@ -7,6 +6,7 @@ export type LocalizedRouteConfig = {
     [key in Locale]: {
       path: string;
       title: string;
+      description?: string;
       canonicalPath?: string;
     };
   };
@@ -18,23 +18,34 @@ export const routes: Record<string, LocalizedRouteConfig> = {
     localized: {
       en: {
         path: "",
-        canonicalPath: "/en",
-        title: "Home",
+        canonicalPath: "/",
+        title: "TwoFifty - Expert Coworking Consultancy & Workspace Solutions",
+        description:
+          "Transform your workspace with TwoFifty's global coworking expertise. We teach, advise, and build understanding about coworking for organizations worldwide.",
       },
       fr: {
         path: "",
-        canonicalPath: "/fr/",
-        title: "Accueil",
+        canonicalPath: "/fr",
+        title:
+          "TwoFifty - Conseil Expert en Coworking & Solutions d'Espace de Travail",
+        description:
+          "Transformez votre espace de travail avec l'expertise mondiale de TwoFifty en coworking.",
       },
       de: {
         path: "",
-        canonicalPath: "/de/",
-        title: "Startseite",
+        canonicalPath: "/de",
+        title:
+          "TwoFifty - Experten für Coworking-Beratung & Arbeitsplatzlösungen",
+        description:
+          "Transformieren Sie Ihren Arbeitsplatz mit TwoFiftys globaler Coworking-Expertise.",
       },
       es: {
         path: "",
-        canonicalPath: "/es/",
-        title: "Inicio",
+        canonicalPath: "/es",
+        title:
+          "TwoFifty - Consultoría Experta en Coworking & Soluciones de Espacio",
+        description:
+          "Transforme su espacio de trabajo con la experiencia global de TwoFifty en coworking.",
       },
     },
   },
@@ -42,34 +53,50 @@ export const routes: Record<string, LocalizedRouteConfig> = {
     standard: "mission",
     localized: {
       en: {
-        path: "our-mission",
-        title: "Our Mission",
-        canonicalPath: "/en/our-mission",
+        path: "our-mission-coworking-excellence",
+        canonicalPath: "/en/our-mission-coworking-excellence",
+        title: "Our Mission | Building Better Coworking Communities | TwoFifty",
       },
       fr: {
-        path: "notre-mission",
-        title: "Notre Mission",
-        canonicalPath: "/fr/notre-mission",
+        path: "notre-mission-excellence-coworking",
+        canonicalPath: "/fr/notre-mission-excellence-coworking",
+        title: "Notre Mission | Créer de Meilleures Communautés de Coworking",
       },
       de: {
-        path: "unsere-mission",
-        title: "Unsere Mission",
-        canonicalPath: "/de/unsere-mission",
+        path: "unsere-mission-coworking-exzellenz",
+        canonicalPath: "/de/unsere-mission-coworking-exzellenz",
+        title: "Unsere Mission | Bessere Coworking-Communities Aufbauen",
       },
       es: {
-        path: "nuestra-mision",
-        title: "Nuestra Misión",
-        canonicalPath: "/es/nuestra-mision",
+        path: "nuestra-mision-excelencia-coworking",
+        canonicalPath: "/es/nuestra-mision-excelencia-coworking",
+        title: "Nuestra Misión | Construyendo Mejores Comunidades de Coworking",
       },
     },
   },
   workshops: {
     standard: "workshops",
     localized: {
-      en: { path: "workshops", title: "Workshops" },
-      fr: { path: "ateliers", title: "Ateliers" },
-      de: { path: "workshops", title: "Workshops" },
-      es: { path: "talleres", title: "Talleres" },
+      en: {
+        path: "coworking-workshops-training-programs",
+        canonicalPath: "/en/coworking-workshops-training-programs",
+        title: "Coworking Workshops & Training Programs | TwoFifty",
+      },
+      fr: {
+        path: "ateliers-formation-espaces-coworking",
+        canonicalPath: "/fr/ateliers-formation-espaces-coworking",
+        title: "Ateliers et Programmes de Formation Coworking",
+      },
+      de: {
+        path: "coworking-workshops-trainingsprogramme",
+        canonicalPath: "/de/coworking-workshops-trainingsprogramme",
+        title: "Coworking Workshops & Trainingsprogramme",
+      },
+      es: {
+        path: "talleres-formacion-espacios-coworking",
+        canonicalPath: "/es/talleres-formacion-espacios-coworking",
+        title: "Talleres y Programas de Formación Coworking",
+      },
     },
   },
   education: {
@@ -152,6 +179,36 @@ export const routes: Record<string, LocalizedRouteConfig> = {
       fr: { path: "contactez-nous", title: "Contactez-nous" },
       de: { path: "kontakt", title: "Kontakt" },
       es: { path: "contacto", title: "Contacto" },
+    },
+  },
+  "coworking-consulting": {
+    standard: "coworking-consulting",
+    localized: {
+      en: {
+        path: "coworking-consulting-services",
+        canonicalPath: "/en/coworking-consulting-services",
+        title: "Expert Coworking Consulting Services | TwoFifty",
+        description:
+          "Transform your workspace with expert coworking consulting...",
+      },
+      fr: {
+        path: "services-conseil-coworking",
+        canonicalPath: "/fr/services-conseil-coworking",
+        title: "Services de Conseil en Coworking | TwoFifty",
+        description: "Transformez votre espace avec notre expertise...",
+      },
+      de: {
+        path: "coworking-beratung",
+        canonicalPath: "/de/coworking-beratung",
+        title: "Coworking Beratung & Services | TwoFifty",
+        description: "Optimieren Sie Ihren Workspace...",
+      },
+      es: {
+        path: "servicios-consultoria-coworking",
+        canonicalPath: "/es/servicios-consultoria-coworking",
+        title: "Servicios de Consultoría Coworking | TwoFifty",
+        description: "Transforme su espacio...",
+      },
     },
   },
 };

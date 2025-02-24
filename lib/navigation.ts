@@ -19,11 +19,8 @@ export const getNavigation = (lang: Locale): NavigationItem[] => [
     labelKey: "header.services",
     children: [
       {
-        key: "coworking",
-        href: `/${lang}/${getLocalizedPath(
-          "coworking-consulting-services",
-          lang
-        )}`,
+        key: "coworking-consulting",
+        href: `/${lang}/${getLocalizedPath("coworking-consulting", lang)}`,
         labelKey: "header.coworkingConsultancy",
       },
       {

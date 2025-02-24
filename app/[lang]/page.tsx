@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import { getValidatedParams } from "@/lib/params-helper";
 import { generatePageMetadata } from "@/lib/metadata";
 import { RoutingService } from "@/lib/routing/utils";
+import { routes } from "@/lib/url-utils";
 
 export const dynamicParams = false;
 
@@ -22,7 +23,15 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
-  return RoutingService.generateMetadata("home", lang);
+
+  // For debugging
+  console.log("Available routes:", Object.keys(routes));
+  console.log("Current lang:", lang);
+
+  return generatePageMetadata({
+    routeKey: "home",
+    lang,
+  });
 }
 
 export default async function Page({ params }: Props) {

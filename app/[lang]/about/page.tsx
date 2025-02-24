@@ -14,24 +14,11 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  try {
-    const validatedParams = await getValidatedParams(params);
-    const dictionary = await getDictionary(validatedParams.lang);
-
-    return generatePageMetadata({
-      lang: validatedParams.lang,
-      path: "/about",
-      title: dictionary.about?.meta?.title || "About | TwoFifty Consulting",
-      description:
-        dictionary.about?.meta?.description || "About TwoFifty Consulting",
-    });
-  } catch (error) {
-    console.error("Error generating metadata:", error);
-    return {
-      title: "About | TwoFifty Consulting",
-      description: "About TwoFifty Consulting",
-    };
-  }
+  const { lang } = await getValidatedParams(params);
+  return generatePageMetadata({
+    routeKey: "about",
+    lang,
+  });
 }
 
 export default async function About({ params }: Props) {
@@ -43,13 +30,6 @@ export default async function About({ params }: Props) {
       console.error("Missing about section in dictionary");
       notFound();
     }
-
-    // Add debugging
-    // console.log("Dictionary loaded:", {
-    //   hasDict: !!dictionary,
-    //   aboutSection: dictionary?.about,
-    //   heroSection: dictionary?.about?.hero,
-    // });
 
     if (!dictionary?.about?.hero?.title) {
       console.error("About page is missing required fields");
@@ -164,8 +144,7 @@ export default async function About({ params }: Props) {
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Pauline Roussel</h3>
                 <p className="text-gray-600 mb-4">Co-founder & CEO</p>
-                <p className="text-gray-600 mb-4">
-                </p>
+                <p className="text-gray-600 mb-4"></p>
                 <a
                   href="https://www.linkedin.com/in/paulineroussel/"
                   target="_blank"
@@ -188,8 +167,7 @@ export default async function About({ params }: Props) {
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Dimitar Inchev</h3>
                 <p className="text-gray-600 mb-4">Co-founder & CTO</p>
-                <p className="text-gray-600 mb-4">
-                </p>
+                <p className="text-gray-600 mb-4"></p>
                 <a
                   href="https://www.linkedin.com/in/inchev/"
                   target="_blank"

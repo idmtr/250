@@ -185,10 +185,10 @@ export function getLocalizedPath(path: string, locale: Locale): string {
 }
 
 export function getStandardPath(localizedPath: string, locale: Locale): string {
-  console.log('getStandardPath Debug:', {
+  console.log("getStandardPath Debug:", {
     localizedPath,
     locale,
-    routes: Object.keys(routes)
+    routes: Object.keys(routes),
   });
 
   if (!localizedPath) return "";
@@ -197,35 +197,39 @@ export function getStandardPath(localizedPath: string, locale: Locale): string {
 
   // Direct match with standard path
   if (routes[cleanPath]) {
-    console.log('Found direct match:', cleanPath);
+    console.log("Found direct match:", cleanPath);
     return cleanPath;
   }
 
   // Match by localized path
-  const routeEntry = Object.entries(routes).find(([_, config]) => 
-    config.localized[locale].path === cleanPath
+  const routeEntry = Object.entries(routes).find(
+    ([_, config]) => config.localized[locale].path === cleanPath
   );
 
   if (routeEntry) {
-    console.log('Found by localized path:', routeEntry[0]);
+    console.log("Found by localized path:", routeEntry[0]);
     return routeEntry[0];
   }
 
   // Match in any locale
   const anyLocaleMatch = Object.entries(routes).find(([_, config]) =>
-    Object.values(config.localized).some(l => l.path === cleanPath)
+    Object.values(config.localized).some((l) => l.path === cleanPath)
   );
 
   if (anyLocaleMatch) {
-    console.log('Found in any locale:', anyLocaleMatch[0]);
+    console.log("Found in any locale:", anyLocaleMatch[0]);
     return anyLocaleMatch[0];
   }
 
-  console.log('No match found, using original:', cleanPath);
+  console.log("No match found, using original:", cleanPath);
   return cleanPath;
 }
 
-export function getCanonicalUrl(path: string, locale: Locale, baseUrl: string): string {
+export function getCanonicalUrl(
+  path: string,
+  locale: Locale,
+  baseUrl: string
+): string {
   const standardPath = getStandardPath(path, locale);
   const route = routes[standardPath];
 
@@ -234,12 +238,14 @@ export function getCanonicalUrl(path: string, locale: Locale, baseUrl: string): 
   }
 
   const localizedPath = route.localized[locale].path;
-  return locale === 'en'
+  return locale === "en"
     ? `${baseUrl}/${localizedPath}`
     : `${baseUrl}/${locale}/${localizedPath}`;
 }
 
-export function getAllLocalizedPaths(standardPath: string): Record<Locale, string> {
+export function getAllLocalizedPaths(
+  standardPath: string
+): Record<Locale, string> {
   const route = routes[standardPath];
   if (!route) return {} as Record<Locale, string>;
 
@@ -250,7 +256,7 @@ export function getAllLocalizedPaths(standardPath: string): Record<Locale, strin
 }
 
 export function getFullPath(locale: Locale, path: string): string {
-  return locale === 'en' ? `/${path}` : `/${locale}/${path}`;
+  return locale === "en" ? `/${path}` : `/${locale}/${path}`;
 }
 
 export interface NavigationItem {
@@ -269,7 +275,11 @@ export function getNavigationItems(locale: Locale): NavigationItem[] {
     }));
 }
 
-export function translatePath(path: string, fromLocale: Locale, toLocale: Locale): string {
+export function translatePath(
+  path: string,
+  fromLocale: Locale,
+  toLocale: Locale
+): string {
   const standardPath = getStandardPath(path, fromLocale);
   return getLocalizedPath(standardPath, toLocale);
 }

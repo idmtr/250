@@ -478,5 +478,257 @@
       "paragraph3": "At TwoFifty, we actively organize and participate in coworking-related events. Our goal is to share our knowledge and experiences of coworking practices from around the world. As the workplace continues to evolve, we are dedicated to educating individuals and organizations about the benefits and possibilities of coworking."
     },
     "cta": "Get in Touch"
+  },
+  "consulting_services": {
+    "meta": {
+      "title": "Expert Coworking Consulting Services | TwoFifty",
+      "description": "Optimize your flexible workspace operations with TwoFifty's expert coworking consulting services. Specializing in operations, sales, community building, and more."
+    },
+    "hero_section": {
+      "image": {
+        "src": "images/pages/twofifty-coworking-consulting-service_drvax1",
+        "alt": "TwoFifty coworking consulting service",
+        "class": "object-cover"
+      },
+      "content": {
+        "badge": "Expert Coworking Consulting",
+        "title": {
+          "line1": "Optimize How Your",
+          "line2": "Flexible Workspace",
+          "line3": "Operates"
+        },
+        "services_list_label": "We can help with:",
+        "services_list": [
+          "Operations",
+          "Sales",
+          "Community Building",
+          "Team Education",
+          "Member Experience"
+        ],
+        "cta_buttons": [
+          {
+            "text": "Book a Free Consultation",
+            "href": "https://calendar.app.google/zYZVFkH2prid92Wq5",
+            "target": "_blank"
+          },
+          {
+            "text": "Learn More",
+            "href": "#benefits"
+          }
+        ],
+        "trust_indicators": {
+          "text": "Trusted by coworking spaces worldwide",
+          "stats": [
+            {
+              "value": "500+",
+              "label": "Spaces Visited"
+            },
+            {
+              "value": "50+",
+              "label": "Cities"
+            },
+            {
+              "value": "10+",
+              "label": "Years Experience"
+            }
+          ]
+        }
+      }
+    },
+    "benefits_section": {
+      "header": {
+        "label": "BENEFITS",
+        "title": "Key Benefits of Our Coworking Consulting Services",
+        "description": "Discover how our consulting services can transform your workspace into a thriving community hub."
+      },
+      "benefits": [
+        {
+          "title": "Streamline Processes",
+          "description": "We'll analyze your current operational workflow and pinpoint areas for improvement. By optimizing term-structure, administrative tasks, implementing automation, and promoting efficient space utilization, we help you save time for important tasks and run a leaner, more effective operation. The result is a smoother experience for everyone involved — from management to members.",
+          "icon": "Settings"
+        },
+        {
+          "title": "Enhance Team Dynamics",
+          "description": "Our Coworking Consulting services don't just focus on physical space; we dive deep into the interpersonal dynamics that make or break a coworking community. Through team-building exercises, collaborative workspace design, and industry-tested approaches, we foster an environment where teams can excel. Boost the collaborative spirit of your workspace and see the team spirit and productivity soar.",
+          "icon": "Users"
+        },
+        {
+          "title": "Boost Community Engagement",
+          "description": "Our belief is that a nurtured and taken care of community is the heart of any successful coworking space. Our Coworking Consulting services include strategies to engage your members through events, workshops, and digital platforms. We create a sense of belonging and interconnectivity that not only retains existing members but also attracts new ones. Elevate your shared workspace from a mere office to a thriving, engaged community.",
+          "icon": "Network"
+        }
+      ],
+      "cta": {
+        "image": {
+          "src": "images/pages/coworking-travel_drvqnf",
+          "alt": "Coworking seminar",
+          "class": "object-cover"
+        },
+        "title": "Ready to Transform Your Workspace?",
+        "description": "Let's discuss how we can help optimize your coworking space operations and build a stronger community.",
+        "buttons": [
+          {
+            "text": "Book a Call",
+            "href": "https://calendar.app.google/zYZVFkH2prid92Wq5",
+            "target": "_blank"
+          },
+          {
+            "text": "Send an Enquiry",
+            "href": "mailto:mail@twofifty.co"
+          }
+        ]
+      }
+    },
+    "expert_services_section": {
+      "label": "EXPERT",
+      "title": "Results Driven Expert Coworking Consulting Services",
+      "description": "Welcome to TwoFifty, where our Coworking Consulting services are driving forward the future of the modern, flexible workspace. In an era of rapid change and increasing need for adaptability, the coworking sector is witnessing unparalleled growth along with new challenges."
+    },
+    "process_section": {
+      "header": {
+        "label": "PROCESS",
+        "title": "How It Works: Your Journey to a Better Coworking Space",
+        "description": "Embarking on a consulting journey with TwoFifty is a straightforward process designed to ensure our common project's success from start to finish. Here's how our Coworking Consulting services work in four simple steps:"
+      },
+      "steps": [
+        {
+          "title": "Initial Consultation",
+          "description": "Start by scheduling a free initial consultation with our Coworking Consulting Team. During this session, we'll assess your needs, discuss your vision, and identify the key areas that could benefit from our specialized services.",
+          "icon": "Handshake"
+        },
+        {
+          "title": "Customized Plan Creation",
+          "description": "Based on our initial discussion, we develop a customized consulting plan tailored to your unique challenges and objectives. This includes recommended changes, a project timeline, and an estimated budget to provide a clear roadmap for the journey ahead.",
+          "icon": "ClipboardList"
+        },
+        {
+          "title": "Implementation and Training",
+          "description": "The next step in our Coworking Consulting service involves putting the plan into action. From optimizing operational processes to redesigning workspace layouts, we oversee each aspect, ensuring it aligns with our sustainability and adaptability guidelines. We also provide training sessions to educate your team on best practices and new systems.",
+          "icon": "Target"
+        },
+        {
+          "title": "Post-Project Evaluation and Support",
+          "description": "Our commitment doesn't end with project completion. We conduct a thorough post-project evaluation to measure success and identify any areas for further improvement. You'll also have access to ongoing support and updates to ensure your coworking space continues to flourish.",
+          "icon": "LineChart"
+        }
+      ],
+      "cta": {
+        "image": {
+          "src": "images/pages/coworkies-teach_ho15ue",
+          "alt": "Coworking seminar students",
+          "class": "object-cover"
+        },
+        "title": "Ready to Get Started?",
+        "description": "Take the first step towards optimizing your coworking space. Schedule a free consultation or send us an inquiry.",
+        "buttons": [
+          {
+            "text": "Book a Call",
+            "href": "https://calendar.app.google/zYZVFkH2prid92Wq5",
+            "target": "_blank"
+          },
+          {
+            "text": "Send an Enquiry",
+            "href": "mailto:mail@twofifty.co"
+          }
+        ]
+      }
+    },
+    "focus_section": {
+      "header": {
+        "label": "FOCUS",
+        "title": "Our Approach to Coworking Consulting",
+        "description": "At TwoFifty, we've developed an in-house comprehensive consulting methodology that ensures your coworking space isn't just another office but a dynamic environment where productivity and community thrive. Below, we detail the pillars of our approach."
+      },
+      "focus_areas": [
+        {
+          "title": "Sustainable Coworking Solutions",
+          "description": "Sustainability isn't just an environmental concern; it's a business imperative. Our Coworking Consulting services employ cutting-edge practices to ensure your workspace is both environmentally friendly and economically viable. From energy-efficient designs to waste-reducing processes, we guide you in making sustainable choices that benefit your bottom line.",
+          "icon": "LeafyGreen"
+        },
+        {
+          "title": "Adaptable Workspace Strategies",
+          "description": "Change is the only constant in today's fast-paced world. Our adaptable workspace strategies focus on creating coworking spaces that can evolve with your needs. Whether you're expanding, pivoting, or adopting new technologies, our Coworking Consulting services build your knowledge to adapt quickly and efficiently.",
+          "icon": "Layers"
+        },
+        {
+          "title": "Process Optimization for Operational Excellence",
+          "description": "Every minute counts in a busy coworking environment. That's why our Coworking Consulting approach involves an in-depth analysis of your current operations. We identify bottlenecks, suggest improvements, and help implement changes that streamline processes, ultimately enhancing productivity and member satisfaction.",
+          "icon": "Workflow"
+        },
+        {
+          "title": "Community-Centric Planning",
+          "description": "A coworking space is as strong as the community it nurtures. Our Coworking Consulting services include community-centric planning to ensure that both individuals and teams find value, engagement, and a sense of belonging in your space. From community events to shared goals, we help you build a space that fosters collaboration and mutual growth.",
+          "icon": "Users2"
+        }
+      ],
+      "cta": {
+        "image": {
+          "src": "images/pages/twofifty-coworking-consulting-service_drvax1",
+          "alt": "TwoFifty Coworking Consulting Approach",
+          "class": "object-cover"
+        },
+        "title": "Ready to Transform Your Workspace?",
+        "description": "Let's discuss how our expert approach can help optimize your coworking space operations.",
+        "button": {
+          "text": "Book a Call",
+          "href": "https://calendar.app.google/zYZVFkH2prid92Wq5",
+          "target": "_blank"
+        }
+      }
+    },
+    "faq_section": {
+      "title": "Frequently Asked Questions About Our Coworking Consulting",
+      "description": "Find answers to frequently asked questions about our Coworking Consulting services. This FAQ section addresses common queries to ensure you have a clear understanding of our consulting process.",
+      "faqs": [
+        {
+          "question": "What Makes TwoFifty's Coworking Consulting Unique?",
+          "answer": "Our Coworking Consulting services stand out for their focus on sustainability, adaptability, and community engagement. We don't offer one-size-fits-all solutions; instead, we tailor our consulting to meet the unique needs and objectives of each client."
+        },
+        {
+          "question": "How Does the Initial Consultation Work?",
+          "answer": "The initial consultation is a free session where we discuss your needs, assess your current workspace, and identify key areas for improvement. This sets the foundation for our customized Coworking Consulting plan tailored to your goals."
+        },
+        {
+          "question": "What is Included in the Customized Plan?",
+          "answer": "Our customized Coworking Consulting plan includes a range of services like space optimization, process streamlining, team dynamics enhancement, and community engagement strategies. Each plan comes with a clear timeline and estimated budget."
+        },
+        {
+          "question": "How Long Does a Typical Consulting Project Take?",
+          "answer": "The duration of our Coworking Consulting projects varies depending on the scope and specific needs of the client. However, you can expect a project timeline to be discussed and agreed upon during the initial consultation."
+        },
+        {
+          "question": "Do You Offer Training for Teams?",
+          "answer": "Yes, training is a crucial part of our Coworking Consulting services. We provide comprehensive training sessions to educate your team on new systems, best practices, and how to maintain an engaging, productive workspace."
+        },
+        {
+          "question": "How Do You Ensure Sustainability in Coworking Spaces?",
+          "answer": "Sustainability is a core focus of our Coworking Consulting. We guide you in making eco-friendly choices from energy-efficient designs to waste-reducing processes, all aimed at creating a workspace that is both environmentally and economically sustainable."
+        }
+      ]
+    },
+    "cta_section": {
+      "title": "Ready to Transform Your Workspace?",
+      "description": "Schedule an initial consultation with our team to discuss how we can help optimize your coworking space operations.",
+      "buttons": [
+        {
+          "text": "Book a 30min Call",
+          "href": "https://calendar.app.google/zYZVFkH2prid92Wq5",
+          "target": "_blank",
+          "icon": "calendar"
+        },
+        {
+          "text": "Connect on LinkedIn",
+          "href": "https://www.linkedin.com/in/paulineroussel/",
+          "target": "_blank",
+          "icon": "linkedin"
+        },
+        {
+          "text": "Connect via Email",
+          "href": "mailto:hello@twofifty.co",
+          "target": "_blank",
+          "icon": "email"
+        }
+      ]
+    }
   }
 }
