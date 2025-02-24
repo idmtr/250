@@ -1,33 +1,10 @@
-import { NextResponse } from "next/server";
+import { MetadataRoute } from "next";
 
-export async function GET() {
-  const entries = await generateDynamicEntries();
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://twofifty.co";
+  const sitemapEntries: MetadataRoute.Sitemap = [];
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
-        ${entries
-          .map(
-            (entry) => `
-                <url>
-                    <loc>${entry.url}</loc>
-                    <lastmod>${entry.lastModified.toISOString()}</lastmod>
-                </url>
-            `
-          )
-          .join("")}
-    </urlset>`;
+  // Your existing sitemap generation logic...
 
-  return NextResponse.text(sitemap, {
-    headers: {
-      "Content-Type": "application/xml",
-    },
-  });
-}
-
-async function generateDynamicEntries() {
-  return [
-    { url: "/en/our-mission", lastModified: new Date() },
-    { url: "/fr/notre-mission", lastModified: new Date() },
-    // Add more entries as needed
-  ];
+  return sitemapEntries;
 }

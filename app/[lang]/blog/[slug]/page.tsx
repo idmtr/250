@@ -22,6 +22,8 @@ interface Props {
   };
 }
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
     const { lang, slug } = await getValidatedParams(params);
@@ -281,9 +283,7 @@ export default async function BlogPost({ params }: Props) {
                 )}
               </div>
 
-              <span title={`${post.readingTime}`}>
-                {post.readingTime}
-              </span>
+              <span title={`${post.readingTime}`}>{post.readingTime}</span>
             </div>
           </header>
 
@@ -306,7 +306,7 @@ export default async function BlogPost({ params }: Props) {
               __html: post.content.replace(
                 /<img([^>]+)src="([^"]+)"([^>]*)>/g,
                 (match, before, src, after) => {
-                  const alt = /alt="([^"]+)"/.exec(match)?.[1] || ''
+                  const alt = /alt="([^"]+)"/.exec(match)?.[1] || "";
                   // Use the src directly without mapping
                   return `<div class="relative aspect-[16/9] my-8">
                     <img${before}src="${src}"${after} 
@@ -314,9 +314,9 @@ export default async function BlogPost({ params }: Props) {
                       class="rounded-lg object-cover"
                       loading="lazy"
                     />
-                  </div>`
+                  </div>`;
                 }
-              )
+              ),
             }}
           />
 

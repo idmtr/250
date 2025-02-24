@@ -11,6 +11,8 @@ type Props = {
   params: { lang: Locale };
 };
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
   const dictionary = await getDictionary(lang);

@@ -12,15 +12,14 @@ import { generatePageMetadata } from "@/lib/metadata";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
 });
 
 export const dynamicParams = false;
 
-type Props = {
-  params: { lang: Locale };
+interface Props {
   children: React.ReactNode;
-};
+  params: { lang: string };
+}
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({
@@ -29,27 +28,33 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const validatedParams = await getValidatedParams(params);
-  const { lang } = validatedParams;
+  const { lang } = await getValidatedParams(params);
 
   return generatePageMetadata({
     lang,
-    title: "TwoFifty - Coworking Consultancy",
-    description: "TwoFifty specializes in crafting sustainable, adaptable workspaces that streamline processes, foster team dynamics, and enhance community engagement.",
+    title: "TwoFifty",
+    description: "Your default description",
   });
 }
 
-export default async function RootLayout(props: Props) {
-  const { lang } = await getValidatedParams(props.params);
+export default async function Layout({ children, params }: Props) {
+  const { lang } = await getValidatedParams(params);
   const dictionary = await getDictionary(lang);
 
   return (
-    <div
-      className={`${inter.variable} min-h-screen font-sans antialiased bg-[#F5EBE0]`}
-    >
-      <Header lang={lang} dictionary={dictionary} />
-      <main>{props.children}</main>
-      <Footer lang={lang} dictionary={dictionary} />
-    </div>
+    <html lang={lang} className={inter.className}>
+      <body className="min-h-screen font-sans antialiased">
+        <Header lang={lang} dictionary={dictionary} />
+        <main className="min-h-screen">{children}</main>
+        <Footer lang={lang} dictionary={dictionary} />
+      </body>
+    </html>
   );
+}
+
+// Make this a client component if needed
+function getCanonicalUrl() {
+  if (typeof window === "undefined") return "";
+  const searchParams = new URLSearchParams(window.location.search);
+  return searchParams.get("canonical") || window.location.pathname;
 }

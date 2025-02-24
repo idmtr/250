@@ -112,27 +112,17 @@ export function middleware(request: NextRequest) {
 
     // If accessing standard path, redirect to localized
     if (path === standardPath && localizedPath !== standardPath) {
-      const redirectUrl = new URL(
-        `/${potentialLocale}/${localizedPath}`,
-        request.url
+      return NextResponse.redirect(
+        new URL(`/${potentialLocale}/${localizedPath}`, request.url)
       );
-      console.log(
-        "[middleware] Redirecting to localized:",
-        redirectUrl.pathname
-      );
-      return NextResponse.redirect(redirectUrl);
     }
 
-    // If on localized path, set canonical and rewrite
+    // If on localized path, rewrite to standard path
     if (path === localizedPath) {
-      const response = NextResponse.rewrite(
-        new URL(`/${potentialLocale}/${standardPath}`, request.url)
-      );
-      response.headers.set(
-        "x-canonical-url",
-        `/${potentialLocale}/${localizedPath}`
-      );
-      return response;
+      // Instead of setting headers, pass the canonical URL as a searchParam
+      const url = new URL(`/${potentialLocale}/${standardPath}`, request.url);
+      url.searchParams.set("canonical", `/${potentialLocale}/${localizedPath}`);
+      return NextResponse.rewrite(url);
     }
   }
 

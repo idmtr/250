@@ -93,18 +93,16 @@ const nextConfig = {
     });
     return config;
   },
-  onError: (error) => {
-    if (process.env.NODE_ENV !== 'production') {
-      console.log('Next.js Error:', {
-        message: error.message,
-        stack: error.stack,
-        hydration: error.digest?.includes('hydration')
-      })
-    }
-  },
   experimental: {
     typedRoutes: true,
     serverActions: true
+  },
+  output: 'standalone',
+  // Specify which routes should be dynamic
+  dynamicRoutes: {
+    '/[lang]/blog/[slug]': { dynamic: true },
+    '/[lang]/speaking-events': { dynamic: true },
+    '/[lang]/admin/articles': { dynamic: true },
   }
 }
 
