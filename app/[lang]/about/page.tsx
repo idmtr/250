@@ -16,8 +16,8 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
   return generatePageMetadata({
-    routeKey: "about",
     lang,
+    path: "/about",
   });
 }
 

@@ -89,25 +89,13 @@ type Props = {
   params: { lang: Locale };
 };
 
-// Metadata generation with translations
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
-  const t = await getDictionary(lang);
-  const cs = t.consulting_services as ConsultingServicesDict;
-  const route = routes["coworking-consulting"];
-
-  // Fallback metadata if cs or cs.meta is undefined
-  const meta = cs?.meta || {
-    title: "Expert Coworking Consulting Services | TwoFifty",
-    description:
-      "Optimize your flexible workspace operations with TwoFifty's expert coworking consulting services.",
-  };
 
   return generatePageMetadata({
     lang,
-    path: route.localized[lang].path,
-    title: meta.title,
-    description: meta.description,
+    path: "/coworking-consulting",
   });
 }
 

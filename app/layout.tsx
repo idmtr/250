@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     ...generateFaviconMetadata({ baseUrl }),
     title: {
-      default: "TwoFifty - Coworking Consultancy",
+      default: "TwoFifty",
       template: "%s | Coworking Consulting",
     },
     description:

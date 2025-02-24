@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
 
   return {
-    title: "TwoFifty - Expert Coworking Consultancy",
+    title: "TwoFifty",
     description:
       "Transform your workspace with TwoFifty's global coworking expertise.",
     alternates: {

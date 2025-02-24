@@ -4,7 +4,6 @@ Allow: /
 # Old URLs
 Disallow: /speaking/
 Disallow: /presentations-workshops/
-Disallow: /coworking-community-retreats/
 Disallow: /fr/coworking-mission-francais/
 
 # Sitemap

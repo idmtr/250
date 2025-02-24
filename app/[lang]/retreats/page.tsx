@@ -20,10 +20,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return generatePageMetadata({
     lang,
     path: "/retreats",
-    title: dictionary.retreats?.heroTitle || "Retreats | TwoFifty Consulting",
-    description:
-      dictionary.retreats?.heroDescription ||
-      "Join our transformative coworking retreats",
   });
 }
 

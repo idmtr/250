@@ -17,8 +17,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return generatePageMetadata({
     lang,
     path: "/mission",
-    title: "Our Mission | TwoFifty Consulting",
-    description: "Discover TwoFifty Consulting's mission and values",
   });
 }
 

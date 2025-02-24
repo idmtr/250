@@ -59,10 +59,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return generatePageMetadata({
     lang,
     path: "/workshops",
-    title: dictionary.workshops?.title || "Workshops | TwoFifty Consulting",
-    description:
-      dictionary.workshops?.subtitle ||
-      "Professional workshops for coworking spaces",
   });
 }
 

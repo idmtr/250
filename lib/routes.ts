@@ -10,158 +10,158 @@ export type LocalizedRouteConfig = {
   };
 };
 
-export const routes: Record<string, LocalizedRouteConfig> = {
-  home: {
-    standard: "",
-    localized: {
-      en: {
-        path: "",
-        title: "Home",
-      },
-      fr: {
-        path: "",
-        title: "Accueil",
-      },
-      de: {
-        path: "",
-        title: "Startseite",
-      },
-      es: {
-        path: "",
-        title: "Inicio",
-      },
-    },
-  },
-  mission: {
-    standard: "mission",
-    localized: {
-      en: {
-        path: "our-mission",
-        title: "Our Mission",
-      },
-      fr: {
-        path: "notre-mission",
-        title: "Notre Mission",
-      },
-      de: {
-        path: "unsere-mission",
-        title: "Unsere Mission",
-      },
-      es: {
-        path: "nuestra-mision",
-        title: "Nuestra Misión",
-      },
-    },
-  },
-  workshops: {
-    standard: "workshops",
-    localized: {
-      en: { path: "workshops", title: "Workshops" },
-      fr: { path: "ateliers", title: "Ateliers" },
-      de: { path: "workshops", title: "Workshops" },
-      es: { path: "talleres", title: "Talleres" },
-    },
-  },
-  education: {
-    standard: "education",
-    localized: {
-      en: {
-        path: "coworking-education",
-        title: "Coworking Education",
-      },
-      fr: {
-        path: "formation-coworking",
-        title: "Formation Coworking",
-      },
-      de: {
-        path: "coworking-ausbildung",
-        title: "Coworking Ausbildung",
-      },
-      es: {
-        path: "educacion-coworking",
-        title: "Educación Coworking",
-      },
-    },
-  },
-  "speaking-events": {
-    standard: "speaking-events",
-    localized: {
-      en: { path: "speaking-events", title: "Speaking Events" },
-      fr: { path: "conferences", title: "Conférences" },
-      de: { path: "vortraege", title: "Vorträge" },
-      es: { path: "conferencias", title: "Conferencias" },
-    },
-  },
-  "get-feedback": {
-    standard: "get-feedback",
-    localized: {
-      en: { path: "get-feedback", title: "Get Feedback" },
-      fr: { path: "obtenir-conseil", title: "Obtenir Conseil" },
-      de: { path: "feedback-erhalten", title: "Feedback Erhalten" },
-      es: { path: "obtener-feedback", title: "Obtener Feedback" },
-    },
-  },
-  retreats: {
-    standard: "retreats",
-    localized: {
-      en: { path: "community-retreats", title: "Coworking Community Retreats" },
-      fr: {
-        path: "retraites-communautaires",
-        title: "Retraites Communautaires",
-      },
-      de: { path: "community-retreats", title: "Community Retreats" },
-      es: { path: "retiros-comunitarios", title: "Retiros Comunitarios" },
-    },
-  },
-  blog: {
-    standard: "blog",
-    localized: {
-      en: { path: "blog", title: "Blog" },
-      fr: { path: "blog", title: "Blog" },
-      de: { path: "blog", title: "Blog" },
-      es: { path: "blog", title: "Blog" },
-    },
-  },
-  about: {
-    standard: "about",
-    localized: {
-      en: { path: "about", title: "About Us" },
-      fr: { path: "a-propos", title: "À Propos" },
-      de: { path: "ueber-uns", title: "Über Uns" },
-      es: { path: "sobre-nosotros", title: "Sobre Nosotros" },
-    },
-  },
-  contact: {
-    standard: "contact",
-    localized: {
-      en: { path: "contact", title: "Contact" },
-      fr: { path: "contactez-nous", title: "Contactez-nous" },
-      de: { path: "kontakt", title: "Kontakt" },
-      es: { path: "contacto", title: "Contacto" },
-    },
-  },
-  "coworking-consulting": {
-    standard: "coworking-consulting",
-    localized: {
-      en: {
-        path: "coworking-consulting-services",
-        title: "Expert Coworking Consulting Services",
-      },
-      fr: {
-        path: "services-conseil-coworking",
-        title: "Services de Conseil en Coworking",
-      },
-      de: {
-        path: "coworking-beratung",
-        title: "Coworking-Beratung",
-      },
-      es: {
-        path: "servicios-consultoria-coworking",
-        title: "Servicios de Consultoría Coworking",
-      },
-    },
-  },
-};
+// export const routes: Record<string, LocalizedRouteConfig> = {
+//   home: {
+//     standard: "",
+//     localized: {
+//       en: {
+//         path: "",
+//         title: "Home",
+//       },
+//       fr: {
+//         path: "",
+//         title: "Accueil",
+//       },
+//       de: {
+//         path: "",
+//         title: "Startseite",
+//       },
+//       es: {
+//         path: "",
+//         title: "Inicio",
+//       },
+//     },
+//   },
+//   mission: {
+//     standard: "mission",
+//     localized: {
+//       en: {
+//         path: "our-mission",
+//         title: "Our Mission",
+//       },
+//       fr: {
+//         path: "notre-mission",
+//         title: "Notre Mission",
+//       },
+//       de: {
+//         path: "unsere-mission",
+//         title: "Unsere Mission",
+//       },
+//       es: {
+//         path: "nuestra-mision",
+//         title: "Nuestra Misión",
+//       },
+//     },
+//   },
+//   workshops: {
+//     standard: "workshops",
+//     localized: {
+//       en: { path: "workshops", title: "Workshops" },
+//       fr: { path: "ateliers", title: "Ateliers" },
+//       de: { path: "workshops", title: "Workshops" },
+//       es: { path: "talleres", title: "Talleres" },
+//     },
+//   },
+//   education: {
+//     standard: "education",
+//     localized: {
+//       en: {
+//         path: "coworking-education",
+//         title: "Coworking Education",
+//       },
+//       fr: {
+//         path: "formation-coworking",
+//         title: "Formation Coworking",
+//       },
+//       de: {
+//         path: "coworking-ausbildung",
+//         title: "Coworking Ausbildung",
+//       },
+//       es: {
+//         path: "educacion-coworking",
+//         title: "Educación Coworking",
+//       },
+//     },
+//   },
+//   "speaking-events": {
+//     standard: "speaking-events",
+//     localized: {
+//       en: { path: "speaking-events", title: "Speaking Events" },
+//       fr: { path: "conferences", title: "Conférences" },
+//       de: { path: "vortraege", title: "Vorträge" },
+//       es: { path: "conferencias", title: "Conferencias" },
+//     },
+//   },
+//   "get-feedback": {
+//     standard: "get-feedback",
+//     localized: {
+//       en: { path: "get-feedback", title: "Get Feedback" },
+//       fr: { path: "obtenir-conseil", title: "Obtenir Conseil" },
+//       de: { path: "feedback-erhalten", title: "Feedback Erhalten" },
+//       es: { path: "obtener-feedback", title: "Obtener Feedback" },
+//     },
+//   },
+//   retreats: {
+//     standard: "retreats",
+//     localized: {
+//       en: { path: "community-retreats", title: "Coworking Community Retreats" },
+//       fr: {
+//         path: "retraites-communautaires",
+//         title: "Retraites Communautaires",
+//       },
+//       de: { path: "community-retreats", title: "Community Retreats" },
+//       es: { path: "retiros-comunitarios", title: "Retiros Comunitarios" },
+//     },
+//   },
+//   blog: {
+//     standard: "blog",
+//     localized: {
+//       en: { path: "blog", title: "Blog" },
+//       fr: { path: "blog", title: "Blog" },
+//       de: { path: "blog", title: "Blog" },
+//       es: { path: "blog", title: "Blog" },
+//     },
+//   },
+//   about: {
+//     standard: "about",
+//     localized: {
+//       en: { path: "about", title: "About Us" },
+//       fr: { path: "a-propos", title: "À Propos" },
+//       de: { path: "ueber-uns", title: "Über Uns" },
+//       es: { path: "sobre-nosotros", title: "Sobre Nosotros" },
+//     },
+//   },
+//   contact: {
+//     standard: "contact",
+//     localized: {
+//       en: { path: "contact", title: "Contact" },
+//       fr: { path: "contactez-nous", title: "Contactez-nous" },
+//       de: { path: "kontakt", title: "Kontakt" },
+//       es: { path: "contacto", title: "Contacto" },
+//     },
+//   },
+//   "coworking-consulting": {
+//     standard: "coworking-consulting",
+//     localized: {
+//       en: {
+//         path: "coworking-consulting-services",
+//         title: "Expert Coworking Consulting Services",
+//       },
+//       fr: {
+//         path: "services-conseil-coworking",
+//         title: "Services de Conseil en Coworking",
+//       },
+//       de: {
+//         path: "coworking-beratung",
+//         title: "Coworking-Beratung",
+//       },
+//       es: {
+//         path: "servicios-consultoria-coworking",
+//         title: "Servicios de Consultoría Coworking",
+//       },
+//     },
+//   },
+// };
 
 export function getLocalizedPath(path: string, locale: Locale): string {
   const cleanPath = path.replace(/^\/+|\/+$/g, "");

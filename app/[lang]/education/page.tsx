@@ -6,7 +6,7 @@ import Link from "next/link";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { MetadataService } from "@/lib/services/MetadataService";
+import { generatePageMetadata } from "@/lib/metadata";
 import { routes } from "@/lib/url-utils";
 
 type Props = {
@@ -18,11 +18,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dictionary = await getDictionary(lang);
   const route = routes.education.localized[lang];
 
-  return MetadataService.generateMetadata({
-    currentPath: route.path,
-    locale: lang,
-    title: route.title,
-    description: dictionary.education.description,
+  return generatePageMetadata({
+    lang,
+    path: "/education",
   });
 }
 

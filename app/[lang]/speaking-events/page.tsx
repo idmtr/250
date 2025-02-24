@@ -18,9 +18,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return generatePageMetadata({
     lang,
     path: "/speaking-events",
-    title: "Speaking Events | TwoFifty Consulting",
-    description:
-      "Upcoming and past speaking events about coworking and digital transformation",
   });
 }
 

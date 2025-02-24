@@ -18,8 +18,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return generatePageMetadata({
     lang,
     path: "/get-feedback",
-    title: "Get Feedback | TwoFifty Consulting",
-    description: "Professional feedback services for coworking spaces",
   });
 }
 
