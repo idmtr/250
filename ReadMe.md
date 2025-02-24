@@ -18,24 +18,38 @@
 
 ## Prerequisites
 
-- Node.js (v18.0.0 or higher)
-- npm (v9.0.0 or higher)
-- Git
-- Basic knowledge of:
-  - Next.js 13+
-  - TypeScript
-  - TailwindCSS
-  - i18n concepts
+- Next.js 15.1.7+
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- Cloudinary for images
 
 ## Architecture Overview
 
-Built with Next.js 15+, TypeScript, and TailwindCSS, this multilingual website features:
+A multilingual consulting website built with:
 
-- **Internationalization (i18n)** with English and French support
-- **Static and Dynamic Pages** for optimal performance
-- **Client/Server Component** separation
-- **MDX-based Blog** system with tag support
-- **SEO-optimized** dynamic routing
+- **Next.js App Router** with language-based routing
+- **Server Components** for optimal performance
+- **Client Components** for interactive features
+- **Framer Motion** for animations
+- **TailwindCSS** for styling
+
+### Directory Structure
+
+```plaintext
+/app/
+├── [lang]/                   # Language-specific routes
+│   ├── about/               # Static pages
+│   ├── blog/                # Blog system
+│   │   ├── [slug]/         # Individual posts
+│   │   └── tag/[tag]/      # Tag filtering
+│   ├── education/          # Service pages
+│   ├── manifest.json/      # Manifest route
+│   └── layout.tsx          # Root layout
+├── api/                     # API routes
+├── components/             # Shared components
+└── lib/                    # Utility functions
+```
 
 ## Core Components
 
@@ -1151,358 +1165,89 @@ return {
 
 3. **404 on Language Routes**
 
-```typescript
-// Problem: Language routes returning 404
-// Solution: Update middleware configuration
-export const config = {
-  matcher: [
-    // Include all routes except static assets and API
-    "/((?!api|_next/static|_next/image|favicon.ico|favicon/|images/).*)",
-  ],
-};
 ```
 
-### SEO Best Practices
+## Core Features
 
-1. **Language Tags**
+### Internationalization
 
-```typescript
-// filepath: /app/[lang]/layout.tsx
-export default function Layout({ params: { lang } }: Props) {
-  return (
-    <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
-      {/* ... */}
-    </html>
-  );
-}
+- Supported languages: English (en), French (fr), German (de), Spanish (es)
+- Dictionary-based translations
+- URL localization with language prefixes
+- Fallback to English for missing translations
+
+### Navigation
+
+- Responsive header with mobile menu
+- Animated dropdown menus
+- Language switcher
+- Scroll-aware styling
+
+### Components
+
+1. **Header**
+   - Animated logo
+   - Multi-level navigation
+   - Mobile-responsive menu
+   - Language selector
+
+2. **Layout**
+   - Server-side rendered
+   - Font optimization
+   - SEO metadata handling
+
+### Styling
+
+- TailwindCSS for utility-first styling
+- Custom color scheme:
+  - Primary: #D4A373
+  - Background gradients
+  - Responsive design
+
+### Performance Optimizations
+
+- Server components where possible
+- Client components for interactive features
+- Image optimization via Cloudinary
+- Font optimization with `next/font`
+
+## Development Guidelines
+
+### Component Structure
+
+1. **Server Components (Default)**
+   - Page components
+   - Layout components
+   - Static content
+
+2. **Client Components**
+   - Interactive UI elements
+   - Animated components
+   - User input handlers
+
+### Naming Conventions
+
+- Components: PascalCase
+- Utilities: camelCase
+- Files: kebab-case
+
+### Type Safety
+
+- TypeScript for all components
+- Strict type checking
+- Interface definitions for props
+
+## Deployment
+
+- Vercel recommended
+- Environment variables required:
+  - `NEXT_PUBLIC_SITE_URL`
+  - Cloudinary configuration
+
+## Troubleshooting
+
+Common issues:
+- Hydration errors: Check client/server component boundaries
+- Navigation issues: Verify language parameter validation
+- Image loading: Ensure Cloudinary URLs are correct
 ```
-
-2. **Structured Data**
-
-```typescript
-// filepath: /lib/structured-data.ts
-export function generateBlogPostSchema(post: Post, lang: Locale) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    datePublished: post.date,
-    inLanguage: lang,
-    // ...more fields
-  };
-}
-```
-
-### Canonical URLs and Metadata Generation
-
-```typescript
-// filepath: /lib/metadata.ts
-import type { Metadata } from "next";
-import type { Locale } from "@/i18n-config";
-import { i18n } from "@/i18n-config";
-import { getBaseUrl } from "./url";
-
-interface PageMetadataProps {
-  lang: Locale;
-  path?: string;
-  title: string;
-  description: string;
-}
-
-export function generatePageMetadata({
-  lang,
-  path = "",
-  title,
-  description,
-}: PageMetadataProps): Metadata {
-  const baseUrl = getBaseUrl();
-  const canonicalPath = path ? `/${lang}${path}` : `/${lang}`;
-
-  return {
-    title,
-    description,
-    metadataBase: new URL(baseUrl),
-    alternates: {
-      canonical: `${baseUrl}${canonicalPath}`,
-      languages: Object.fromEntries(
-        i18n.locales.map((locale) => [locale, `${baseUrl}/${locale}${path}`])
-      ),
-    },
-  };
-}
-```
-
-### Usage Examples
-
-```typescript
-// Example 1: Static Page
-// filepath: /app/[lang]/about/page.tsx
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { lang } = await getValidatedParams(params);
-  const dictionary = await getDictionary(lang);
-
-  return generatePageMetadata({
-    lang,
-    path: "/about",
-    title: dictionary.about?.meta?.title || "About | TwoFifty Consulting",
-    description:
-      dictionary.about?.meta?.description || "About TwoFifty Consulting",
-  });
-}
-
-// Example 2: Blog Post
-// filepath: /app/[lang]/blog/[slug]/page.tsx
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { lang, slug } = await getValidatedParams(params);
-  const post = await getPostBySlug(slug, lang);
-
-  if (!post) return {};
-
-  return generatePageMetadata({
-    lang,
-    path: `/blog/${slug}`,
-    title: post.title,
-    description: post.excerpt,
-  });
-}
-```
-
-This generates proper canonical URLs like:
-
-- `https://twofifty.co/en/about`
-- `https://twofifty.co/fr/blog/getting-started`
-
-With corresponding language alternates:
-
-```html
-<link rel="canonical" href="https://twofifty.co/en/about" />
-<link rel="alternate" hreflang="en" href="https://twofifty.co/en/about" />
-<link rel="alternate" hreflang="fr" href="https://twofifty.co/fr/about" />
-<link rel="alternate" hreflang="de" href="https://twofifty.co/de/about" />
-<link rel="alternate" hreflang="es" href="https://twofifty.co/es/about" />
-```
-
-## Page Headers
-
-Our pages follow a consistent header style pattern. Here's how to implement it:
-
-### Standard Page Header
-
-```typescript
-<section className="py-24 bg-gradient-to-r from-primary/10 to-primary/5">
-  <div className="container mx-auto px-6">
-    <p className="text-primary mb-4">{dictionary.page.subtitle}</p>
-    <h1 className="text-5xl font-bold mb-8">{dictionary.page.title}</h1>
-  </div>
-</section>
-```
-
-### Header Components
-
-1. **Container Structure**
-
-   - Outer section: `py-24` for vertical padding
-   - Gradient background: `bg-gradient-to-r from-primary/10 to-primary/5`
-   - Inner container: `container mx-auto px-6`
-
-2. **Typography**
-
-   - Subtitle: `text-primary mb-4`
-   - Main title: `text-5xl font-bold mb-8`
-
-3. **Dictionary Structure**
-
-```typescript
-{
-  "page": {
-    "subtitle": "Optional overline text",
-    "title": "Main Page Title"
-  }
-}
-```
-
-### Example Implementation
-
-```typescript
-export default async function PageName(props: Props) {
-  const { lang } = await getValidatedParams(props.params);
-  const dictionary = await getDictionary(lang);
-
-  return (
-    <main className="min-h-screen">
-      <section className="py-24 bg-gradient-to-r from-primary/10 to-primary/5">
-        <div className="container mx-auto px-6">
-          <p className="text-primary mb-4">{dictionary.page.subtitle}</p>
-          <h1 className="text-5xl font-bold mb-8">{dictionary.page.title}</h1>
-        </div>
-      </section>
-      {/* Page content */}
-    </main>
-  );
-}
-```
-
-### Customization Options
-
-- Add additional elements like CTAs or breadcrumbs
-- Modify background gradient intensity with opacity values
-- Adjust spacing for specific page requirements
-
-## Pages Version 2
-
-Our enhanced page structure follows a more sophisticated composition with multiple structured sections. Here's the pattern used in pages like Retreats:
-
-### Hero Section with Split Layout
-
-```typescript
-<section className="relative py-24 bg-gradient-to-r from-primary/10 to-primary/5">
-  <div className="container mx-auto px-4">
-    <div className="grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <span className="text-primary mb-4">{dictionary.heroSubtitle}</span>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          {dictionary.heroTitle}
-        </h1>
-        <p className="text-xl mb-8">{dictionary.heroDescription}</p>
-        <Button size="lg" className="mt-4">
-          {dictionary.cta.buttonText}
-        </Button>
-      </div>
-      <div>
-        <Image
-          src="/images/hero.jpg"
-          alt="Hero Image"
-          width={1080}
-          height={720}
-          className="rounded-lg shadow-lg"
-          priority
-        />
-      </div>
-    </div>
-  </div>
-</section>
-```
-
-### Content Section Pattern
-
-Each content section follows this structure:
-
-```typescript
-<section className="py-16 [bg-gray-50]">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl font-bold mb-12">{dictionary.section.title}</h2>
-    {/* Content Grid */}
-    <div className="grid md:grid-cols-[2,3,4] gap-8">
-      {/* Section specific content */}
-    </div>
-  </div>
-</section>
-```
-
-### Dictionary Structure
-
-```typescript
-{
-  "page": {
-    "heroSubtitle": "Overline text",
-    "heroTitle": "Main Title",
-    "heroDescription": "Description text",
-    "sections": {
-      "whatYouGet": {
-        "title": "Section Title",
-        "items": ["item1", "item2"]
-      },
-      "program": {
-        "title": "Program Title",
-        "days": [
-          {
-            "title": "Day 1",
-            "activities": ["activity1", "activity2"]
-          }
-        ]
-      }
-    },
-    "cta": {
-      "title": "CTA Title",
-      "buttonText": "Action Text"
-    }
-  }
-}
-```
-
-### Section Types
-
-1. **Split Content**
-
-   ```typescript
-   <div className="grid md:grid-cols-2 gap-12 items-center">
-     <ContentSection />
-     <ImageSection />
-   </div>
-   ```
-
-2. **Grid Layout**
-
-   ```typescript
-   <div className="grid md:grid-cols-3 gap-8">
-     {items.map((item) => (
-       <GridItem key={item.id} {...item} />
-     ))}
-   </div>
-   ```
-
-3. **Feature List**
-   ```typescript
-   <div className="space-y-4">
-     {features.map((feature) => (
-       <div className="flex items-center space-x-3">
-         <span className="text-primary">✓</span>
-         <span>{feature}</span>
-       </div>
-     ))}
-   </div>
-   ```
-
-### Common Components
-
-1. **Section Container**
-
-   ```typescript
-   <section className="py-16 [bg-variant]">
-     <div className="container mx-auto px-4">{children}</div>
-   </section>
-   ```
-
-2. **Section Header**
-
-   ```typescript
-   <div className="text-center mb-12">
-     <h2 className="text-3xl font-bold mb-4">{title}</h2>
-     <p className="text-xl">{subtitle}</p>
-   </div>
-   ```
-
-3. **CTA Section**
-   ```typescript
-   <section className="py-16 bg-primary text-white">
-     <div className="container mx-auto px-4 text-center">
-       <h2 className="text-3xl font-bold mb-4">{title}</h2>
-       <p className="text-xl mb-8">{subtitle}</p>
-       <Button size="lg" variant="secondary">
-         {buttonText}
-       </Button>
-     </div>
-   </section>
-   ```
-
-### Customization Options
-
-- Background variants: `bg-gray-50`, `bg-white`, `bg-primary`
-- Grid columns: `md:grid-cols-[2,3,4]`
-- Spacing: `py-16`, `py-24`, `mb-8`, `gap-12`
-- Typography: `text-4xl`, `text-3xl`, `text-xl`
-- Image handling: `rounded-lg`, `shadow-lg`, `priority`
-
-### Example Implementation
-
-See the Retreats page for a complete implementation of this enhanced page structure.
