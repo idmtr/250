@@ -20,20 +20,23 @@ export default function AdminLogin() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json',
         },
+        credentials: 'include', // Important for cookies
         body: JSON.stringify({ password })
       })
 
-      const data = await res.json()
-      
-      if (res.ok && data.success) {
-        await new Promise(resolve => setTimeout(resolve, 500))
-        router.push('/en/admin/articles/new')
-        router.refresh()
+      if (res.ok) {
+        const data = await res.json()
+        if (data.success) {
+          // Add a small delay for UX
+          await new Promise(resolve => setTimeout(resolve, 500))
+          router.replace('/en/admin/articles/new')
+        } else {
+          setError(data.error || 'Login failed')
+          setPassword('')
+        }
       } else {
-        setError(data.error || 'Invalid password')
-        // Clear password field on error
+        setError('Invalid password')
         setPassword('')
       }
     } catch (err) {

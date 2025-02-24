@@ -282,9 +282,9 @@ const allPaths = getAllLocalizedPaths("education");
 */
 
 // Get canonical URL
-const canonicalUrl = getCanonicalUrl(
-  "formation-coworking",
-  "fr",
-  "https://example.com"
-);
+// const canonicalUrl = getCanonicalUrl(
+//   "formation-coworking",
+//   "fr",
+//   "https://twofifty.co"
+// );
 // console.log(canonicalUrl);

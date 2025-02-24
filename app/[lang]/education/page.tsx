@@ -6,6 +6,8 @@ import Link from "next/link";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { MetadataService } from "@/lib/services/MetadataService";
+import { routes } from "@/lib/url-utils";
 
 type Props = {
   params: { lang: Locale };
@@ -14,23 +16,14 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
   const dictionary = await getDictionary(lang);
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://twofifty.co";
+  const route = routes.education.localized[lang];
 
-  // Type guard for education section
-  if (!dictionary.education?.meta) {
-    return {
-      title: "Education | TwoFifty Consulting",
-      description: "Educational services and workshops",
-    };
-  }
-
-  // If meta data exists, use it
-  const { meta } = dictionary.education;
-
-  return {
-    title: meta.title || "Education | TwoFifty Consulting",
-    description: meta.description || "Educational services and workshops",
-  };
+  return MetadataService.generateMetadata({
+    currentPath: route.path,
+    locale: lang,
+    title: route.title,
+    description: dictionary.education.description,
+  });
 }
 
 export default async function Education(props: Props) {

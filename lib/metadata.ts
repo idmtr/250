@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { i18n } from "@/i18n-config";
 import { getBaseUrl } from "./url";
 import { headers } from "next/headers";
-import { 
-  routes, 
-  getStandardPath, 
+import {
+  routes,
+  getStandardPath,
   getFullPath,
-  getLocalizedPath 
+  getLocalizedPath,
 } from "./routes";
 import type { Locale } from "@/i18n-config";
 
@@ -33,21 +33,24 @@ export async function generatePageMetadata({
 
     if (!cleanPath) {
       // Handle root/home page
-      i18n.locales.forEach(locale => {
-        alternateLanguages[locale] = locale === i18n.defaultLocale
-          ? baseUrl
-          : `${baseUrl}/${locale}`;
+      i18n.locales.forEach((locale) => {
+        alternateLanguages[locale] = `${baseUrl}/${locale}`;
       });
     } else {
-      const standardPath = getStandardPath(cleanPath, lang);
-      const route = routes[standardPath];
+      // Find route by current localized path
+      const route = Object.values(routes).find(
+        (r) => r.localized[lang].path === cleanPath
+      );
 
       if (route?.localized) {
-        i18n.locales.forEach(locale => {
+        i18n.locales.forEach((locale) => {
           const localizedPath = route.localized[locale].path;
-          alternateLanguages[locale] = locale === i18n.defaultLocale
-            ? `${baseUrl}/${localizedPath}`
-            : `${baseUrl}/${locale}/${localizedPath}`;
+          alternateLanguages[locale] = `${baseUrl}/${locale}/${localizedPath}`;
+        });
+      } else {
+        // Fallback for dynamic routes (blog, tags, etc)
+        i18n.locales.forEach((locale) => {
+          alternateLanguages[locale] = `${baseUrl}/${locale}/${cleanPath}`;
         });
       }
     }
@@ -63,8 +66,9 @@ export async function generatePageMetadata({
       alternates: {
         canonical,
         languages: Object.fromEntries(
-          Object.entries(alternateLanguages)
-            .filter(([locale]) => locale !== lang)
+          Object.entries(alternateLanguages).filter(
+            ([locale]) => locale !== lang
+          )
         ),
       },
     };

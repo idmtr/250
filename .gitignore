@@ -2,6 +2,7 @@
 
 # folders
 /public/images/*
+/localfiles/*
 
 # dependencies
 /node_modules

@@ -6,6 +6,7 @@ import { getLatestPosts } from "@/lib/blog";
 import type { Metadata } from "next";
 import { getValidatedParams } from "@/lib/params-helper";
 import { generatePageMetadata } from "@/lib/metadata";
+import { RoutingService } from "@/lib/routing/utils";
 
 export const dynamicParams = false;
 
@@ -20,14 +21,8 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const validatedParams = await getValidatedParams(params);
-  const { lang } = validatedParams;
-
-  return generatePageMetadata({
-    lang,
-    title: "TwoFifty",
-    description: "TwoFifty specializes in crafting sustainable, adaptable workspaces that streamline processes, foster team dynamics, and enhance community engagement.",
-  });
+  const { lang } = await getValidatedParams(params);
+  return RoutingService.generateMetadata("home", lang);
 }
 
 export default async function Page({ params }: Props) {

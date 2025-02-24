@@ -2,6 +2,7 @@ import { getPosts } from "@/lib/blog";
 import { i18n } from "@/i18n-config";
 import { MetadataRoute } from "next";
 import { routes, getLocalizedPath } from "@/lib/url-utils";
+import { RoutingService } from "@/lib/routing/utils";
 
 // Define static routes that exist in all languages
 const staticRoutes = Object.entries(routes).map(([standard, config]) => ({
@@ -12,47 +13,8 @@ const staticRoutes = Object.entries(routes).map(([standard, config]) => ({
 }));
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://twofifty.co";
-  const sitemapEntries: MetadataRoute.Sitemap = [];
+  const staticEntries = RoutingService.getSitemapEntries();
+  const dynamicEntries = await generateDynamicEntries(); // For blog posts etc.
 
-  // Generate routes for static pages
-  i18n.locales.forEach((locale) => {
-    staticRoutes.forEach((route) => {
-      // Skip tag routes
-      if (route.path.startsWith("blog/tag/")) return;
-
-      const localizedPath = route.localizedPaths[locale].path;
-      sitemapEntries.push({
-        url: `${baseUrl}/${locale}${localizedPath ? `/${localizedPath}` : ""}`,
-        lastModified: new Date().toISOString(),
-        changeFrequency: route.changeFrequency,
-        priority: route.priority,
-      });
-    });
-  });
-
-  // Add blog posts
-  const allPosts = await Promise.all(
-    i18n.locales.map(async (locale) => {
-      const posts = await getPosts(locale);
-      return posts.map((post) => ({
-        url: `${baseUrl}/${locale}/blog/${post.slug}`,
-        lastModified: new Date(post.modified || post.date).toISOString(),
-        changeFrequency: "weekly" as const,
-        priority: post.featured ? 1 : 0.7,
-        // Add alternates if post exists in other languages
-        alternates: post.alternates
-          ? Object.entries(post.alternates).reduce(
-              (acc, [altLocale, altSlug]) => ({
-                ...acc,
-                [altLocale]: `${baseUrl}/${altLocale}/blog/${altSlug}`,
-              }),
-              {}
-            )
-          : undefined,
-      }));
-    })
-  );
-
-  return [...sitemapEntries, ...allPosts.flat()];
+  return [...staticEntries, ...dynamicEntries];
 }
