@@ -178,3 +178,45 @@ curl -I http://localhost:3000/fr/notre-mission
 2. Market-specific routing (e.g., fr-CA)
 3. Dynamic route generation
 4. Improved caching strategy
+
+## Language Localization Management
+
+### 1. URL Localization
+
+- **Language Prefixes**: All URLs are prefixed with the language code (e.g., `/fr/`, `/en/`) to indicate the content's language.
+- **Localized Paths**: Each route has a corresponding localized path defined in the route configuration, ensuring that users are directed to the correct language version of the content.
+- **Automatic Redirects**: Middleware handles redirects from standard paths to their localized counterparts based on the user's language preference or browser settings.
+
+### 2. Content Localization
+
+- **Translation Management**: All content is translated and stored in language-specific files or databases. This ensures that users receive content in their preferred language.
+- **Dynamic Content Loading**: The application dynamically loads the appropriate content based on the URL's language prefix, allowing for seamless user experiences across different languages.
+- **Fallback Mechanism**: If a translation is missing, the application can fall back to a default language (usually English) to ensure that users still receive relevant content.
+
+### 3. Metadata Localization
+
+- **Localized Metadata**: Each page includes language-specific metadata, such as titles and descriptions, which are crucial for SEO. This metadata is defined in the route configuration.
+- **Canonical Tags**: Proper canonical tags are set for each localized version of a page to prevent duplicate content issues and to inform search engines about the preferred version of the content.
+- **Language Alternates**: The application includes `<link rel="alternate" hreflang="x">` tags in the HTML head to indicate the available language versions of a page, improving SEO and user navigation.
+
+### 4. Example of URL and Metadata Handling
+
+- For a page like "Our Mission":
+  - **URL**: `/fr/notre-mission`
+  - **Title**: "Notre Mission"
+  - **Canonical URL**: `https://example.com/fr/notre-mission`
+  - **Alternate Tags**:
+    ```html
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://example.com/en/our-mission"
+    />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://example.com/fr/notre-mission"
+    />
+    ```
+
+This structured approach ensures that users have a consistent and localized experience across the application, enhancing usability and SEO performance.

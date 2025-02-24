@@ -23,12 +23,13 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Skip middleware for static files and favicons
+  // Skip middleware for static files, API routes, and sitemap
   if (
     pathname.startsWith("/_next/") ||
     pathname.startsWith("/api/") ||
     pathname.includes("/favicon") ||
     pathname.includes(".ico") ||
+    pathname === "/sitemap.xml" ||
     /\.(jpg|jpeg|png|gif|svg|css|js)$/i.test(pathname)
   ) {
     return NextResponse.next();
