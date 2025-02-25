@@ -24,28 +24,20 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
 
-  // For debugging
-  // console.log("Available routes:", Object.keys(routes));
-  // console.log("Current lang:", lang);
-
+  // Pass an empty string as path for the home page
+  // This will map to the 'home' route in url-utils.ts
   return generatePageMetadata({
-    routeKey: "home",
+    path: "",
     lang,
   });
 }
 
-export default async function Page({ params }: Props) {
-  try {
-    const { lang } = await getValidatedParams(params);
-    const [dictionary, recentPosts] = await Promise.all([
-      getDictionary(lang),
-      getLatestPosts(lang, 3),
-    ]);
+export default async function Page(props: Props) {
+  const { lang } = await getValidatedParams(props.params);
 
-    if (!dictionary) {
-      console.error(`Failed to load dictionary for locale ${lang}`);
-      notFound();
-    }
+  try {
+    const dictionary = await getDictionary(lang);
+    const recentPosts = await getLatestPosts(lang, 3);
 
     return (
       <HomePage
@@ -55,7 +47,7 @@ export default async function Page({ params }: Props) {
       />
     );
   } catch (error) {
-    console.error("Failed to load page:", error);
+    console.error("Failed to load homepage data:", error);
     notFound();
   }
 }

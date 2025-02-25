@@ -2,7 +2,6 @@ import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
 import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
-// import CustomImage from "@/components/CustomImage";
 import { getValidatedParams } from "@/lib/params-helper";
 import { notFound } from "next/navigation";
 import { generatePageMetadata } from "@/lib/metadata";

@@ -6,50 +6,112 @@ import type { Locale } from "@/i18n-config";
 interface GeneratePageMetadataProps {
   path: string;
   lang: Locale;
+  options?: {
+    openGraph?: {
+      images?: string[];
+    };
+    twitter?: {
+      images?: string[];
+    };
+  };
 }
 
-const defaultMetadata = {
-  title: "TwoFifty",
-  description: "Transform your workspace with TwoFifty's global coworking expertise. We teach, advise, and build understanding about coworking for organizations worldwide."
-};
+// Add the default image URL as a constant
+const DEFAULT_IMAGE_URL =
+  "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302489/images/pages/contact-us-space_h1ey90.webp";
 
-export function generatePageMetadata({ path, lang }: GeneratePageMetadataProps): Metadata {
+export function generatePageMetadata({
+  path,
+  lang,
+  options,
+}: GeneratePageMetadataProps): Metadata {
   const baseUrl = getBaseUrl();
-  const standardPath = getStandardPath(path, lang);
-  const route = routes[standardPath];
+  let route;
+  let localizedData;
+  let canonicalPath;
+  let languages: Record<string, string> = {};
 
-  // Get localized metadata from routes configuration
-  const localizedData = route?.localized[lang] || defaultMetadata;
+  // Handle home page vs other pages
+  if (path === "") {
+    // Home page logic
+    route = routes.home;
 
-  // Get canonical path from route config or fallback to localized path
-  const canonicalPath = localizedData.canonicalPath || 
-    (localizedData.path ? `/${lang}/${localizedData.path}` : `/${lang}`);
+    if (!route || !route.localized || !route.localized[lang]) {
+      throw new Error(
+        `No home route configuration found for language: ${lang}`
+      );
+    }
 
-  // Generate alternate URLs
-  const languages = Object.entries(route?.localized || {}).reduce((acc, [locale, data]) => {
-    acc[locale] = `${baseUrl}/${locale}${data.path ? `/${data.path}` : ""}`;
-    return acc;
-  }, {} as Record<string, string>);
+    localizedData = route.localized[lang];
+    canonicalPath = localizedData.canonicalPath || `/${lang}`;
 
+    // Generate alternate URLs for the home page
+    languages = Object.entries(route.localized).reduce(
+      (acc, [locale, data]) => {
+        if (data && typeof data === "object") {
+          const path = data.canonicalPath || `/${locale}`;
+          acc[locale] = `${baseUrl}${path}`;
+        }
+        return acc;
+      },
+      {} as Record<string, string>
+    );
+  } else {
+    // Other pages logic
+    const standardPath = getStandardPath(path, lang);
+    route = routes[standardPath];
+
+    if (!route || !route.localized || !route.localized[lang]) {
+      throw new Error(
+        `No route configuration found for path: ${path} in language: ${lang}`
+      );
+    }
+
+    localizedData = route.localized[lang];
+    canonicalPath =
+      localizedData.canonicalPath ||
+      (localizedData.path ? `/${lang}/${localizedData.path}` : `/${lang}`);
+
+    // Generate alternate URLs
+    languages = Object.entries(route.localized).reduce(
+      (acc, [locale, data]) => {
+        if (data && typeof data === "object") {
+          acc[locale] = `${baseUrl}/${locale}${
+            data.path ? `/${data.path}` : ""
+          }`;
+        }
+        return acc;
+      },
+      {} as Record<string, string>
+    );
+  }
+
+  // Define ogImages - common for both paths
+  const ogImages = options?.openGraph?.images ||
+    route.ogimage || [DEFAULT_IMAGE_URL];
+
+  // Return metadata - common structure for both paths
   return {
     title: localizedData.title,
     description: localizedData.description,
     alternates: {
-      canonical: `${baseUrl}${canonicalPath}`, // Use the canonical path from route config
+      canonical: `${baseUrl}${canonicalPath}`,
       languages,
     },
     openGraph: {
       title: localizedData.title,
       description: localizedData.description,
-      url: `${baseUrl}${canonicalPath}`, // Also use canonical path here
-      siteName: 'TwoFifty Consulting',
+      url: `${baseUrl}${canonicalPath}`,
+      siteName: "TwoFifty Consulting",
       locale: lang,
-      type: 'website',
+      type: "website",
+      images: ogImages,
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title: localizedData.title,
       description: localizedData.description,
+      images: ogImages,
     },
   };
 }

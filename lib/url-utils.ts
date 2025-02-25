@@ -3,6 +3,7 @@ import type { NavigationItem } from "@/lib/navigation";
 
 export type LocalizedRouteConfig = {
   standard: string;
+  ogimage?: string[];
   localized: {
     [key in Locale]: {
       path: string;
@@ -16,6 +17,9 @@ export type LocalizedRouteConfig = {
 export const routes: Record<string, LocalizedRouteConfig> = {
   home: {
     standard: "",
+    ogimage: [
+      "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302489/images/pages/contact-us-space_h1ey90.webp",
+    ],
     localized: {
       en: {
         path: "",
@@ -52,6 +56,9 @@ export const routes: Record<string, LocalizedRouteConfig> = {
   },
   mission: {
     standard: "mission",
+    ogimage: [
+      "https://res.cloudinary.com/ddqw1uuhd/image/upload/c_limit,w_1920/f_auto/q_auto/v1/images/pages/twofifty-coworkies-founders-portrait_dxrd2e?_a=BAVAZGBz0",
+    ],
     localized: {
       en: {
         path: "our-mission",
@@ -85,6 +92,9 @@ export const routes: Record<string, LocalizedRouteConfig> = {
   },
   workshops: {
     standard: "workshops",
+    ogimage: [
+      "https://res.cloudinary.com/ddqw1uuhd/image/upload/c_limit,w_1920/f_auto/q_auto/v1/images/workshops/workshop_fb3ci4?_a=BAVAZGBz0",
+    ],
     localized: {
       en: {
         path: "coworking-workshops-training-programs",
@@ -118,6 +128,9 @@ export const routes: Record<string, LocalizedRouteConfig> = {
   },
   education: {
     standard: "education",
+    ogimage: [
+      "https://res.cloudinary.com/ddqw1uuhd/image/upload/c_limit,w_1920/f_auto/q_auto/v1/images/pages/coworking-education-workshhop-copenhagen-2_d8whyn?_a=BAVAZGBz0",
+    ],
     localized: {
       en: {
         path: "coworking-education",
@@ -151,6 +164,9 @@ export const routes: Record<string, LocalizedRouteConfig> = {
   },
   "speaking-events": {
     standard: "speaking-events",
+    ogimage: [
+      "https://res.cloudinary.com/ddqw1uuhd/image/upload/c_limit,w_1920/f_auto/q_auto/v1/images/speaking/educate_wjlisv?_a=BAVAZGBz0",
+    ],
     localized: {
       en: {
         path: "speaking-events",
@@ -180,6 +196,9 @@ export const routes: Record<string, LocalizedRouteConfig> = {
   },
   "get-feedback": {
     standard: "get-feedback",
+    ogimage: [
+      "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302478/images/pages/twofiflty-workshops2_s69jih.png",
+    ],
     localized: {
       en: {
         path: "get-feedback",
@@ -209,6 +228,9 @@ export const routes: Record<string, LocalizedRouteConfig> = {
   },
   retreats: {
     standard: "retreats",
+    ogimage: [
+      "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302492/images/pages/The-Community-Managers-Retreat_cgq1ct.png",
+    ],
     localized: {
       en: {
         path: "coworking-community-retreats",
@@ -238,31 +260,41 @@ export const routes: Record<string, LocalizedRouteConfig> = {
   },
   blog: {
     standard: "blog",
+    ogimage: [
+      "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302503/images/blog/how-we-wrok_pnpvhf.webp",
+    ],
     localized: {
       en: {
         path: "blog",
-        title: "Blog",
-        description: "Latest insights and updates",
+        title: "Coworking Insights & Best Practices",
+        description:
+          "Analisis and Actionable Best Practices for Workspace Operators and Community Managers | TwoFifty Blog",
       },
       fr: {
         path: "blog",
-        title: "Blog",
-        description: "Derniers articles et mises à jour",
+        title: "Insights & Bonnes Pratiques en Coworking",
+        description:
+          "Analyse et meilleures pratiques actionnables pour les gestionnaires d'espaces de travail et community managers | TwoFifty Blog",
       },
       de: {
         path: "blog",
-        title: "Blog",
-        description: "Neueste Einblicke und Updates",
+        title: "Coworking-Einblicke & Best Practices",
+        description:
+          "Analyse und umsetzbare Best Practices für Workspace-Betreiber und Community-Manager | TwoFifty Blog",
       },
       es: {
         path: "blog",
-        title: "Blog",
-        description: "Últimas publicaciones y actualizaciones",
+        title: "Insights y Mejores Prácticas de Coworking",
+        description:
+          "Análisis y mejores prácticas accionables para operadores de espacios de trabajo y community managers | TwoFifty Blog",
       },
     },
   },
   about: {
     standard: "about",
+    ogimage: [
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddqw1uuhd%2Fimage%2Fupload%2Fv1740302477%2Fimages%2Fpages%2Ftwofifty-coworkies-founders-portrait_dxrd2e.jpg&w=1920&q=75",
+    ],
     localized: {
       en: {
         path: "about",
@@ -292,6 +324,9 @@ export const routes: Record<string, LocalizedRouteConfig> = {
   },
   contact: {
     standard: "contact",
+    ogimage: [
+      "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302491/images/pages/at-work-coworking_klfw1g.jpg",
+    ],
     localized: {
       en: {
         path: "contact",
@@ -321,13 +356,16 @@ export const routes: Record<string, LocalizedRouteConfig> = {
   },
   "coworking-consulting": {
     standard: "coworking-consulting",
+    ogimage: [
+      "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302476/images/pages/twofifty-coworking-consulting-service_drvax1.jpg",
+    ],
     localized: {
       en: {
         path: "coworking-consulting-services",
         canonicalPath: "/en/coworking-consulting-services",
         title: "Expert Coworking Consulting Services | TwoFifty",
         description:
-          "Transform your workspace with TwoFifty's expert coworking consulting services. Optimize your space, community, and operations for success.",
+          "sTransform your workspace with TwoFifty's expert coworking consulting services. Optimize your space, community, and operations for success.",
       },
       fr: {
         path: "services-conseil-coworking",

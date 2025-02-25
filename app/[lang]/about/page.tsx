@@ -12,13 +12,26 @@ import { CloudinaryImage } from "@/components/ui/CloudinaryImage";
 type Props = {
   params: { lang: Locale };
 };
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
   return generatePageMetadata({
     lang,
     path: "/about",
-    image: `https://res.cloudinary.com/twofifty/image/upload/c_scale,w_1200,h_630/v1/images/pages/twofifty-coworkies-founders-portrait_dxrd2e.jpg`,
+    openGraph: {
+      images: [
+        {
+          url: "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302477/images/pages/twofifty-coworkies-founders-portrait_dxrd2e.jpg",
+          width: 1200,
+          height: 630,
+          alt: "TwoFifty Coworking COnsulting Founders",
+        },
+      ],
+    },
+    twitter: {
+      images: [
+        "https://res.cloudinary.com/ddqw1uuhd/image/upload/v1740302477/images/pages/twofifty-coworkies-founders-portrait_dxrd2e.jpg",
+      ],
+    },
   });
 }
 export default async function About({ params }: Props) {

@@ -78,7 +78,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         publishedTime: post.date,
         modifiedTime: post.modified || post.date,
         authors: post.author ? [post.author] : undefined,
-        images: post.coverImage ? [`${baseUrl}${post.coverImage}`] : undefined,
+        images: post.coverImage
+          ? [
+              post.coverImage.startsWith("http")
+                ? post.coverImage
+                : `${baseUrl}${post.coverImage}`,
+            ]
+          : undefined,
       },
       alternates: {
         canonical:
