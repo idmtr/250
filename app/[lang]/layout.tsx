@@ -53,10 +53,3 @@ export default async function Layout({ children, params }: Props) {
     </html>
   );
 }
-
-// Make this a client component if needed
-function getCanonicalUrl() {
-  if (typeof window === "undefined") return "";
-  const searchParams = new URLSearchParams(window.location.search);
-  return searchParams.get("canonical") || window.location.pathname;
-}

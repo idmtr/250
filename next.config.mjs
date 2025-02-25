@@ -11,9 +11,15 @@ try {
 function parseRedirects() {
   try {
     const content = readFileSync(join(process.cwd(), 'public/_redirects'), 'utf8')
+    // Skip redirects that would conflict with language-based routing
     return content
       .split('\n')
       .filter(line => line && !line.startsWith('#'))
+      .filter(line => {
+        const [from] = line.trim().split(/\s+/)
+        // Skip redirects that would interfere with language prefixes
+        return !from.match(/^\/[a-z]{2}(\/|$)/)
+      })
       .map(line => {
         const [from, to, code] = line.trim().split(/\s+/)
         return {
@@ -22,7 +28,6 @@ function parseRedirects() {
           permanent: code === '308'
         }
       })
-      .filter(redirect => redirect.source && redirect.destination)
   } catch (error) {
     console.warn('No _redirects file found or error reading it:', error)
     return []
@@ -84,7 +89,21 @@ const nextConfig = {
     ]
   },
   async redirects() {
-    return parseRedirects()
+    // Get redirects from _redirects file
+    const fileRedirects = parseRedirects()
+
+    // Add any hardcoded redirects, but be careful not to conflict with language routing
+    return [
+      ...fileRedirects,
+      // Example of a safe redirect:
+      {
+        source: '/legacy-path',
+        destination: '/en/new-path',
+        permanent: true
+      },
+      // Avoid redirects like these:
+      // { source: '/fr/blog', destination: '/en/blog', permanent: true },
+    ]
   },
   webpack(config) {
     config.module.rules.push({

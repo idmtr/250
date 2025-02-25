@@ -1,4 +1,5 @@
 import { Locale } from "@/i18n-config";
+import type { NavigationItem } from "@/lib/navigation";
 
 export type LocalizedRouteConfig = {
   standard: string;
@@ -240,27 +241,23 @@ export const routes: Record<string, LocalizedRouteConfig> = {
     localized: {
       en: {
         path: "blog",
-        title: "Coworking Insights & Best Practices",
-        description:
-          "Read TwoFifty's blog for insights on coworking trends, workspace optimization, and community building. Stay informed and inspired.",
+        title: "Blog",
+        description: "Latest insights and updates",
       },
       fr: {
         path: "blog",
-        title: "Tendances et Bonnes Pratiques du Coworking",
-        description:
-          "Lisez le blog de TwoFifty pour des insights sur les tendances du coworking, l'optimisation d'espace de travail et la construction de communauté. Restez informé et inspiré.",
+        title: "Blog",
+        description: "Derniers articles et mises à jour",
       },
       de: {
         path: "blog",
-        title: "Coworking-Einblicke & Best Practices",
-        description:
-          "Lesen Sie TwoFiftys Blog für Erkenntnisse zu Coworking-Trends, Workspace-Optimierung und Community-Aufbau. Bleiben Sie informiert und inspiriert.",
+        title: "Blog",
+        description: "Neueste Einblicke und Updates",
       },
       es: {
         path: "blog",
-        title: "Insights y Mejores Prácticas de Coworking",
-        description:
-          "Lea el blog de TwoFifty para insights sobre tendencias de coworking, optimización de espacios de trabajo y construcción de comunidades. Manténgase informado e inspirado.",
+        title: "Blog",
+        description: "Últimas publicaciones y actualizaciones",
       },
     },
   },
@@ -443,7 +440,7 @@ export function getNavigationItems(locale: Locale): NavigationItem[] {
     .map(([key, config]) => ({
       key,
       href: `/${locale}/${config.localized[locale].path}`,
-      title: config.localized[locale].title || key,
+      labelKey: `header.${key}`,
     }));
 }
 

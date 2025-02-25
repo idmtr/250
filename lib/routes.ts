@@ -185,11 +185,11 @@ export function getLocalizedPath(path: string, locale: Locale): string {
 }
 
 export function getStandardPath(localizedPath: string, locale: Locale): string {
-  console.log("getStandardPath Debug:", {
-    localizedPath,
-    locale,
-    routes: Object.keys(routes),
-  });
+  // console.log("getStandardPath Debug:", {
+  //   localizedPath,
+  //   locale,
+  //   routes: Object.keys(routes),
+  // });
 
   if (!localizedPath) return "";
 
@@ -197,7 +197,7 @@ export function getStandardPath(localizedPath: string, locale: Locale): string {
 
   // Direct match with standard path
   if (routes[cleanPath]) {
-    console.log("Found direct match:", cleanPath);
+    // console.log("Found direct match:", cleanPath);
     return cleanPath;
   }
 
@@ -207,7 +207,7 @@ export function getStandardPath(localizedPath: string, locale: Locale): string {
   );
 
   if (routeEntry) {
-    console.log("Found by localized path:", routeEntry[0]);
+    // console.log("Found by localized path:", routeEntry[0]);
     return routeEntry[0];
   }
 
@@ -217,11 +217,11 @@ export function getStandardPath(localizedPath: string, locale: Locale): string {
   );
 
   if (anyLocaleMatch) {
-    console.log("Found in any locale:", anyLocaleMatch[0]);
+    // console.log("Found in any locale:", anyLocaleMatch[0]);
     return anyLocaleMatch[0];
   }
 
-  console.log("No match found, using original:", cleanPath);
+  // console.log("No match found, using original:", cleanPath);
   return cleanPath;
 }
 

@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await getValidatedParams(params);
 
   // For debugging
-  console.log("Available routes:", Object.keys(routes));
-  console.log("Current lang:", lang);
+  // console.log("Available routes:", Object.keys(routes));
+  // console.log("Current lang:", lang);
 
   return generatePageMetadata({
     routeKey: "home",

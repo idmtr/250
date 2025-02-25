@@ -33,6 +33,12 @@ export interface Dictionary {
     subtitle: string;
     learnMore: string;
     getInTouch: string;
+    members?: {
+      name: string;
+      role: string;
+      image: string;
+      linkedin: string;
+    }[];
   };
   consulting: {
     title: string;
@@ -109,6 +115,9 @@ export interface Dictionary {
     byAuthor: string;
     tags: string;
     noPostsFound: string;
+    subtitle?: string;
+    description?: string;
+    viewAll?: string;
   };
   contact: {
     title: string;

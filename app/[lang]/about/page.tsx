@@ -18,9 +18,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return generatePageMetadata({
     lang,
     path: "/about",
+    image: `https://res.cloudinary.com/twofifty/image/upload/c_scale,w_1200,h_630/v1/images/pages/twofifty-coworkies-founders-portrait_dxrd2e.jpg`,
   });
 }
-
 export default async function About({ params }: Props) {
   try {
     const validatedParams = await getValidatedParams(params);

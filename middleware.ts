@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { i18n } from "@/i18n-config";
+import type { Locale } from "@/i18n-config";
 import { getLocalizedPath, getStandardPath, routes } from "./lib/url-utils";
 
 // Helper function for tag URL generation
@@ -23,12 +24,10 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Check if it's an admin-login attempt with language prefix
-  if (pathname.match(/^\/[a-z]{2}\/admin-login$/)) {
-    return NextResponse.redirect(new URL("/admin-login", request.url));
-  }
+  // Add debug logging
+  console.log(`[Middleware] Processing: ${pathname}`);
 
-  // Skip middleware for static files, API routes, and admin paths
+  // Skip middleware for static files and API routes
   if (
     pathname.startsWith("/_next/") ||
     pathname.startsWith("/api/") ||
@@ -50,52 +49,38 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Redirect root to default language
-  if (pathname === "/") {
-    return NextResponse.redirect(new URL(`/en`, request.url));
-  }
-
   // Extract locale and path
   const pathSegments = pathname.split("/");
-  const potentialLocale = pathSegments[1];
+  const potentialLocale = pathSegments[1] as Locale;
   const path = pathSegments.slice(2).join("/");
 
-  // If accessing a non-admin path without language code, redirect to /en/
-  if (!i18n.locales.includes(potentialLocale as any)) {
+  // Special handling for root path
+  if (pathname === "/") {
+    return NextResponse.redirect(new URL("/en", request.url));
+  }
+
+  // If no locale is present, redirect to default locale
+  if (!i18n.locales.includes(potentialLocale)) {
     return NextResponse.redirect(
       new URL(`/en/${pathname.replace(/^\/+/, "")}`, request.url)
     );
   }
 
-  // Special handling for tag routes
-  if (path.startsWith("blog/tag/")) {
-    const tagPart = path.replace("blog/tag/", "");
-    const decodedTag = decodeURIComponent(tagPart);
-    const normalizedTag = decodedTag.toLowerCase();
-    const encodedNormalizedTag = encodeURIComponent(normalizedTag);
-
-    if (tagPart !== encodedNormalizedTag) {
-      return NextResponse.redirect(
-        new URL(
-          `/${potentialLocale}/blog/tag/${encodedNormalizedTag}`,
-          request.url
-        )
-      );
-    }
+  // IMPORTANT: Special handling for blog routes - completely bypass other rules
+  if (path === "blog" || path.startsWith("blog/")) {
     return NextResponse.next();
   }
 
-  const standardPath = getStandardPath(path, potentialLocale as any);
+  // Only for non-blog routes: handle standard/localized path logic
+  const standardPath = getStandardPath(path, potentialLocale);
+
+  // If we're already on a standard path or a path that doesn't need processing, just pass through
+  if (standardPath === path || !routes[standardPath]) {
+    return NextResponse.next();
+  }
+
   const route = routes[standardPath];
-
-  console.log("[middleware] Route resolution:", {
-    path,
-    standardPath,
-    hasRoute: !!route,
-    expectedPath: route?.localized[potentialLocale]?.path,
-  });
-
-  if (route) {
+  if (route && route.localized[potentialLocale]) {
     const localizedPath = route.localized[potentialLocale].path;
 
     // If accessing standard path, redirect to localized
@@ -107,13 +92,13 @@ export function middleware(request: NextRequest) {
 
     // If on localized path, rewrite to standard path
     if (path === localizedPath) {
-      // Instead of setting headers, pass the canonical URL as a searchParam
       const url = new URL(`/${potentialLocale}/${standardPath}`, request.url);
-      url.searchParams.set("canonical", `/${potentialLocale}/${localizedPath}`);
       return NextResponse.rewrite(url);
     }
   }
 
+  // At the end
+  console.log(`[Middleware] Completed processing: ${pathname}`);
   return NextResponse.next();
 }
 
